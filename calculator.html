@@ -46,7 +46,7 @@
   const $operator = document.querySelector('#operator');
   const $result = document.querySelector('#result');
   const onClickNumber = (event) => {
-    if (!operator) { // 비어있다
+    if (!operator) { // 비어있다 책이랑 순서 반대...
       numOne += event.target.textContent;
       $result.value += event.target.textContent;
       return;
@@ -99,15 +99,20 @@
         default:
           break;
       }
-    } else {
+    
+    $operator.value = '';
+    numOne = $result.value; 
+    operator = '';
+    numTwo = '';
+}else {
       alert('숫자를 먼저 입력하세요.');
     }
   });
   document.querySelector('#clear').addEventListener('click', () => {
     numOne = '';
-    operator = '';
-    numTwo = '';
-    $operator.value = '';
+    
+    
+
     $result.value = '';
   });
 </script>

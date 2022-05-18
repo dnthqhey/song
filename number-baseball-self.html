@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>숫자야구</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" id="input">
+        <button>확인</button>
+    </form>
+    <div id="logs"></div>
+    <script>
+        const $input = document.querySelector('#input'); //이 쌤은 html태그 선택한거 변수에 넣을떄는 앞에 $나 _붙여서 구분기억하려고 붙임..아무의미없음 
+        //뒤에 tag붙이는 사람도 있고 앞에 대문자T붙여서 구분하기도 함
+        const $form = document.querySelector('#form');
+        const $logs = document.querySelector('#logs');
+        const numbers = []; // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        for (let n = 0; n < 9; n += 1) {
+            numbers.push(n + 1);
+        }
+        const answer = []; // [3, 1, 4, 6]
+        for (let n = 0; n < 4; n += 1) { // 네 번 반복
+            // 자연수 1-9까지 가 필요하므로
+            // 1 <= Math.random() *9 + 1 <10
+            // Math.random()은 완벽히 무작위 랜덤은 아니라 보안과 관련된 작업에서는 비권장..
+            // 그때는  window.crypoto, getRandomValues()함수를 쓴다
+
+            // 언제 배열을 쓸지 객체를 쓸지 구분하느냐면
+            // 단순히 값 모을때 배열
+            // 각각에 속성이름 붙일때 객체 리터럴씀
+
+            const index = Math.floor(Math.random() * numbers
+            .length); // 0~8 정수 숫자가 아니라 numbers.length로 쓴 건 코드수정할떄 대비해서  
+            answer.push(numbers[index]);
+            numbers.splice(index, 1);
+        }
+        console.log(answer);
+        const tries = [];
+
+        function checkInput(input) { // 3146,   314,  3144
+            if (input.length !== 4) { // 길이는 4가 아닌가
+                return alert('4자리 숫자를 입력해 주세요.');
+            }
+            if (new Set(input).size !== 4) { // 중복된 숫자가 있는가 new Set()은 중복을 제거해주는 애 3144같은거 걸러줌
+                return alert('중복되지 않게 입력해 주세요.');
+            }
+            if (tries.includes(input)) { // 이미 시도한 값은 아닌가 까먹고 또 쓴거..
+                return alert('이미 시도한 값입니다.');
+            }
+            return true;
+        } // 검사하는 코드
+        function defeated() {
+            const message = document.createTextNode(`패배! 정답은 ${answer.join('')}`);
+            $logs.appendChild(message);
+        }
+        let out = 0;
+        $form.addEventListener('submit', (event) => {
+            event.preventDefault(); //기본동작 막아줌 form나 a태그의..
+            //             form태그는 submit 확인눌렀을때 html뒤에? 붙으면서 새로고침처럼 되면서 변수같은거 다 날아가기때문에  그 기본동작을 막아주려고 event 매개변수 씀
+            // event.preventDefault(); //기본동작 막기
+
+            // a태그 클릭하면 링크이동하는거 기본동작인데 이걸로 똑같이 기본동작 막을수 있음
+
+            // 이벤트객체 많은데 그 안에 타겟객체 또 있고 ..
+            // 이벤트 타겟에 0번
+            // event.target[0] 은 검색창처럼 생긴부분 가리키고 1번은 그옆 버튼을 가리킴 이렇게 배열처럼 접근하면 form안에 태그에 접근할수 있다
+            const value = $input.value;
+            $input.value = ''; //다음 값 쉽게 입력하라고 지워준거 센스!코드가 점점 길어지니까
+            //검사하는 코드
+            //검사
+            //검사
+            if (!checkInput(value)) { //alert의 리턴값은 undefined, 이게 if문에 들어가면 false뜸
+                return;
+            }
+            const valid = checkInput(value);
+            if (!valid) return;
+            // 입력값 문제없음
+            if (answer.join('') === value) { // 원래 join(,)괄호안에 뭘넣어 구분해줄건지쓰는건데 빈문자열이니까 [3, 1, 4, 6] -> '3146'
+                //split을 조건써서 사용할수 있음 (1), 1 기준으로 나뉘고..
+                $logs.textContent = '홈런!'; // $logs.textContent 는 기존글자
+                return;
+            }
+            if (tries.length >= 9) { //열번 이상 도전했으면 패배 
+                const message = document.createTextNode(`패배! 정답은 ${answer.join('')}`);
+                $logs.appendChild(message);
+                // defeated();
+                return;
+            }
+            // 몇 스트라이크 몇 볼인지 검사
+            let strike = 0;
+            let ball = 0;
+            // answer: 3146,  value: 1234... 1347
+            for (let i = 0; i < answer.length; i++) {
+                const index = value.indexOf(answer[i]);
+                if (index > -1) { // 일치하는 숫자 발견  ball
+                    if (index === i) { // 자릿수도 같음 스트라이크
+                        strike += 1;
+                    } else { // 숫자만 같음
+                        ball += 1;
+                    }
+                }
+            }
+            if (strike === 0 && ball === 0) {
+                out++;
+                $logs.append(`${value}:아웃`, document.createElement('br'));
+            } else {
+                $logs.append(`${value}:${strike} 스트라이크 ${ball} 볼`, document.createElement('br'));
+            }
+            if (out === 3) {
+                defeated();
+                return;
+            }
+            tries.push(value);
+        });
+    </script>
+</body>
+
+</html>
