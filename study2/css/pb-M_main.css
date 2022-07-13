@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    min-width: 320px;
+}
+
+/* .wrap {
+    min-width: 320px; 
+}
+
+.inner {
+    min-width: 320px; 
+    
+} */
+
+.header1 {
+   display: none;
+}
+.header2{
+    min-width: 320px;
+    max-width: 640px;
+    /* padding: 0 20px;
+    height: 60px; */
+}
