@@ -1,0 +1,20 @@
+html {height:100%;}
+body {overflow: hidden; height:100%; background-image:url('../images/main/landing_bg1.png'), url('../images/main/landing_bg2.png'); background-color:#d7f5f6; background-repeat:no-repeat; background-position:left bottom, right top;}
+#wrapper {overflow: visible}
+#landing .landing_wrap {width:1300px; padding:0 106px 0 57px; margin:0 auto;}
+#landing .landing_wrap .logo_image {margin-top:90px;}
+#landing .main_box {position:relative; padding-top:65px; font-size:0; line-height:0;}
+#landing .main_box:before,
+#landing .main_box .text_area:before,
+#landing .main_box .text_area .text2:before {display:inline-block; position:absolute; content:'';}
+#landing .main_box:before {top:-56px; right:69px;  width:824px; height:115px; background:url('../images/main/landing_bg3.png') no-repeat 0 0;}
+#landing .main_box .title_area {display:inline-block; width:calc(100% - 647px); padding-top:25px; font-size:30px; line-height:43px; color:#007176; font-weight:600;}
+#landing .main_box .title_area p {margin-bottom:34px;}
+#landing .main_box .text_area {display:inline-block; padding:120px 48px 70px; vertical-align: top;}
+#landing .main_box .text_area:before {top:66px; right:-154px; width:1184px; height:702px; background:url('../images/main/landing_textarea.png') no-repeat 0 0; z-index:-1;}
+#landing .main_box .text_area .text1 {padding-left:115px;}
+#landing .main_box .text_area .text2 {position:relative; margin-top:33px;  padding:24px 10px 24px; border-radius:20px; background-color:#ffd055; font-size:24px; line-height:30px; color:#000; font-weight:600; text-align: center;}
+#landing .main_box .text_area .text2:before {bottom:-160px; left:-30px; width:92px; height:185px; background:url('../images/main/landing_textarea2.png') no-repeat 0 0;}
+#landing .main_box .text_area .text2 p {margin-top:12px;}
+#landing .covid_btn {position: absolute; top:143px; right:calc(50% - 400px); padding:14px 50px 14px 25px; border-radius:15px; font-size:22px; color:#fff; font-weight:bold; background-color:#3d3b75; z-index: 100}
+#landing .covid_btn:before {display: inline-block; position:absolute; top:13px; right:21px; width:10px; height:20px; font-size:30px; content:'+';}

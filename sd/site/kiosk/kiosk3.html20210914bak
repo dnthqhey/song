@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--meta http-equiv="refresh" content="30" /-->
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="성동구 새소식" />
+    <meta name="description" content="성동구 새소식" />
+    <link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/site/kiosk/css/main.css" />
+    <!--[if lt IE 9]><script src="/common/js/html5.js"></script><![endif]-->
+    <script src="/common/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="/common/js/plugins.js"></script>
+    <script src="/common/js/program.min.js"></script>
+    <script src="/site/kiosk/js/main.js"></script>
+<script type="text/javascript">
+    <!--
+	/* 서버 시간 참조 */
+    var xmlHttp;
+    function srvTime() {
+        try {
+            //FF, Opera, Safari, Chrome
+            xmlHttp = new XMLHttpRequest();
+        }
+        catch (err1) {
+            //IE
+            try {
+                xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+            }
+            catch (err2) {
+                try {
+                    xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+                catch (eerr3) {
+                    //AJAX not supported, use CPU time.
+                    console.log("AJAX not supported");
+                }
+            }
+        }
+        xmlHttp.open('HEAD', window.location.href.toString(), false);
+        xmlHttp.setRequestHeader("Content-Type", "text/html");
+        xmlHttp.send('');
+        return xmlHttp.getResponseHeader("Date");
+    }
+
+    var st = srvTime();
+    var serverDate = new Date(st);
+    //-->
+</script>
+  <script language="javascript">
+  //var localTime = new Date();
+  //document.write("Local machine time is: " + localTime + "<br>");
+	// console.log("Server time is: " + serverDate);
+  </script>
+<script>
+var site = {
+id : 'site',
+layout : 'www',
+login : 'true'
+};
+</script>
+    <script src="/common/js/layout.js"></script>
+    <title>성동구 선별진료소 실시간 대기현황</title>
+</head>
+<body class="kiosk6">
+<script>
+
+	var idleTime = 0;
+    $(document).ready(function() {
+        var idleInterval = setInterval(timerIncrement, 20000);
+        //1000 =  1초
+        
+        if(element.requestFullScreen) {
+            element.requestFullScreen();
+        } else if(element.webkitRequestFullScreen ) {
+            element.webkitRequestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen(); // IE
+        }
+    });
+    $(function() {
+		$('#refresh_btn').on('click', function() {
+		location.reload(true);
+       	});
+   });
+   function InfoRefresh(){
+		location.reload(true);	
+   }
+    function timerIncrement(){
+    	var timeLimit = 5;	
+    	idleTime = idleTime + 1;
+    	console.log(idleTime);
+    	if (idleTime > timeLimit ) { // 5 minutes
+			readCvdWait();
+			readCvcWait();
+			readCvbWait();    
+    	}
+    }    
+	function readCvbWait(){
+		console.log("성수구두테마공원(임시)) 대기정보갱신");
+		/* 성수구두테마공원(임시)) */
+			var now = serverDate;//new Date();
+			var day=now.getDay();//요일 
+
+			/* Tue Aug 17 2021 09:05:42 GMT+0900 을 YYYY-MM-dd 형식으로 변경*/
+			var year = now.getFullYear();
+			var month = ('0' + (now.getMonth() + 1)).slice(-2);
+			var dd = ('0' + now.getDate()).slice(-2);
+
+			var dateString = year + '-' + month  + '-' + dd;
+
+			/*
+			0:일,1:월,2:화,3:수,4:목,5:금,6:토
+			*/
+			var hr=now.getHours();//시간 
+			var min=now.getMinutes();//분
+			var msgText="";
+			if(day==0 || day==6 ){
+				msgText ="주말 휴무";
+			}else{
+				//평일은 17시까지 
+				if(hr < 9 ){
+					msgText ="준비중(9시)";
+				} else if(hr>=17){
+					msgText ="금일운영종료";
+				} 
+			}
+			//대체공휴일 입력구간(구두공원)
+			var dateTime=now.toISOString();
+			var toDay=dateString;
+			
+			var alternativeHolidays = ["2021-09-20","2021-09-21","2021-09-22","2021-10-04","2021-10-11"];
+			for(var i=0; i<alternativeHolidays.length ; i++){
+
+				if(toDay ===alternativeHolidays[i]) msgText ="금일운영안함";
+			}
+			//msgText ="금일운영안함";		//임시 강제 설정(구두공원)
+
+         $.ajax({
+      		url:'/readCvibWaitGroupSetJSON.do',
+      		type: 'POST',
+      		dataType: 'json',
+      		cache: false,
+      		async: true,
+      		success: function(resp) {
+
+			if(resp.groupList.length == 1) {
+				if (msgText!=""){
+					//$('#stat3').html('<em>'+msgText+'</em>');
+					$('#cvid_seq_3_waitNo').text(msgText);
+					$('#cvid_seq_update3_today').text(resp.today);
+					$('#cvid_seq_update3_time').text(resp.thisTime);
+				}else{
+					$('#cvid_seq_update3_today').text(resp.today);
+					$('#cvid_seq_update3_time').text(resp.thisTime);
+					$('#cvid_seq_3_waitNo').text(resp.groupList[0].waitNo).append('명');
+					$('#cvid_seq_3_lastCallNo').text(resp.groupList[0].lastCallNo);
+				}
+			}
+      		}
+      	});      			
+	}
+	function readCvcWait(){
+		console.log("성동구청 농구장(임시) 대기정보갱신");
+		/* 성동구청 농구장(임시) */
+			var now = serverDate;//new Date();
+			var day=now.getDay();//요일 
+			/* Tue Aug 17 2021 09:05:42 GMT+0900 을 YYYY-MM-dd 형식으로 변경*/
+			var year = now.getFullYear();
+			var month = ('0' + (now.getMonth() + 1)).slice(-2);
+			var dd = ('0' + now.getDate()).slice(-2);
+
+			var dateString = year + '-' + month  + '-' + dd;
+
+			/*
+			0:일,1:월,2:화,3:수,4:목,5:금,6:토
+			*/
+
+			var hr=now.getHours();//시간 
+			var min=now.getMinutes();//분
+			var msgText="";
+
+			/* 당분간 일요일도 운영 (농구장)
+			if(day==0){
+				msgText ="일요일 휴무";
+			}else if(day==6 ){
+			*/
+			
+			//if(day==0 || day==6 || day==1 || day==2 || day==3 ){		// 추석 월,화,수 09~18시
+			if(day==0 || day==6 ){
+				//토,일요일은 13 시까지 (농구장)
+				if(hr < 9 ){
+					msgText ="준비중(9시)";
+				} else if(hr>=13){
+					msgText ="금일운영종료";
+				}
+			}else{
+				//평일은 17 까지 
+				if(hr < 9 ){
+					msgText ="준비중(9시)";
+				} else if(hr>=17){
+					msgText ="금일운영종료";
+				} 
+			}
+			//대체공휴일 입력구간 (농구장)
+			var dateTime=now.toISOString();
+			var toDay=dateTime.substring(0,10);
+			var alternativeHolidays = ["2021-10-04","2021-10-11"];
+			for(var i=0; i<alternativeHolidays.length ; i++){
+
+				if(toDay ===alternativeHolidays[i]) msgText ="금일운영안함";
+			}
+			//msgText ="금일운영안함";		//임시 강제 설정 (농구장)
+
+         $.ajax({
+      		url:'/readCvicWaitGroupSetJSON.do',
+      		type: 'POST',
+      		dataType: 'json',
+      		cache: false,
+      		async: true,
+      		success: function(resp) {
+				if(resp.groupList.length == 1) {
+					if (msgText!=""){
+						//$('#stat2').html('<em>'+msgText+'</em>');
+						$('#cvid_seq_2_waitNo').text(msgText);
+						$('#cvid_seq_update2_today').text(resp.today);
+						$('#cvid_seq_update2_time').text(resp.thisTime);
+					}else{
+						$('#cvid_seq_update2_today').text(resp.today);
+						$('#cvid_seq_update2_time').text(resp.thisTime);
+						$('#cvid_seq_2_waitNo').text(resp.groupList[0].waitNo).append('명');
+						$('#cvid_seq_2_lastCallNo').text(resp.groupList[0].lastCallNo);
+					}
+				}
+      		}
+      	});      			
+	}
+	function readCvdWait(){
+		console.log("성동구 보건소 대기정보갱신");
+		/* 성동구 보건소 */
+		var now = serverDate;//new Date();
+		var day=now.getDay();//요일 
+		
+		/* Tue Aug 17 2021 09:05:42 GMT+0900 을 YYYY-MM-dd 형식으로 변경*/
+			var year = now.getFullYear();
+			var month = ('0' + (now.getMonth() + 1)).slice(-2);
+			var dd = ('0' + now.getDate()).slice(-2);
+
+			var dateString = year + '-' + month  + '-' + dd;
+
+		/*
+		0:일,1:월,2:화,3:수,4:목,5:금,6:토
+		*/
+		var hr=now.getHours();//시간 
+		var min=now.getMinutes();//분
+		var msgText="";
+
+		//if(day==0 || day==6 || day==1 || day==2 || day==3 ){		// 추석 월,화,수 09~18시
+		if(day==0 || day==6 ){
+			//토,일요일은 18시까지
+			if(hr < 9 ){
+				msgText ="준비중(9시)";
+			} else if(hr>=18){
+				msgText ="금일운영종료";
+			} else if (hr>=13 && hr<14) {
+				msgText ="중식(1~2시)";
+			}
+		}else{
+			//평일은 21시까지 
+			if(hr < 9 ){
+				msgText ="준비중(9시)";
+			} else if(hr>=21){
+				msgText ="금일운영종료";
+			} else if (hr>=13 && hr<14) {
+				msgText ="중식(1~2시)";
+			}
+		}
+         $.ajax({
+      		url:'/readCvidWaitGroupSetJSON.do',
+      		type: 'POST',
+      		dataType: 'json',
+      		cache: false,
+      		async: true,
+      		success: function(resp) {
+		if(resp.groupList.length == 1) {
+			if (msgText!=""){
+				//$('#stat1').html('<em>'+msgText+'</em>');
+				$('#cvid_seq_1_waitNo').text(msgText);
+				$('#cvid_seq_update1_today').text(resp.today);
+				$('#cvid_seq_update1_time').text(resp.thisTime);
+			}else{
+				$('#cvid_seq_update1_today').text(resp.today);
+				$('#cvid_seq_update1_time').text(resp.thisTime);
+				$('#cvid_seq_1_waitNo').text(resp.groupList[0].waitNo).append('명');
+				$('#cvid_seq_1_lastCallNo').text(resp.groupList[0].lastCallNo);
+			}			
+		}
+      		}
+      	});      			
+	}    		
+	readCvdWait();
+    readCvcWait();
+    readCvbWait();
+</script>         
+<div id="wrapper">
+    <div class="kiosk_wrap">
+        <a href="javascript:InfoRefresh();" class="refresh_btn" id="refresh_btn"><span>새로고침</span></a>
+        <h1><span>선별진료소별</span> 실시간 대기현황</h1>
+        <p class="title_text">각 선별진료소별 <em>코로나-19 검사자 대기현황</em>을 확인하실 수 있습니다.</p>
+        <div class="cont_area clearfix">
+            <!--cont_box-->
+            <div class="cont_box n1">
+                <div class="title">
+                    <ul class="screening_center_day clearfix">
+                        <li>평일 09~21시</li>
+                        <li>주말·공휴일 09~18시</li>
+                    </ul>
+                    <h2>성동구보건소<br />
+                    선별진료소</h2>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p class="call_text">대기인수</p>
+                        <p class="call_num" id="stat1"><span id="cvid_seq_1_waitNo"></span></p>
+                    </div>
+                    <p class="waiting_box">
+                        호출번호 <span id="cvid_seq_1_lastCallNo">00</span>번
+                    </p>
+
+                    <ul class="time_area">
+                        <li><span id="cvid_seq_update1_today">2021-07-16</span></li>
+                        <li><span id="cvid_seq_update1_time">00:00</span> 현재</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cont_box-->
+            <div class="cont_box n2">
+                <div class="title">
+                    <ul class="screening_center_day clearfix">
+                        <li>평일 09~17시</li>
+                        <li>주말 09~13시</li>
+                        <li>추석연휴 09~13시</li>
+                    </ul>
+                    <h2>성동구청 농구장<br />
+                        임시선별검사소</h2>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p class="call_text">대기인수</p>
+                        <p class="call_num" id="stat2"><span id="cvid_seq_2_waitNo"></span></p>
+                    </div>
+                    <p class="waiting_box">
+                        호출번호 <span id="cvid_seq_2_lastCallNo">00</span>번
+                    </p>
+
+                    <ul class="time_area">
+                        <li><span id="cvid_seq_update2_today">2021-07-16</span></li>
+                        <li><span id="cvid_seq_update2_time">00:00</span> 현재</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cont_box-->
+            <div class="cont_box n3">
+                <div class="title">
+                    <ul class="screening_center_day clearfix">
+                        <li>평일 09~17시</li>
+                        <li>주말·공휴일 휴무</li>
+                    </ul>
+                  <h2>성수구두테마공원<br />
+                    임시선별검사소</h2>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p class="call_text">대기인수</p>
+                        <p class="call_num" id="stat3"><span id="cvid_seq_3_waitNo"></span></p>
+                    </div>
+                    <p class="waiting_box">
+                        호출번호 <span id="cvid_seq_3_lastCallNo">00</span>번
+                    </p>
+
+                    <ul class="time_area">
+                        <li><span id="cvid_seq_update3_today">2021-07-16</span></li>
+                        <li><span id="cvid_seq_update3_time">00:00</span> 현재</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<ul class="time_area">
+            <li><span id="cvid_seq_update_today">2021-07-14</span></li>
+            <li><span id="cvid_seq_update_time">00:00</span> 현재</li>
+        </ul>-->
+    </div>
+</div>
+</body>
+</html>

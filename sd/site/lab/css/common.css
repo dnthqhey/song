@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.wrap{position:relative; width:1300px; margin-right:auto; margin-left:auto;}
+@media all and (max-width:1300px){
+    #wrapper{min-width:1000px;}
+    .wrap{width:1000px;}
+}
+@media all and (max-width:1000px){
+    #wrapper{min-width:0;}
+    .wrap{width:auto; margin-right:0; margin-left:0; padding-right:3%; padding-left:3%;}
+}
+
+/*로고*/
+@media all and (max-width:640px) {
+    .home .logo_image img{width:110px;}
+}

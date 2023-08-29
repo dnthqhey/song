@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*와이드형 body */
+body{background-color:#fff; color:#555; font-size:18px; line-height:30px; font-weight:300; letter-spacing:-0.03em; font-family:'NotoKr', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Gulim', '굴림', sans-serif; word-wrap:break-word; -webkit-text-size-adjust:none;}
+@media all and (max-width:800px){
+    body{font-size:16px; line-height:26px;}
+}
+@media all and (max-width:640px){
+    body{font-size:14px; line-height:22px;}
+}
+
+/*외국어형 h3*/
+
+#contents h3, #contents .h3{padding-bottom:33px; padding-left:0; text-align:center; font-size:36px; line-height:48px; font-weight:600;}
+#contents h3:before, #contents .h3:before{top:auto; bottom:0; right:0; width:52px; height:3px; margin-left:auto; margin-right:auto; background:url('/site/languge/images/sub/lang_h3_before.png') no-repeat;}
+#contents h4, #contents .h4{font-size:24px; line-height:36px;}
+#contents h4:before{top:8px;}
+
+@media all and (max-width:640px) {
+    #contents h3, #contents .h3{padding-bottom:15px; font-size:20px; line-height:36px;}
+    #contents h4, #contents .h4{font-size:18px; line-height:22px;}
+    #contents h4:before{top:3px;}
+}
+
+/*박스 img*/
+#contents .box.img .box_title{text-align:left; font-size:24px; line-height:28px; font-weight:600;}
+.box.img .box_text{font-size:18px; line-height:28px;}
+
+@media all and (max-width:640px) {
+    #contents .box.img .box_title{font-size:17px; line-height:21px;}
+    .box.img .box_text{font-size:14px; line-height:22px;}
+}
+
+/*박스 type3*/
+#contents .box.type3 .box_title{text-align:left;}
+.box.type3 .box_text{font-size:18px; line-height:28px;}
+
+@media all and (max-width:640px) {
+    .box.type3 .box_text{font-size:14px; line-height:22px;}
+}
+
+/*박스 no_icon*/
+#contents .box.no_icon.tiny .box_title{padding: 20px 0 20px 28px; font-size: 24px; line-height: 30px; text-align:left;}
+.box.no_icon .box_text{font-size:18px; line-height:30px;}
+
+@media all and (max-width:640px) {
+    #contents .box.no_icon.tiny .box_title{padding:12px 0 13px 20px; font-size: 17px; line-height:21px;}
+    .box.no_icon .box_text{font-size:14px; line-height:22px;}
+}
+
+/*bu style*/
+.bu li, .num li{line-height:28px; margin-bottom:0;}
+.bu li, p.blt, span.blt{font-size:18px;}
+.bu > li:before, p.blt:before, span.blt:before{top:13px;}
+.dl > li .title:before{top:8px;}
+.bu > li > ul > li, .num > li > ul > li, p.blt.type2, span.blt.type2{padding-left:17px; line-height:30px; color:#666;}
+.bu > li > ul >li:before, .num > li > ul >li:before, p.blt.type2:before, span.blt.type2:before{left:2px; top:14px;}
+
+@media all and (max-width:640px) {
+    .bu li, .num li{line-height:22px;}
+    .bu li, p.blt, span.blt{font-size:14px;}
+    .bu > li > ul > li, .num > li > ul > li, p.blt.type2, span.blt.type2{line-height:22px;}
+}
+
+/*dl style*/
+.dl > li .title{font-size:18px; line-height:28px;}
+.dl > li .text{font-size:18px; line-height:28px;}
+
+@media all and (max-width:640px) {
+    .dl > li .title{font-size:14px; line-height:22px;}
+    .dl > li .text{font-size:14px; line-height:22px;}
+}
+
+/*table*/
+.table{font-size:18px; line-height:28px;}
+
+@media all and (max-width:640px) {
+    .table{font-size:14px; line-height:22px;}
+}

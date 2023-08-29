@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* 우리동 현황/역사 */
+.cts2667 .box:before{background-image:url('/site/dong/images/contents/dong_mapicon.png');}
+
+/* 우리동 명소/문화소개 */
+.cts2644 .box.img .text_cts{padding:6px 0 0 0;}
+.cts2644 .box.img .text_cts a.btn{margin:5px 0 ;}

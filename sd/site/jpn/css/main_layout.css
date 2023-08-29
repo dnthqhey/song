@@ -1,0 +1,8 @@
+.visit .visit_anchor:before {background-image:url('/site/jpn/images/main/visit_sprite.png');}
+.sights .sights_title {width: 221px;height: 36px; background-image: url('/site/jpn/images/main/sights_sprite.png');}
+.weather .weather_content {width: 130px;}
+
+@media (max-width: 1000px){
+    .news .news_title {width: 55px;height: 27px;}
+    .sights .sights_title {width: 174px;height: 29px; background-position: left 53.04%;background-size: 127% 666.47%;}
+}

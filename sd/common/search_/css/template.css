@@ -1,0 +1,77 @@
+/* (주)한신정보기술 권정현 - 2019.03.15 */
+
+/* 제목 */
+h3 {margin-top:38px; margin-bottom:35px; color:#000; font-size:20px; line-height:24px; font-weight:600;}
+@media all and (max-width:640px) {
+    h3 {margin-top:27px; margin-bottom:27px; font-size:18px; line-height:20px;}
+}
+
+/* 강조 글자 */
+.em_red {color:#de2500;}
+.em_black {color:#000;}
+.em_blue {color:#1762eb;}
+
+/* 새창 */
+.blank {display:inline-block; position:relative; padding-right:27px; font-size:15px; line-height:25px;}
+.blank, .blank:link, .blank:visited, .blank:hover, .blank:active {color:#2b4380;}
+.blank:before {display:block; position:absolute; top:6px; right:0; width:20px; height:14px; background:url('../images/sub/template_sprite.png') no-repeat left -50px;}
+@media all and (max-width:640px) {
+    .blank {font-size:14px; line-height:24px;}
+}
+
+/* 버튼 */
+.btn {position:relative; padding:9px 15px 8px; border:1px solid #646464; background-color:#fff; font-size:14px; line-height:16px; vertical-align:middle; transition:all 0.25s linear;}
+.btn, .btn:link, .btn:visited, .btn:hover, .btn:active {color:#3b3b3b;}
+.btn:hover {border-color:transparent; background-color:#1e3779; color:#fff;}
+.btn.download {padding-right:51px;}
+.btn.download:before {display:block; position:absolute; top:11px; right:17px; width:15px; height:11px; background:url('../images/sub/template_sprite.png') no-repeat left -145px;}
+.btn.download:hover:before {background-position:left -166px;}
+@media all and (max-width:640px) {
+    .btn {padding:6px 10px 5px; font-size:13px; line-height:15px;}
+    .btn.download {padding-right:34px;}
+    .btn.download:before {top:8px; right:12px;}
+}
+
+/* 목록 */
+.bu {color:#000; font-size:15px; line-height:25px;}
+.bu li {position:relative; margin-top:6px; padding-left:13px;}
+.bu.type2 li {padding-left:21px;}
+.bu li:first-child {margin-top:0;}
+.bu li:before {display:block; position:absolute; top:12px; left:0; width:5px; height:1px; background-color:#222;}
+.bu.type2 li:before {top:7px; width:13px; height:12px; background:transparent url('../images/sub/template_sprite.png') no-repeat left -28px;}
+.bu a {color:inherit;}
+@media all and (max-width:640px) {
+    .bu {font-size:14px; line-height:24px;}
+    .bu li {margin-top:6px;}
+    .bu li:before {top:12px;}
+    .bu.type2 li:before {top:6px;}
+}
+
+/* 블릿 */
+.blt {position:relative; padding-left:13px; color:#000; font-size:15px; line-height:25px;}
+.blt.type2 {padding-left:21px;}
+.blt:before {display:block; position:absolute; top:12px; left:0; width:5px; height:1px; background-color:#222;}
+.blt.type2:before {top:7px; width:13px; height:12px; background:transparent url('../images/sub/template_sprite.png') no-repeat left -28px;}
+@media all and (max-width:640px) {
+    .blt {font-size:14px; line-height:24px;}
+    .blt:before {top:12px;}
+    .blt.type2:before {top:6px;}
+}
+
+/* 폼양식 */
+.temp_checkbox{position:relative; display:inline-block;}
+.temp_checkbox label{color:#555555;}
+/* ie9이상 적용사항 */
+@media only all{
+.temp_checkbox input[type="checkbox"], .temp_checkbox input[type="radio"]{position:absolute; top:6px; left:2px; margin:0; z-index:1;}
+.temp_checkbox label{position:relative; display:inline-block; padding-bottom:2px; padding-left:33px; line-height:22px; color:#000; font-size:15px; letter-spacing:0; z-index:2;}
+.temp_checkbox label:before{position:absolute; top:0; left:0; display:block; width:24px; height:24px; box-sizing:border-box; content:'';}
+.temp_checkbox input[type="checkbox"] + label:before{border:1px solid #d3d3d3; background-color:#FFF; background-repeat:no-repeat; background-position:center center; transition:background-position 250ms ease-in-out;}
+.temp_checkbox input[type="checkbox"]:checked + label:before{background-image:url(../images/common/checkbox.png);}
+.temp_checkbox input[type="radio"] + label:before{border:#a1a1a1 solid 1px; border-radius:19px; overflow:hidden; background-color:#f7f8fb; transition-property:border, background-color; transition-duration:250ms; transition-timing-function:ease-in-out;}
+.temp_checkbox input[type="radio"]:checked + label:before{border:#0053a0 solid 7px; background-color:#FFF;}
+.temp_checkbox label:after{position:absolute; top:0; left:0; display:block; width:24px; height:24px; box-sizing:border-box; border-color:transparent; border-style:dashed; border-width:1px; content:''; z-index:3; transition:border-color 250ms ease-in-out;}
+.temp_checkbox input[type="checkbox"]:focus + label:after, .temp_checkbox input[type="radio"]:focus + label:after{border-color:#000;}
+}
+
+

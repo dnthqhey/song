@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+.path .path_item.n4 .path_button {min-width:200px;}
+
+.cts4189 .program .sitemap .depth1_text{left:15px; width:183px; text-align:center;}
+@media all and (max-width:1000px) {
+    .cts4189 .program .sitemap .depth1_text{left:5px; width:135px; font-size:24px; line-height:26px;}
+}
+@media all and (max-width:640px) {
+    .cts4189 .program .sitemap .depth1_text{left:24px; width:auto; line-height:34px;}
+}
+
+/* greeting */
+.cts4566{font-size:0; line-height:0;}
+.cts4566 .greeting_image{display:inline-block; position:relative; width:62%; margin-top:44px; vertical-align:top;}
+.cts4566 .greeting{display:block; position:absolute; z-index:0; bottom:-232px; right:1px; padding:68px 66px; background-color:#fff;}
+.cts4566 .greeting_text{display:inline-block; position:relative; z-index:1; width:38%; margin-top:35px; color:#444; font-size:18px; line-height:30px; word-break:keep-all; vertical-align:top;}
+@media all and (max-width:1300px) {
+    .cts4566 .greeting_image{display:block; width:auto;}
+    .cts4566 .greeting{width:450px; bottom:-160px; right:0; padding:54px 56px;}
+    .cts4566 .greeting_text{display:block; width:auto; margin-top:150px;}
+}
+@media all and (max-width:640px) {
+    .cts4566 .greeting{position:relative; bottom:auto; right:auto; padding:35px 0 25px;}
+    .cts4566 .greeting_text{margin-top:0; font-size:14px; line-height:22px;}
+}
+
+/* History of seongdong-gu */
+.cts4582 p{word-break:keep-all;}
+.cts4582 .top_text{margin-bottom:58px;}
+.cts4582 .box{margin-bottom:40px;}
+.cts4582 .box.img .text_cts{padding-left:22px;}
+#contents.cts4582 .box.img .box_title{margin-top:-5px; line-height:30px;}
+.cts4582 .history_list{margin-top:16px;}
+.cts4582 .history_list li{padding-top:11px; padding-bottom:16px; font-size:0; line-height:0;}
+.cts4582 .history_list .day{display:inline-block; width:18.2%; color:#049bc1; font-size:24px; line-height:24px; font-weight:500; letter-spacing:-0.03em; vertical-align:top;}
+.cts4582 .history_list .day:before{display:inline-block; width:70px; height:4px; margin-right:14px; background-color:#049bc1; vertical-align:middle;}
+.cts4582 .history_list .text{display:inline-block; position:relative; width:81.8%; margin-top:10px; padding-top:16px; padding-left:21px; font-size:16px; line-height:26px; background-color:#fff;}
+.cts4582 .history_list .text:before{display:block; position:absolute; top:27px; left:5px; width:6px; height:6px; border-radius:5px; background-color:#4289e6;}
+.cts4582 .history_list .text:after{display:block; position:absolute; top:-4px; left:0; z-index:-1; width:100%; height:100%; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2Ps6en5X1JSwsjAwMAAJmAAhQMAjQEEBJpQ+o0AAAAASUVORK5CYII=') left top repeat; box-sizing:content-box;}
+@media all and (max-width:1300px) {
+    .cts4582 .history_list .day{width:220px; font-size:22px;}
+    .cts4582 .history_list .day:before{width:60px;}
+    .cts4582 .history_list .text{width:calc(100% - 220px); margin-top:4px;}
+}
+@media all and (max-width:740px) {
+    .cts4582 .box.img .img_cts{display:block; min-width:auto;}
+    .cts4582 .box.img .text_cts{display:block; padding:15px 0 0 0;}
+    .cts4582 .box.img .text_cts{padding-left:0;}
+}
+@media all and (max-width:640px) {
+    .cts4582 .top_text{margin-bottom:30px;}
+    .cts4582 .box{margin-bottom:30px;}
+    #contents.cts4582 .box.img .box_title{line-height:21px;}
+    .cts4582 .history_list li{padding-bottom:6px;}
+    .cts4582 .history_list .day{width:115px; font-size:16px;}
+    .cts4582 .history_list .day:before{display:block; margin-bottom:10px;}
+    .cts4582 .history_list .text{width:calc(100% - 115px); padding-top:11px; padding-left:18px; font-size:14px; line-height:22px;}
+    .cts4582 .history_list .text:before{top:21px; width:4px; height:4px;}
+}
+
+
+/* Symbol */
+.cts4567 .grid_box{position:relative; margin-top:15px; padding-top:47px; border:1px solid #9fa3af; background:url("/site/main/images/contents/cts1382_bg.png") 0 0 repeat; text-align:center;}
+.cts4567 .grid_box img{display:block; margin:0 auto;}
+.cts4567 .grid_box .down_box{display:inline-block; width:499px; margin-top:41px; margin-bottom:-1px; font-size:0; line-height:0;}
+.cts4567 .grid_box .down_box .btn{width:50%; font-size:16px; line-height:24px;}
+.cts4567 .grid_box .down_box .btn + .btn{margin-left:-1px;}
+/*.cts4567 .grid_box{position:relative; margin-top:13px; margin-bottom:16px; padding-top:64px; padding-bottom:63px; border:1px solid #9fa3af; background:url("/site/main/images/contents/cts1382_bg.png") 0 0 repeat; text-align:center;}
+.cts4567 .grid_box img{display:block; margin:0 auto;}*/
+#contents.cts4567 .margin_t_33{margin-top:33px;}
+.cts4567 .divide_box{position:relative; padding-left:513px;}
+.cts4567 .divide_box.broken_grid{padding-top:76px; padding-left:412px;}
+.cts4567 .divide_box .image{position:absolute; top:0; left:0; z-index:0;}
+.cts4567 .img_line .image{width:480px; height:160px; padding-top:8px; border:5px solid #eaebed; text-align:center;}
+.cts4567 .divide_box p{position:relative; z-index:1; min-height:160px;}
+.cts4567 .divide_box.broken_grid p{min-height:164px; padding-top:33px; padding-left:39px; background-color:#fff;}
+
+.cts4567 .divide_box.multi{margin-bottom:30px; margin-left:-30px; padding-left:0; font-size:0; line-height:0;}
+.cts4567 .divide_box.multi .item{display:inline-block; width:calc(50% - 30px); margin-left:30px; font-size:16px; line-height:24px; vertical-align:top;}
+.cts4567 .divide_box.multi .item.n1 .grid_box{padding-top:87px;}
+.cts4567 .divide_box.multi .grid_box{height:300px;}
+.cts4567 .divide_box.multi .down_box{position:absolute; left:0; bottom:0; width:calc(100% + 3px); margin-left:-2px;}
+.cts4567 .divide_box.multi .item.img_line{padding:9px 10px 22px; border:5px solid #eaebed; text-align:center;}
+.cts4567 .divide_box.multi .item.broken_grid{position:absolute; right:0; bottom:0; width:578px; height:163px; padding-left:34px; background-color:#fff;}
+
+
+@media all and (max-width:1300px) {
+    .cts4567 .img_line .image,.cts4567 .last .image{width:45%; margin-right:5%;}
+    .cts4567 .divide_box{padding-left:50%;}
+    .cts4567 .divide_box.broken_grid{padding-top:146px; padding-left:20%;}
+    .cts4567 .divide_box p{min-height:auto;}
+    .cts4567 .divide_box.broken_grid p{min-height:auto;}
+
+    .cts4567 .divide_box.multi .item.photo_img{width:480px; margin-bottom:50px;}
+    .cts4567 .divide_box.multi .item.broken_grid{width:480px;}
+}
+
+@media all and (max-width:1000px){
+    .cts4567 .divide_box.multi .grid_box{height:340px;}
+    .cts4567 .grid_box .down_box{width:calc(100% + 2px); margin-left:-1px;}
+    .cts4567 .divide_box.multi .down_box .btn{display:block; width:auto;}
+    .cts4567 .divide_box.multi .down_box .btn+.btn{margin-top:-1px; margin-left:0;}
+}
+
+@media all and (max-width:640px){
+    .cts4567 .grid_box{margin-bottom:50px; padding-right:5%; padding-left:5%;}
+    .cts4567 .grid_box .down_box .btn{font-size:14px;}
+    .cts4567 .divide_box.multi{margin-left:0; margin-bottom:50px;}
+    .cts4567 .divide_box.multi .grid_box{height:auto; margin-left:0;}
+    .cts4567 .divide_box.multi .item.n1 .grid_box{padding-top:47px;}
+    .cts4567 .divide_box.multi .item .grid_box{padding-bottom:100px;}
+    .cts4567 .divide_box.multi .item{display:block; width:auto; margin-left:0;}
+    .cts4567 .divide_box.multi .item.photo_img{width:auto; margin:0 auto 20px; text-align:center;}
+    .cts4567 .divide_box.multi .item.text_center{margin-bottom:20px;}
+    .cts4567 .divide_box.multi .item.broken_grid{position:relative; right:auto; bottom:auto; width:auto; height:auto; padding-left:0; padding-bottom:0;}
+
+}
+
+@media all and (max-width:430px) {
+    .cts4567 .divide_box.img_line,.cts4567 .divide_box.last{padding-left:0;}
+    .cts4567 .img_line .image, .cts4567 .last .image{position:relative; top:auto; left:auto; width:auto; margin-bottom:16px; margin-right:0;}
+    .cts4567 .divide_box.broken_grid{padding-left:15px;}
+    .cts4567 .divide_box.broken_grid p{padding-top:23px; padding-left:29px;}
+}
+
+/* Feature */
+.cts4568 p{word-break:keep-all;}
+.cts4568 .top_text{margin-top:50px; margin-bottom:58px;}
+.cts4568 .box{margin-bottom:40px;}
+.cts4568 .box.img .text_cts{padding-left:22px;}
+#contents.cts4568 .box.img .box_title{margin-top:-5px; line-height:30px;}
+@media all and (max-width:1300px) {
+    .cts4568 .top_text{margin-top:0;}
+}
+@media all and (max-width:740px) {
+    .cts4568 .box.img .img_cts{display:block; min-width:auto;}
+    .cts4568 .box.img .text_cts{display:block; padding:15px 0 0 0;}
+    .cts4568 .box.img .text_cts{padding-left:0;}
+}
+@media all and (max-width:640px) {
+    .cts4568 .box{margin-bottom:30px;}
+    .cts4568 .top_text{margin-bottom:30px;}
+    #contents.cts4568 .box.img .box_title{line-height:21px;}
+}
+
+
+/*1379_비전*/
+.cts4569{text-align:center;}
+.cts4569_title{position:relative; padding-top:90px; padding-bottom:85px;}
+.cts4569_title:before{display:block; position:absolute;left:0; top:0; bottom:0; width:100%; height:5px; margin:auto; background-repeat:repeat-x; background-image:url('/site/public/images/template/line_pattern2.png');}
+#contents .cts4569_title h3{display:inline-block; background-color:#fff; margin-top:0; padding:0 30px;}
+.cts4569_desc{margin-bottom:40px;}
+.cts4569_slogan{margin-top:9px; margin-bottom:20px;}
+.cts4569_slogan img{margin-bottom:16px; margin-right:5px; margin-left:5px;}
+.cts4569_value{background-color:#eeeeef; background-image:url('/site/eng/images/contents/cts2956_value_bg.jpg'); background-position:left top; background-repeat:no-repeat; background-size:cover;}
+.cts4569 .value_list{padding:50px 200px;font-size:0; line-height:0;}
+.cts4569 .value_item{display:inline-block; position:relative; width: 25%;}
+.cts4569 .value_item:before{display:inline-block; position:absolute; right:0; top:22px; width:1px; height:72px; background-color:#d9d9d9;}
+.cts4569 .value_item:last-child:before{display:none;}
+.cts4569 .value_text{display:block; padding-top:145px; font-size:22px; line-height:22px; font-weight:600; letter-spacing:-0.025em; color:#39393a; background-position:center top; background-repeat:no-repeat;}
+
+.cts4569 .value_item.n1 .value_text{background-image:url('/site/eng/images/contents/cts2956_value_icon1.png')}
+.cts4569 .value_item.n2 .value_text{background-image:url('/site/eng/images/contents/cts2956_value_icon2.png')}
+.cts4569 .value_item.n3 .value_text{background-image:url('/site/eng/images/contents/cts2956_value_icon3.png')}
+.cts4569 .value_item.n4 .value_text{background-image:url('/site/eng/images/contents/cts2956_value_icon4.png')}
+@media all and (max-width:1300px){
+    .cts4569 .value_list{padding:50px 0;}
+    .cts4569_title{padding-top:60px; padding-bottom:60px;}
+    .cts4569 .value_text{font-size:19px;}
+}
+@media all and (max-width:640px){
+    .cts4569 .value_item.n2:before{display:none;}
+    .cts4569 .value_item{width:50%; margin-bottom:15px;}
+    .cts4569_title{padding-top:40px; padding-bottom:40px;}
+    #contents .cts4569_title h3{padding-right:0; padding-left:0;}
+    .cts4569_title .h0 img{width:50%;}
+    .cts4569_slogan{width:310px; margin:0 auto;}
+    .cts4569_slogan img:last-child{margin-bottom:0;}
+    .cts4569_desc{margin-bottom:0;}
+    .cts4569 .value_list{padding:30px 20px;}
+    .cts4569 .value_text{padding-top:115px; background-size:100px; font-size:16px; line-height:20px;}
+}
+
+/* Information on the Ward Office Premises */
+.cts4571 th,.cts4571 td{word-break:keep-all;}
+
+/* Alien registration guide */
+.cts1944 p{word-break:keep-all;}
+.cts1944 .box.type3{margin-top:53px; padding-right:6%; padding-left:6%; padding-bottom:58px; color:#666; line-height:28px;}
+#contents.cts1944 .box.type3 + h4{margin-top:28px;}
+.cts1944 .box.list{margin-top:12px}
+.cts1944 .dl > li:first-child{margin-bottom:4px;}
+.cts1944 .dl > li .title{width:60px; line-height:22px;}
+.cts1944 .dl > li .text{margin-top:1px; line-height:22px;}
+.cts1944 .dl > li .text li{line-height:25px;}
+.cts1944 .bottom_text{margin-top:90px;}
+@media all and (max-width:640px){
+    .cts1944 .box.type3{margin-top:30px; padding-bottom:20px;}
+    .cts1944 .bottom_text{margin-top:40px;}
+}
+
+/* Major hospitals and emergency rooms */
+.cts1945 p{word-break:keep-all;}
+#contents.cts1945 h3{margin-bottom:46px;}
+#contents.cts1945 .margin_t_36{margin-top:36px;}
+.cts1945 .box{margin-top:30px; margin-bottom:30px; min-height:154px;}
+.cts1945 .box.no_icon{padding-bottom:26px;}
+#contents.cts1945 .box .box_title{margin-bottom:18px; font-size:24px; line-height:24px; text-align:left;}
+@media all and (max-width:1300px){
+    #contents.cts1945 .box .box_title{font-size:20px;}
+}
+@media all and (max-width:640px){
+    #contents.cts1945 h3{margin-bottom:30px;}
+    #contents.cts1945 .box .box_title{font-size:16px;}
+    #contents.cts1945 .margin_t_36{margin-top:20px;}
+}
+
+/* Seongdong-gu Citizens’ Sports Center */
+.eng_h4_cont .box{margin-top:60px; margin-bottom:33px;}
+.eng_h4_cont .box.img .img_cts{min-width:200px;}
+.eng_h4_cont .box.img .text_cts{padding-top:0;}
+#contents .eng_h4_cont .h0{margin-top:27px; margin-bottom:8px; color:#3357bd; font-size:24px; line-height:26px; font-weight:500;}
+#contents .eng_h4_cont .h0 + .bu{margin-top:20px;}
+.eng_h4_cont .table.type2 tbody td.bg{background-color:#f9f9f9; color:#0b356c; font-weight:500; text-align:center;}
+#contents .eng_h4_cont h5{margin-top:20px; margin-bottom:30px;}
+#contents .eng_h4_cont h6{margin-top:20px;}
+.eng_h4_cont .dl_113.dl > li .title{width:113px;}
+@media all and (max-width:640px){
+    .eng_h4_cont .box.img .text_cts{padding-top:15px;}
+}
+
+/* Cheonggyecheon-Jungnangcheon Bicycle Road */
+.cts4607 .dl > li .title{width:262px;}
+.cts4607 .img_info .infobox{width:750px;}
+
+/* Directions to the Ward Office */
+#contents .directions h4{margin-bottom:5px;}
+.directions .method .bu{margin-top:2px;}
+.directions .method.divide2 .bu > li{display:block; width:auto;}
+.directions .method.divide2 .bu > li:nth-child(2n){margin-left:0;}
+.directions .method .way{padding-left:125px; line-height:25px;}
+.directions .method .way.type2{padding-left:195px;}
+.directions .method .way .type{width:96px; line-height:22px;}
+@media all and (max-width:640px){
+    .directions .info{margin-bottom:10px;}
+
+}
+@media all and (max-width:480px){
+    .directions .method .way .type{display:block; position:relative; left:auto; top:auto;}
+    .directions .method ul.margin_t_5{padding-top:5px;}
+    .directions .method .way{padding-left:15px;}
+    .directions .method .way.type2{padding-left:15px;}
+}
+
+/* Citizens’ Majang Sports Center */
+.cts4600 .directions .method{padding-right:25px;}
+.cts4600 .box.ul_icon .item > ul{padding-left:330px;}
+.cts4600 .box.ul_icon .item{padding-right:0;}
+.cts4600 .box.ul_icon .bu li{letter-spacing:-0.05em;}
+.cts4600 .box.ul_icon .bu li .title{width:165px}
+.cts4600 .box.ul_icon .bu li .warning{margin-left:-115px;}
+.cts4600 .box.ul_icon .bu li .warning a{color:#049bc1;}
+@media all and (max-width:1300px) {
+    .cts4600 .box.ul_icon .item > ul{padding-left:0;}
+}
+@media all and (max-width:640px) {
+    .cts4600 .box.ul_icon .bu li .warning{margin-left:0;}
+}
+
+.cts1455_box.box.icon:before{width:62px; height:76px; background-image:url("/site/main/images/contents/cts1445_icon.png"); z-index:-1;}
+@media all and (max-width:1300px){
+    .cts1455_box.box.icon{padding-right:180px;}
+}
+@media all and (max-width:640px){
+    .cts1455_box.box.icon{padding-right:25px;}
+}
+
+.cts1457_box.box.icon:before{width:80px; height:76px; background-image:url("/site/main/images/contents/cts1457_icon.png");}
+
+@media all and (max-width:640px){
+    .cts1457_box.box.icon:before{z-index:-1}
+}
+
+.cts1458_box.box{min-height:161px;}
+.cts1458_box.box.icon:before{width:68px; height:61px; background-image:url("/site/main/images/contents/cts1458_icon.png");}
+.cts4599 .box.ul_icon .bu li .title{width:165px}
+@media all and (max-width:1300px) {
+    .cts4599 .box.ul_icon .item > ul{padding-left:0;}
+}
+
+
+/**sister-city**/
+
+.cts4609 .img_link .info_area .bu.dl .title,
+.cts4592 .img_link .info_area .bu.dl .title,
+.cts4592 .img_link .info_area .bu.dl .title,
+.cts4610 .img_link .info_area .bu.dl .title,
+.cts4594 .img_link .info_area .bu.dl .title,
+.cts4595 .img_link .info_area .bu.dl .title,
+.cts4596 .img_link .info_area .bu.dl .title,
+.cts4597 .img_link .info_area .bu.dl .title{width:155px;}
+
+.cts2960 .img_link .info_area .bu.dl .title,
+.cts4586 .img_link .info_area .bu.dl .title,
+.cts4587 .img_link .info_area .bu.dl .title,
+.cts4588 .img_link .info_area .bu.dl .title,
+.cts4589 .img_link .info_area .bu.dl .title{width:170px;}
+
+@media all and (max-width:800px){
+    .img_link {min-height:auto;}
+    .img_link .inner {padding:25px 20px;}
+    .img_link .img_area {display:inline-block; position:static; width:auto; margin-bottom:25px;}
+    .img_link .title_area .title {float:none; margin-bottom:10px; font-size:20px; line-height:28px;}
+    .img_link .title_area .btn {float:none;}
+}
+
+/*Cobb County, Georgia, USA*/
+.cts2960 .dl .title{width:170px;}
+/*Huairou District, Beijing, China*/
+.cts4586 .dl .title{width:210px;}
+/*Tuyhoa City of Phu Yen Province, Vietnam*/
+.cts4587 .dl .title{width:210px;}
+/*Bayangol District of Ulaanbaatar City, Mongolia*/
+.cts4588 .dl .title{width:270px;}
+/*Yakkasaroy District of Tashkent City, Uzbekistan*/
+.cts4589 .dl .title{width:280px;}
+
+/*Hampyeong-gun*/
+.cts4609 .dl .title{width:200px;}
+/*Seocheon-gun*/
+.cts4592 .dl .title{width:290px;}
+/*Jincheon-gun*/
+.cts4592 .dl .title{width:250px;}
+/*Hadong-gun*/
+.cts4610 .dl .title{width:230px;}
+/*Yeongcheon-si*/
+.cts4594 .dl .title{width:200px;}
+/*Yeongwol-gun*/
+.cts4595 .dl .title{width:200px;}
+/*Yeosu-si*/
+.cts4596 .dl .title{width:230px;}
+/*Hwaseong-si*/
+.cts4597 .dl .title{width:190px;}
+
+/* news */
+.news_cont {font-size:0; line-height:0;}
+.news_cont .cont_box {display:inline-block; position:relative; width:calc(20% - 16px); margin-right:20px; margin-bottom:40px; font-size:15px; line-height:22px; color:#555; vertical-align:top;}
+.news_cont .cont_box img {max-width:100%;}
+.news_cont .cont_box:nth-child(5n) {margin-right:0;}
+.news_cont .cont_box .title_area {padding:10px 5px 9px; border-bottom:3px solid #bdd6f2; border-radius:0 0 10px 10px; background-color:#e4effb; text-align: center; font-weight:500; font-size:16px; line-height:24px;  color:#213d5b; word-break:keep-all}
+.news_cont .cont_box .text_area {margin-top:8px; word-break:keep-all}
+.news_cont .cont_box:nth-child(1) img {border:1px solid #ccc; border-bottom:none; box-sizing: border-box}
+
+@media all and (max-width:1300px){
+    .news_cont .cont_box {width:calc(33.3% - 15px); }
+    .news_cont .cont_box img {width:100%;}
+    .news_cont .cont_box:nth-child(3n) {margin-right:0;}
+    .news_cont .cont_box:nth-child(5n) {margin-right:20px;}
+
+}
+
+@media all and (max-width:640px){
+    .news_cont .cont_box {width:calc(50% - 10px); }
+    .news_cont .cont_box:nth-child(3n) {margin-right:20px;}
+    .news_cont .cont_box:nth-child(2n) {margin-right:0;}
+
+}
+@media all and (max-width:400px){
+    .news_cont .cont_box {width:100%; margin-right:0;}
+    .news_cont .cont_box:nth-child(3n) {margin-right:0;}
+
+}
+
+/* 구청장인사말 */
+.cts4566 .greetings_title{color:#383838; font-size:30px; line-height:45px; letter-spacing:-0.03em; text-align:center;}
+.cts4566 .greetings_title span{margin-left:10px; color:#01175e;}
+.cts4566 .greetings_cont_box{position:relative; margin-top:30px; text-align:right;}
+.cts4566 .greetings_image{position:absolute; bottom:0; right:0;}
+.cts4566 .greetings_text{width:45%; min-height:600px; padding-top:50px; padding-left:4.7%; position:relative; text-align:left; font-weight:300; font-size: 16px; color: #555; line-height: 25px;}
+.cts4566 .greetings_text .em_bold{font-weight: 500;}
+
+@media all and (max-width:1200px){
+    .cts4566 .greetings_title{font-size:24px; line-height:32px;}
+    .cts4566 .greetings_cont_box{margin-top:40px;}
+    .cts4566 .greetings_text{padding-top:40px; font-size:16px; line-height:24px;}
+}
+@media all and (max-width:1000px){
+    .cts4566 .greetings_text {word-break: keep-all}
+}
+@media all and (max-width:800px){
+    .cts4566 .greetings_image{position:relative; top:auto; left:auto;}
+    .cts4566 .greetings_text{display:block; width:auto; margin-top:30px; padding:0;}
+}
+@media all and (max-width:640px){
+    .cts4566 .greetings_cont_box{margin-top:30px;}
+    .cts4566 .greetings_title{font-size:18px; line-height:24px; word-break: keep-all}
+    .cts4566 .greetings_text{font-size:14px; line-height:20px;}
+}

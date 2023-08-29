@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+	<meta name="keywords" content="프로그램 관리">
+	<meta name="description" content="프로그램 관리">
+    <link rel="stylesheet" href="/common/css/font.css">
+    <link rel="stylesheet" href="/common/css/default.css">
+    <link rel="stylesheet" href="/site/board/css/common.css">
+    <link rel="stylesheet" href="/common/css/template.css">
+    <link rel="stylesheet" href="/common/css/program.css">
+    <!--[if lt IE 9]><script src="/common/js/html5.js"></script><![endif]-->
+    <title>게시판 입력 - (주)한신정보기술</title>
+</head>
+<body>
+
+<div id="container">
+<main class="main">
+    <article>
+        <div class="contents">
+
+            <div class="p-wrap bbs bbs__form">
+                <div class="card card--line top">
+                    <div class="card-content">
+                        게시판 상단 설명
+                    </div>
+                </div>
+
+                <div>
+                    <svg width="20" height="25" fill="#202e70" focusable="false">
+                        <use xlink:href="/common/images/program/p-icon.svg#exclamation-circle"></use>
+                    </svg>
+                    <span class="p-form__required--icon margin_l_5">필수</span> 표시는 필수 항목 입니다.
+                </div>
+
+                <form name="bbsNttForm" id="" method="post" action="" onsubmit="" enctype="multipart/form-data">
+                <fieldset>
+                <legend>게시물 작성</legend>
+                    <table class="p-table mobile block">
+                    <caption>{게시판이름} 상세보기 - 제목, 담당부서, 담당자, 담당연락처, 내용, 첨부파일 정보 제공</caption>
+                    <colgroup>
+                        <col class="w20p">
+                        <col>
+                    </colgroup>
+                    <tbody class="p-table--th-left">
+                    <tr class="p-table__subject">
+                        <th scope="row"><label for="" class="p-form__label">제목 <span class="p-form__required--icon">필수</span></label></th>
+                        <td>
+                            <input type="text" name="" id="" class="p-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">공지여부 <span class="p-form__required--icon">필수</span></label></th>
+                        <td>
+                            <span class="p-form-checkbox">
+                                <input type="checkbox" name="c11" id="c11_1" class="p-form-checkbox__input" value="">
+                                <label for="c11_1" class="p-form-checkbox__label">체크박스     - inline</label>
+                            </span>
+                            <span class="p-form-checkbox">
+                                <input type="radio" name="c11" id="c11_2" class="p-form-radio__input" value="">
+                                <label for="c11_2" class="p-form-radio__label">체크박스     - inline</label>
+                            </span>
+
+                            <span class="p-switcher">
+                                <input id="aa" type="checkbox" class="p-switcher__input" value="">
+                                <label for="aa" class="p-switcher__label" >공지로 등록</label>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">공지 게시일 <span class="p-form__required--icon">필수</span></th>
+                        <td>
+                            <div class="p-form-inline">
+                                <input type="text" name="start_date" id="" class="p-form__date-input" title="" value="" placeholder="">
+                                <button type="button" class="p-form__date-button" title="시작일 선택" onclick="getCalendar(document.bbsNttForm.start_date);">
+                                    <svg width="16" height="18" fill="#464646" focusable="false">
+                                        <title>시작일 선택</title>
+                                        <use xlink:href="/common/images/program/p-icon.svg#calendar-alt"></use>
+                                        <switch><foreignObject width="20" height="20">선택</foreignObject></switch>
+                                    </svg>
+                                </button>
+                                 ~
+                                <input type="text" name="end_date" id="" class="p-form__date-input" title="" value="" placeholder="">
+                                <button type="button" class="p-form__date-button" title="종료일 선택" onclick="getCalendar(document.bbsNttForm.end_date);">
+                                    <svg width="16" height="18" fill="#464646" focusable="false">
+                                        <title>종료일 선택</title>
+                                        <use xlink:href="/common/images/program/p-icon.svg#calendar-alt"></use>
+                                        <switch><foreignObject width="20" height="20">선택</foreignObject></switch>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="small margin_t_5">
+                                <svg width="20" height="25" fill="#202e70 ">
+                                    <title>주의사항</title>
+                                    <use xlink:href="/common/images/program/p-icon.svg#exclamation-circle-solid" y="-1"></use>
+                                    <switch><foreignObject width="20" height="20">주의사항</foreignObject></switch>
+                                </svg>
+                                2018-01-01(연도-월-일) 형식으로 입력하세요
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">작성자</label></th>
+                        <td>작성자 정보</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">담당부서</label></th>
+                        <td>
+                            <select name="" id="" class="p-input p-input--auto">
+                                <option value="">부서</option>
+                                <option value="">영업/기획팀</option>
+                                <option value="">디자인팀</option>
+                                <option value="">퍼블리셔팀 퍼블리셔팀 퍼블리셔팀</option>
+                                <option value="">개발팀</option>
+                                <option value="">운영관리팀</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">input 100%</label></th>
+                        <td><input type="text" name="" id="" class="p-input"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">input 너비 초기화</label></th>
+                        <td><input type="text" name="" id="" class="p-input p-input--auto"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">input 너비 % 적용</label></th>
+                        <td><input type="text" name="" id="" class="p-input w75p w-sm-100p"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">연락처</label></th>
+                        <td>
+                            <div class="row">
+                                <div class="col-12 col-sm-24 ">
+                                    <div class="p-form-group">
+                                        <select name="" id="" class="p-input" title="연락처 첫번째 번호 선택">
+                                            <option value="">010</option>
+                                            <option value="">011</option>
+                                        </select>
+                                        <span class="p-form__split"> - </span>
+                                        <input type="tel" name="" class="p-input" title="연락처 중간번호 입력" value="">
+                                        <span class="p-form__split"> - </span>
+                                        <input type="tel" name="" class="p-input" title="연락처 마지막번호 입력" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">이메일</label></th>
+                        <td>
+                            <div class="row">
+                                <div class="col-16 col-sm-24">
+                                    <div class="p-form-group">
+                                        <input type="text" name="" id="" class="p-input" title="이메일 아이디 입력" value="">
+                                        <span class="p-form__split">@</span>
+                                        <input type="text" name="" class="p-input" title="이메일 도메인 입력" value="">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-sm-24">
+                                    <select name="" class="p-input" title="이메일 도메인 선택">
+                                        <option value="">naver.com</option>
+                                        <option value="">gmail.com</option>
+                                        <option value="">nate.com</option>
+                                        <option value="">hanshinit.co.kr</option>
+                                        <option value="">직접입력</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">이메일 2</label></th>
+                        <td>
+                            <div class="row">
+                                <div class="col-12 col-sm-24">
+                                    <input type="email" name="" id="" class="p-input" value="" placeholder="email@abc.com 형식으로 입력하세요.">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">연락처 2</label></th>
+                        <td>
+                            <input type="tel" name="" class="p-input p-input--auto" value="" placeholder="숫자만 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주소</th>
+                        <td>
+                            <a href="" class="p-button p-button--small gray margin_r_10" title="새창">주소 검색</a>
+                            <span class="small">
+                                <svg width="20" height="25" fill="#202e70 ">
+                                    <title>주의사항</title>
+                                    <use xlink:href="/common/images/program/p-icon.svg#exclamation-circle-solid" y="-1"></use>
+                                    <switch><foreignObject width="20" height="20">주의사항</foreignObject></switch>
+                                </svg>
+                                우편번호 검색창이 새창으로 열립니다.
+                            </span>
+                            <!--검색결과  우편번호, 기본주소, 상세주소 .p-form__address에 표시-->
+                            <div class="p-form__address">28507 &nbsp; 충북 청주시 상당구 수암로 37(수동) 네오스페이스 1층 (주)한신정보기술</div>
+                            <!--<input type="text" name="" class="p-input p-form__address" title="주소 입력" value="또는 28507 충북 청주시 상당구 수암로 37(수동) 네오스페이스 1층 (주)한신정보기술">-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="" class="p-form__label">내용</label></th>
+                        <td>
+                            <textarea name="" id="" class="p-input" cols="80" rows="10" required="required"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">파일 첨부</th>
+                        <td>
+                            <ul class="p-attach margin_b_15">
+                                <li class="p-attach__item">
+                                    <span class="p-form-radio">
+                                         <input type="radio" name="aa" id="a1" class="p-form-radio__input" checked>
+                                         <label for="a1" class="p-form-radio__label margin_r_10">유지</label>
+                                    </span>
+                                    <span class="p-form-radio">
+                                        <input type="radio" name="aa" id="a2" class="p-form-radio__input">
+                                        <label for="a2" class="p-form-radio__label margin_r_10">삭제</label>
+                                    </span>
+                                    <span class="p-form-checkbox">
+                                        <input type="checkbox" name="" id="a3" class="p-form-checkbox__input" checked>
+                                        <label for="a3" class="p-form-checkbox__label margin_r_20">본문삽입</label>
+                                    </span>
+                                    <a href=""><span class="p-icon p-icon__hwp">hwp 문서</span><span>2014년 정기분 재산세(건축물, 주택) 납부안내 재산세.hwp</span></a>
+                                </li>
+                                <li class="p-attach__item">
+                                    <span class="p-form-radio">
+                                        <input type="radio" name="bb" id="b1" class="p-form-radio__input" checked>
+                                        <label for="b1" class="p-form-radio__label margin_r_10">유지</label>
+                                    </span>
+                                    <span class="p-form-radio">
+                                        <input type="radio" name="bb" id="b2" class="p-form-radio__input">
+                                        <label for="b2" class="p-form-radio__label margin_r_10">삭제</label>
+                                    </span>
+                                    <span class="p-form-checkbox">
+                                        <input type="checkbox" name="" id="b3" class="p-form-checkbox__input" checked>
+                                        <label for="b3" class="p-form-checkbox__label margin_r_20">본문삽입</label>
+                                    </span>
+                                    <a href=""><span class="p-icon p-icon__xls">xls 문서</span><span>2014년 정기분 재산세(건축물, 주택) 납부안내 재산세.hwp</span></a>
+                                </li>
+                            </ul>
+
+
+                            <div class="p-upload">
+                                <div class="p-form-group">
+                                    <div class="p-form-group__upload">
+                                        <input type="file" id="fileorg" class="p-upload__file--hidden" multiple>
+                                        <span id="filename" class="p-input disabled"></span>
+                                        <button type="button" class="p-upload__clear clear">선택한 1번 첨부 제거</button>
+                                    </div>
+                                    <div class="p-input__addon">
+                                        <label for="fileorg" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#fileorg" data-showfilename="#filename"><span class="skip">1번째 </span>파일선택</label>
+                                        <!-- data-original="#fileorg" : 첨부파일 input의 id 표시, data-showfilename="#filename" : 파일면 표시될 곳의 id-->
+                                    </div>
+                                    <div class="p-form-checkbox padding_l_5">
+                                        <input type="checkbox" name="" id="addcheck" class="p-form-checkbox__input">
+                                        <label for="addcheck" class="p-form-checkbox__label">본문삽입</label>
+                                    </div>
+                                </div>
+                                <input type="text" id="" class="p-input" title="1번 첨부 이미지 대체 텍스트 입력" value="" placeholder="첨부 이미지 대체 텍스트 입력">
+                            </div>
+                            <div class="p-upload">
+                                <div class="p-form-group">
+                                    <div class="p-form-group__upload">
+                                        <input type="file" id="fileorg2" class="p-upload__file--hidden">
+                                        <span id="filename2" class="p-input disabled"></span>
+                                        <button type="button" class="p-upload__clear clear">선택한 2번 첨부 제거</button>
+                                    </div>
+                                    <div class="p-input__addon">
+                                        <label for="fileorg2" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#fileorg2" data-showfilename="#filename2"><span class="skip">2번째 </span>파일선택</label>
+                                        <!-- data-original="#fileorg" : 첨부파일 input의 id 표시, data-showfilename="#filename2" : 파일면 표시될 곳의 id-->
+                                    </div>
+                                    <div class="p-form-checkbox padding_l_5">
+                                        <input type="checkbox" name="" id="addcheck2" class="p-form-checkbox__input">
+                                        <label for="addcheck2" class="p-form-checkbox__label">본문삽입</label>
+                                    </div>
+                                </div>
+                                <input type="text" id="" class="p-input" title="2번 첨부 이미지 대체 텍스트 입력" value="" placeholder="첨부 이미지 대체 텍스트 입력">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </fieldset>
+                </form>
+                <div class="text_right margin_t_30">
+                      <a href="" class="p-button cancel">취소</a><input type="submit" class="p-button write" value="글등록">
+                </div>
+
+                <div class="card card--line bottom">
+                    <div class="card-content">
+                        게시판 하단 설명
+                    </div>
+                </div>
+
+            </div>
+            <!--//p-wrap-->
+
+        </div>
+    </article>
+</main>
+</div>
+<!--<footer class="footer"></footer>-->
+
+<script src="/common/js/jquery-1.12.4.min.js"></script>
+<script src="/site/board/js/script.min.js"></script>
+<script src="/common/js/program.min.js"></script>
+</body>
+</html>

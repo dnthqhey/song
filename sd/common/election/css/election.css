@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Layout */
+@import url('default.css');
+
+#election {width:470px;height:550px;padding:10px 10px 10px 20px;background: url(../images/election_bg.gif) no-repeat;}
+
+#election h1{}
+#election h2{margin:15px 0 0 0}
+#election h3{margin:5px 0}
+
+#election ul.bu2 { margin: 0 0 0 15px; padding: 0 0 0.5em 0; list-style: none; text-align: left; }
+#election ul.bu2 li { margin: 0; padding: 0 0 0 0.6em;  background: url('../images/dot.gif') no-repeat 0 0.4em; }
+#election ul.bu2 ul li {padding: 0 0 0 1em;background: url('../images/dot2.gif') no-repeat 0 0.2em;}
+#election ul.bu2 ul ul li {padding: 0 0 0 1em;background: url('../images/dot2.gif') no-repeat 0 0.2em; }
+#election ul.bu2 ul, ul.bu ul ul { padding: 0 0 0.5em 0; }
+
+
+#searchbox{margin-left:20px;position:relative;width:395px;padding:10px 0 0 0;background: url(../images/name_bg.gif) no-repeat;}
+#searchbox .search{width:380px;padding:10px 0 30px 10px;background: url(../images/name_bg2.gif) no-repeat left bottom;letter-spacing:-1px}
+* html #searchbox .search{padding:10px 0 28px 10px;}
+#searchbox .search fieldset{background: url(../images/name_bg1.gif) no-repeat; }
+#searchbox .search p{margin:5px 0}
+#searchbox .search .head{float:left;width:80px;min-width:80px;padding:5px 0 0 0;font-weight:bold;}
+#searchbox .search input.input1{width:120px; height:15px:}
+#searchbox .search input.input2{width:50px;height:15px:}
+
+#searchbox .search .btn_search{position:absolute; left:295px;top:30px}
+
+#election .guide{width:390px;padding:0 0 0 20px;font-size:0.9em}
+#election .guide span{color:#f17a06;font-weight:bold;}
+
+
+#objection{width:390px;margin:10px 0;padding:10px;background:#e8ebf6;border:solid 1px #d1d6e6;}
+#objection .head{width:80px;float:left;min-width:70px;padding:0 0 0 5px; background: url('../images/dot.gif') no-repeat 0 0.4em;}
+#objection span{font-size:0.9em}
+#objection .btn_search{margin:20px 0 0 0;text-align:center;}
+#objection  input.sbj{width:280px;height:15px:}
+#objection  input.email{width:200px;height:15px:}
+
+legend {font-size:0;height:0;overflow:hidden;position:absolute;visibility:hidden;width:0;}
+.bottom{height:22px;background: url('../images/election_bg_bottom.gif') no-repeat;}
+
+.padding_L_10{padding:0 0 0 10px}
+.padding_L_80{padding:0 0 0 80px}
+.padding_L_90{padding:0 0 0 90px}
+.padding_T_10{padding:10px 0 0 0}
+.text_center{text-align:center}
+
+
+#objection div.board {}
+#objection div.board h2 {margin:0 0 5px 0; padding:0; color:#2c60bf; font-size:1.2em; background:none; text-align:center;}
+#objection div.board div.fieldset div.btn {margin:10px 0 0 0;}
+#objection div.board div.fieldset div.btn p {margin-top:10px;}
+#objection div.board div.fieldset div.btn p em {color:#ff6000;}

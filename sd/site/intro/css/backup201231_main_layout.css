@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+html{overflow-x:hidden;}
+body{position:relative; color:#555; background-color:#edeff4; font-size:16px; font-weight:400;letter-spacing:inherit;line-height:18px;}
+body:before{display:block; position:absolute; top:0; left:0; width:100%; height:425px; background:url('/site/intro/images/main/intro_bg.jpg') no-repeat 50% top;background-attachment:fixed; content:'';}
+body *{box-sizing:content-box;}
+header{position:relative; border-bottom:1px solid rgba(255,255,255,0.2);}
+.header_inner{width:100%; max-width:1070px; margin:0 auto; padding:22px 0; font-size:0;}
+.logo{display:inline-block; position:relative; width:auto; color:#fff; font-size:22px; line-height:24px; font-weight:600; vertical-align:middle;}
+.logo:before{display:inline-block;width:112px; height:46px;margin:0 10px 0 0;background:url('/site/intro/images/main/intro_logo.png') no-repeat 100% 0;background-size:auto 100%;vertical-align:middle;}
+.link_wrap{display:inline-block; float:right; margin-top:6px;}
+.move_link{display:inline-block; font-size:0;text-align:right;vertical-align:middle;}
+.move_link a{display:inline-block; height:32px;margin:0 0 0 10px;padding:0 15px 3px;border-radius:17px;color:#fff;font-size:15px;line-height:28px;vertical-align:top; transition:.25s all ease-in-out;}
+.move_link a:after{display:inline-block; width:13px; height:11px; margin:12px 0 0 7px; background-image:url('/site/intro/images/main/corona_arrows_sprite.png'); background-size:207.69% 1209.09%; content:'';}
+.move_link a:hover{background-color:#263971; color:#fff799; transition:.25s all ease-in-out;}
+.move_link a:hover:after{width:13px; height:11px; background-position:left 17.07%; background-size:225% 1330%; transition:none;}
+.move_link .pollLink{background-color:#fff;color:#015ace;}
+.move_link .pollLink:after{color:#222;}
+.move_link .wwwLink{background-color:#0d2968; color:#fff;}
+.move_link .wwwLink:after{background-position:left 33.6%; background-size:207.69% 1209.09%;}
+.sdSns{display:inline-block; width:auto; text-align:right; font-size:0; vertical-align:middle;}
+.sdSns a{display:inline-block;position:relative; color:transparent;font-size:1px; vertical-align:middle;}
+.sdSns a{display:inline-block; margin-left:15px; background-image:url('/site/intro/images/main/corona_sns_sprite.png'); content:'';}
+.sdSns .facebook{width:11px; height:20px; background-size:209.09% 500%;}
+.sdSns .blog{width:13px; height:17px; background-position:left 36.14%; background-size:176.92% 588.23%;}
+.sdSns .twitter{width:20px; height:17px; background-position:left 68.67%; background-size:114.99% 588.23%;}
+.sdSns .youtube{width:23px; height:16px; background-position:left 100%; background-size:100% 625%;}
+@media all and (max-width:1070px) {
+    .header_inner{padding:22px 0 10px;}
+}
+
+
+main{position:relative;padding:40px 0 65px;text-align:center;}
+.top_wrap h2{display:block; color:#fff;font-size:36px;font-weight:600;line-height:38px;text-align:center;}
+.top_wrap h2 span{display:block;color:rgba(255,255,255,.5);font-size:18px; text-align:center;}
+.point_color2{color:#fff475;}
+@media all and (max-width:1070px) {
+    main{padding:20px 0 65px;}
+    .top_wrap h2{font-size:28px; line-height:32px;}
+}
+@media all and (max-width:640px) {
+.top_wrap h2{margin-bottom:15px; font-size:20px; line-height:26px;}
+}
+
+
+.top_wrap{position:relative; max-width:1070px; margin:0 auto 33px;}
+.corona_sms{position:absolute; top:-20px; right:0; padding-left:98px;}
+.corona_sms:before{display:block; position:absolute; top:0; left:0; width:91px; height:99px; background:url('/site/intro/images/main/mobile_icon.png') no-repeat center/cover; content:'';}
+.corona_sms .sms_text{font-size:21px; line-height:26px; font-weight:500; color:#fff;}
+.corona_sms .sms_anchor{display:block; position:relative; margin-top:10px; padding:5px; border:1px solid #fff; border-radius:4px; background-color:#073c94; text-align:center; font-size:14px; line-height:16px; color:#fff;}
+.corona_sms .sms_anchor:after{display:inline-block; width:6px; height:10px; margin-left:12px; background-image:url('/site/intro/images/main/corona_arrows_sprite.png'); background-position:left 50.4%; background-size:450% 1330%; content:'';}
+@media all and (max-width:1070px) {
+    .corona_sms{display:inline-block; position:relative; top:auto; margin-top:20px;}
+    .top_wrap{margin-bottom:60px;}
+}
+@media all and (max-width:640px) {
+    .top_wrap{margin-bottom:30px;}
+    .corona_sms{margin-top:0;}
+    .corona_sms .sms_text{font-size:17px; line-height:22px;}
+    .corona_sms:before{width:70px; height:76px;}
+    .corona_sms .sms_anchor{font-size:13px; line-height:15px;}
+}
+
+.layerDisease{width:100%;max-width:1070px;margin:0 auto; }
+.layerDisease .layerDisease_inner{border-radius:20px;background-color:#fff;}
+.sd_occurrence{position:relative;z-index:0; background-color:#fff;box-shadow:5px 0 35px rgba(0,0,0,.15);border-radius:15px;color:#000;font-size:0;}
+.sd_occurrence:before{display:block;position:absolute;top:-10px;left:-10px;opacity:.3;z-index:-1;width:100%;height:105px;background:url('/site/intro/images/main/cnt_pattern17.png') repeat;border-radius:15px;}
+.sd_occurrence .occurrence_list .occurrence_item{display:block; position:relative; float:left; padding-top:24px; padding-bottom:27px; box-sizing:border-box; text-align:center; font-size:0; line-height:0;}
+.sd_occurrence .occurrence_list .occurrence_item:after{display:block; position:absolute; top:0; bottom:0; right:0; width:1px; height:56px; margin:auto; background-color:#ccc; content:'';}
+.sd_occurrence .occurrence_list .occurrence_item.n1{width:24%; padding-top:27px;}
+.sd_occurrence .occurrence_list .occurrence_item.n2{width:35%;}
+.sd_occurrence .occurrence_list .occurrence_item.n3{width:13%;}
+.sd_occurrence .occurrence_list .occurrence_item.n4{width:13%;}
+.sd_occurrence .occurrence_list .occurrence_item.n5{width:15%;}
+.sd_occurrence .occurrence_list .occurrence_item.n5:after{display:none;}
+.sd_occurrence .occurrence_list .occurrence_item .occurrence_title{display:block; font-size:22px; line-height:24px; color:#000; font-weight:600;}
+.sd_occurrence .occurrence_list .occurrence_item.n1 .occurrence_title{font-size:26px; line-height:28px; color:#143284; font-weight:600;}
+.sd_occurrence .occurrence_list .occurrence_item.n1 .occurrence_title span{color:#e22b74;}
+.sd_occurrence .occurrence_list .occurrence_item.n1 .occurrence_data{margin-top:5px; font-size:16px; line-height:18px; color:#4b5982;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left{vertical-align:top;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left .left_title{font-size:22px; line-height:24px; font-weight:600;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left .left_index{display:block; font-size:30px; line-height:32px; color:#e22b74; font-weight:600;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_right .right_box{overflow:hidden; margin-left:10px;  border-radius:4px; font-size:0; line-height:0;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_right .right_box .right_title{padding:5px 15px; background-color:#e22b74; font-size:14px; line-height:16px; color:#fff;}
+.sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_right .right_box .right_index{display:block;padding:8px; background-color:#edeff4; font-size:18px; line-height:20px;}
+.sd_occurrence .occurrence_list .occurrence_item .occurrence_number{margin-top:7px; font-size:30px; line-height:32px; font-weight:600; color:#153289;}
+@media all and (max-width:1000px) {
+    .layerDisease{max-width:none; padding:0 3%; box-sizing:border-box;}
+    .sd_occurrence{padding-top:20px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n1{width:100%; padding:10px 0 15px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n2{width:100%;}
+    .sd_occurrence .occurrence_list .occurrence_item.n3{width:33.33%;}
+    .sd_occurrence .occurrence_list .occurrence_item.n4{width:33.33%;}
+    .sd_occurrence .occurrence_list .occurrence_item.n5{width:33.33%;}
+    .sd_occurrence .occurrence_list .occurrence_item.n1:after{width:100%; height:1px; top:auto;}
+    .sd_occurrence .occurrence_list .occurrence_item.n2:after{width:100%; height:1px; top:auto;}
+}
+@media all and (max-width:640px) {
+    .sd_occurrence:before{display:none;}
+    .sd_occurrence .occurrence_list .occurrence_item{padding-top:20px; padding-bottom:20px;}
+    .sd_occurrence .occurrence_list .occurrence_item .occurrence_title{font-size:18px; line-height:20px;}
+    .sd_occurrence .occurrence_list .occurrence_item .occurrence_number{font-size:25px; line-height:27px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n1 .occurrence_title{font-size:20px; line-height:22px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n1 .occurrence_data{font-size:18px; line-height:20px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left .left_title{font-size:20px; line-height:22px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left .left_index{font-size:27px; line-height:29px;}
+    .sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_right .right_box .right_index{padding:4px; font-size:16px; line-height:18px;}
+}
+@media all and (max-width:420px) {
+    .sd_occurrence .occurrence_list .occurrence_item.n2 .occurrence_left{display:block; margin-bottom:15px;}
+}
+.tabDisease{position:relative;z-index:1;width:calc(100% - 14px);max-width:976px;margin:67px auto 38px; padding:1px 0;border:7px solid #3c4e83; border-top:none; border-radius:25px;}
+/*.tabDisease:before{display:block;position:absolute;top:-8px;left:-8px;z-index:-1;width:30px;height:90px;background-color:#fff;}
+.tabDisease:after{display:block;position:absolute;top:60px;left:-7px;z-index:-1;width:7px;height:40px;background-color:#3c4e83;border-radius:5px;}*/
+.tabDisease:before,
+.disease_tab .tab_list:before {display:block; position:absolute; top:18px; width:30px; height:40px; border-top:7px solid #3c4e83; background-color:#fff; content:'';}
+.tabDisease:before {top:-6px; left:-7px; border-left:7px solid #3c4e83; border-radius:25px 0 0 0;}
+.disease_tab:after,
+.tabDisease:after {display:block; position:absolute; top:-6px; width:323px; height:7px; background-color:#3c4e83; border-radius:5px; content:'';}
+.tabDisease:after {left:15px;}
+.tabDisease h3{position:absolute;color:transparent;font-size:1px;}
+
+.disease_tab{display:inline-block; position:relative; width:100%; text-align:center; font-size:0; line-height:0;}
+.disease_tab:after{right:15px;}
+.disease_tab .tab_list{display:inline-block; position:relative; top:-24px; width:100%; font-size:0; line-height:0;}
+.disease_tab .tab_list:before{right:-7px; border-right:7px solid #3c4e83; border-radius:0 25px 0 0;}
+.disease_tab .tab_list .tab_item{display:inline-block; position:relative; width:250px; margin-right:10px; border-radius:24px; background-color:#01a3b0;}
+.disease_tab .tab_list .tab_item.active{background-color:#263971;}
+.disease_tab .tab_list .tab_item.active:after{display:block; z-index:-10; position:absolute; left:0; right:0; bottom:-7px; width:15px; height:15px; margin:0 auto; background-color:#263971; transform:rotate(45deg); content:'';}
+.disease_tab .tab_list .tab_item:last-child{margin-right:0;}
+.disease_tab .tab_list .tab_item button{width:100%; padding:13px; box-sizing:border-box;}
+.disease_tab .tab_list .tab_item button span{display:inline-block; position:relative; font-size:19px; line-height:21px; color:#fff; font-weight:500;}
+.disease_tab .tab_list .tab_item.active button span:before{display:inline-block; width:20px; height:21px; margin-right:8px; background-image:url('/site/intro/images/main/corona_sprite.png'); background-size:200% 942.85%; vertical-align:-4px; content:'';}
+
+@media all and (max-width:990px) {
+    .disease_tab:after,
+    .tabDisease:after {width:50%; z-index:-1;}
+    /*.disease_tab:after{display:block; top:55px; right:-7px; width:7px; height:50px; background-color:#3c4e83;}
+    .disease_tab .tab_list:before{height:80px; border:none;}*/
+}
+@media all and (max-width:640px) {
+    .tabDisease{margin-top:50px; margin-bottom:30px;}
+    .disease_tab .tab_list .tab_item{width:auto; word-break:keep-all;}
+    .disease_tab .tab_list .tab_item button{height:40px; padding:0 13px; box-sizing:border-box;}
+    .disease_tab .tab_list .tab_item button span{font-size:16px; line-height:22px;}
+    .disease_tab .tab_list .tab_item.active button span:before{left:5px;}
+}
+
+.disease_panel{padding:0 47px 32px 46px;}
+.disease_panel .panel_content{display:none;}
+.disease_panel .panel_content.active{display:block;}
+.disease_panel .panel_content .item_list{margin-bottom:25px; text-align:left;}
+.disease_panel .panel_content .item_list .item{position:relative; border-bottom:1px dotted #999; vertical-align:middle;}
+.disease_panel .panel_content .item_list .item:after{display:block; position:absolute; top:20px; right:5px; width:18px; height:13px; background-image:url('/site/intro/images/main/intro_sprite.png'); background-position:left 16.79%; background-size:222.22% 2069.23%; content:'';}
+.disease_panel .panel_content .item_list .item.active:after{background-position:left 7.81%; background-size:222.22% 2069.23%;}
+.disease_panel .panel_content .item_list .item .list_line{display:block; position:relative; width:100%; padding:17px 0 13px; font-weight:500; text-align:left;}
+.disease_panel .panel_content .item_list .item .list_line:after{display:block; position:absolute; top:50%; right:5px; width:18px; height:13px; margin-top:-7px; background:url('/site/intro/images/main/item_arrow.png') no-repeat center/cover; transition:.25s transform ease-in-out; content:'';}
+.disease_panel .panel_content .item_list .item.active .list_line:after{transform:rotate(-180deg); transition:.25s transform ease-in-out;}
+.disease_panel .panel_content .item_list .item .list_line .view_detail{position:absolute;visibility:hidden; opacity:0; top:0; left:0; width:100%; height:100%;  padding:21px 0 0; background:linear-gradient(to right,rgba(0,0,0,.2) 0%,rgba(0,0,0,.4) 20%,rgba(0,0,0,.7) 50%,rgba(0,0,0,.4) 70%,rgba(0,0,0,.2) 100%); box-sizing:border-box; color:#fff; font-size:14px;font-weight:400;line-height:16px;text-align:center; transition:.25s all ease-in-out;}
+.disease_panel .panel_content .item_list .item .list_line:hover .view_detail{opacity:1; visibility:visible;  transition:.25s all ease-in-out;}
+.disease_panel .panel_content .item_list .item .item_subject{margin-right:40px; margin-left:7px; font-size:18px; line-height:24px; color:#000; font-weight:300;}
+.disease_panel .panel_content .item_list .item.active .item_category,
+.disease_panel .panel_content .item_list .item.active .item_subject{font-weight:600; font-size:20px; line-height:24px;}
+.disease_panel .panel_content .item_list .item .list_content{display:none; padding:10px 0 20px; border-top:1px dotted #999; font-weight:300;}
+.disease_panel .panel_content .item_list .item .list_content span {display:inline}
+.disease_panel .panel_content .view_more{display:inline-block; position:relative; min-width:142px; margin:0; padding:10px; border:1px solid #283047; box-sizing:border-box; background-color:#fff; font-size:16px; line-height:24px; color:#283047; text-align:center; transition:0.1s; vertical-align:middle; text-decoration:none;}
+.disease_panel .panel_content .view_more:hover{background-color:#283047; color:#fff;}
+.disease_panel .panel_content .view_more:after{display:inline-block; position:relative; width:5px; height:9px; margin-left:12px; background-position:left -268px; vertical-align:1px; background-image:url('/site/public/images/template/template_sprite.png');}
+.disease_panel .panel_content .view_more:hover:after{background-position:left -150px;}
+.disease_panel .panel_content.n2 .panel_title{text-align:center; font-size:18px; line-height:30px; color:#007081;}
+
+@media all and (max-width:640px) {
+    .disease_panel{padding:20px 25px;}
+    .disease_panel .panel_content .item_list .item .item_subject{display:block; margin-left:0; font-size:14px; line-height:22px; word-break:keep-all;}
+    .disease_panel .panel_content .item_list .item.active .item_category, .disease_panel .panel_content .item_list .item.active .item_subject{font-size:16px; line-height:22px;}
+    .disease_panel .panel_content .item_list .item.active .list_content{padding:20px 0;}
+    .disease_panel .panel_content .item_list .item .list_line{padding:13px 0;}
+    .disease_panel .panel_content .item_list .item .list_line .view_detail{display:flex; align-items:center; justify-content:center; padding-top:0;}
+    .disease_panel .panel_content .item_list .item.active .list_content p{font-size:14px; line-height:22px;}
+    .disease_panel .panel_content .view_more{min-width:95px; padding:5px 0 2px; font-size:14px; line-height:22px;}
+    .disease_panel .panel_content .view_more:after{vertical-align:1px;}
+    .disease_panel .panel_content.n2 .panel_title{margin-bottom:20px; font-size:14px; line-height:22px;}
+}
+
+.sdCdc{padding:44px 80px 52px 90px;background-color:#3c4e83;border-radius:15px;color:#fff;}
+.sd_contacts tbody th, .sd_contacts tbody td{padding:7px 0; text-align:left; vertical-align:top;}
+.sd_contacts tbody th{width:174px; font-size:20px; line-height:22px;}
+.sd_contacts tbody th span{position:relative;}
+.sd_contacts tbody tr th span:before{display:inline-block; width:38px; height:38px; margin-right:10px; background-image:url('/site/intro/images/main/corona_sprite.png'); background-position:left 35.62%; background-size:105.26% 521.05%; background-repeat:no-repeat; vertical-align:-11px; content:'';}
+.sd_contacts tbody tr.n2 th span:before{width:40px; height:35px; background-position:left 64.41%; background-size:100% 565.71%;}
+.sd_contacts tbody td{padding-left:0}
+.sd_contacts tbody td ul{padding-top:5px; font-size:0; line-height:0;}
+.sd_contacts tbody td ul li{position:relative; margin-right:13px; padding-left:13px; font-size:17px; line-height:30px; font-weight:500; word-break:keep-all;}
+.sd_contacts tbody td ul li:last-child{margin-right:0;}
+.sd_contacts tbody td ul li:before{display:block; position:absolute; left:0; top:13px; width:7px; height:7px; border-radius:50%; background-color:#fff; content:'';}
+.sd_contacts tbody td ul li .layer_point1{font-size:18px; color:#fff799;}
+.sd_contacts tbody td ul.depth2 li{padding-left:0;}
+.sd_contacts tbody td ul.depth2 li:before{display:inline-block; position:relative; top:auto; width:20px; height:19px; margin-right:10px; background-image:url('/site/intro/images/main/corona_sprite.png'); background-position:left 83.79%; background-size:200% 1042.1%; background-color:transparent; border-radius:inherit; vertical-align:-4px;}
+.sd_contacts tbody td ul.depth2 li:last-child:before{background-position:left 100%; background-size:200% 1042.1%;}
+.sd_contacts tbody td ul.inline-block li{display:inline-block;}
+@media all and (max-width:1050px) {
+    .sdCdc{padding:44px 40px 52px 40px;}
+}
+@media all and (max-width:640px) {
+    .sdCdc{padding:10px 20px;}
+    .sd_contacts tbody th{display:block; width:100%; margin-top:15px; padding-bottom:0; font-size:16px; line-height:18px;}
+    .sd_contacts tbody tr th span:before{width:30px; height:30px; vertical-align:-7px;}
+    .sd_contacts tbody tr.n2 th span:before{width:30px; height:26px;}
+    .sd_contacts tbody td{display:block;}
+    .sd_contacts tbody td ul{padding-top:0;}
+    .sd_contacts tbody td ul li{display:block; font-size:14px; line-height:23px;}
+    .sd_contacts tbody td ul li .layer_point1{font-size:14px;}
+    .sd_contacts tbody td ul.inline-block li{display:block;}
+    .sd_contacts tbody td ul li:before{top:8px;}
+}
+.disease_links{margin-top:30px;}
+.disease_links a{display:inline-block; position:relative; float:left; height:58px; padding-left:25px; margin-right:10px; border-radius:18px; box-sizing:border-box; box-shadow:0 5px 0 #111f48; background-color:#fff; font-size:17px; color:#263971; text-align:left;}
+.disease_links a:before{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.disease_links a:after{display:inline-block; position:absolute; top:50%; right:20px; width:16px;height:14px; margin-top:-7px; background-image:url('/site/intro/images/main/corona_arrows_sprite.png'); background-position:left 68.9%; background-size:168.75% 950%; content:'';}
+.disease_links a span{text-align:left; vertical-align:middle;}
+.disease_links a.n1{width:calc(28% - 8px);}
+.disease_links a.n2{width:calc(24% - 8px);}
+.disease_links a.n3{width:calc(22% - 8px);}
+.disease_links a.n4{width:25%; margin-right:0;}
+
+@media all and (max-width:1000px) {
+ .disease_links a.n1,
+.disease_links a.n2,
+.disease_links a.n3,
+.disease_links a.n4{width:calc(50% - 8px); margin-bottom:20px;}
+.disease_links a.n2{margin-right:0;}
+}
+@media all and (max-width:480px) {
+    .disease_links a.n1,
+.disease_links a.n2,
+.disease_links a.n3,
+.disease_links a.n4{width:100%;}
+}
+
+.quick{margin-top:50px;}
+.quick .quick_anchor{display:block; position:relative;float:left; width:calc(50% - 10px); height:178px; margin-right:20px; box-shadow: 5px 9px 20px 0 rgba(0, 0, 0, 0.15); border-radius:15px; background-color:#ffdc7b;}
+.quick .quick_anchor:before{display:block; position:absolute; left:14px; bottom:0; width:288px; height:147px; background:url('/site/intro/images/main/quick_deco.png') no-repeat center/cover; content:'';}
+.quick .quick_anchor:last-child{margin-right:0; background-color:#b3e2fb;}
+.quick .quick_anchor:last-child:before{right:12px; width:269px; height:159px; background:url('/site/intro/images/main/quick_deco2.png') no-repeat center/cover;}
+.quick .quick_anchor span{position:absolute; top:50%; right:45px; font-size:30px; line-height:32px; color:#243546; font-weight:600; transform:translateY(-50%);}
+.quick .quick_anchor span:after{display:inline-block; width:27px; height:27px; margin-left:25px; background-image:url('/site/intro/images/main/corona_arrows_sprite.png');background-position:left 100%; background-size:100% 492.59%; vertical-align:-2px; content:'';}
+@media all and (max-width:1020px) {
+    .quick .quick_anchor:before{opacity:0.5;}
+    .quick .quick_anchor span{font-size:23px; line-height:25px;}
+    .quick .quick_anchor span:after{width:17px; height:17px; margin-left:15px; vertical-align:1px;}
+}
+@media all and (max-width:850px) {
+    .quick{margin-top:20px;}
+    .quick .quick_anchor{height:150px;}
+    .quick .quick_anchor:before{width:220px; height:112px;}
+    .quick .quick_anchor:last-child:before{width:205px; height:121px;}
+}
+@media all and (max-width:640px) {
+    .quick .quick_anchor{width:100%; margin-bottom:20px;}
+}
+
+footer{padding:35px 0;background-color:#293240;color:#b8bdc3;font-size:14px;line-height:16px;text-align:center;}
+
+@media all and (max-width:1070px) {
+    .logo{display:block; text-align:center;}
+    .link_wrap{display:block; float:none; margin:15px 0; text-align:center;}
+    .move_link{display:block; text-align:center;}
+    .sdSns{display:block; margin-top:20px; text-align:center;}
+}
+@media all and (max-width:910px) {
+	.sd_occurrence li.confirmed_case.n2 .group span:nth-child(1) {width:40%;}
+	.sd_occurrence li.confirmed_case.n2 .group span:nth-child(2) {width:60%;}
+}
+@media all and (max-width:800px) {
+    .disease_links > div{font-size:0;text-align:left;}
+    .disease_links a{position:relative;width:calc(33.333333% - 48px);padding:10px 30px 10px 10px;font-size:16px;line-height:18px;}
+    .disease_links a:after{position:absolute;top:0;right:10px;bottom:0;margin:auto 0;}
+}
+@media all and (max-width:790px) {
+    [data-tab-count="element3"] .tabButton{width:20%;}
+    [data-tab-count="element3"] .tBtn1{left:5%;transform:none;}
+    [data-tab-count="element3"] .tBtn2{left:27%;transform:none;}
+    [data-tab-count="element3"] .tBtn3{left:49%;transform:none;}
+}
+@media all and (max-width:730px) {
+    html,body{overflow-x:hidden;}
+    .header_inner{padding:20px 0 20px;}
+    .logo{font-size:16px;line-height:18px;}
+    .logo:before{width:100px;height:41px;}
+    .move_link{margin:20px auto 5px;}
+    .move_link a{margin:2px 5px;}
+    .sdSns{margin:15px auto 0;}
+    .layerDisease h2 span{display:block;}
+    .sd_occurrence{width:calc(100% - 40px);padding:30px 20px 23px;}
+    .sd_occurrence h3{width:190px;font-size:22px;line-height:24px;}
+    .disease_links a{width:calc(50% - 48px);}
+    .subTabButton{font-size:14px;}
+}
+@media all and (max-width:710px) {
+    .move_link a{width:calc(50% - 40px);}
+	.strongInfoText.type2 p {padding:10px 3%;}
+	.strongInfoText.type2 p br {display:none;}
+}
+@media all and (max-width:640px) {
+    h2{font-size:20px;line-height:22px;}
+    .tabLayout:before{width:auto;right:-7px;}
+    /*.tabLayout:after{width:7px;height:40px;top:20px;right:-7px;}*/
+    .tabLayout:after{top:-51px;height:50px;}
+    .large_text{font-size:18px;line-height:20px;}
+    .tabButton{top:-45px;}
+    .tabButton.tBtn2:after{display:none;top:9px;left:0;height:16px;}
+    .tabButton,.tab_element.active .tabButton{width:170px;font-size:16px;line-height:18px;}
+    [data-tab-count="element3"] .tabButton,[data-tab-count="element3"] .tab_element.active .tabButton{width:30%;}
+    [data-tab-count="element3"] .tBtn1,[data-tab-count="element3"] .tab_element.active .tBtn1{left:2%;transform:none;}
+    [data-tab-count="element3"] .tBtn2,[data-tab-count="element3"] .tab_element.active .tBtn2{left:34%;transform:none;}
+    .subTab{margin:15px 20px;padding:1px 0;}
+    .subTabButton{top:5px;width:calc(25% - 4px);font-size:14px;line-height:16px;}
+    .subTabButton.stBtn1{left:0;}
+    .subTabButton.stBtn2{left:25%;}
+    .subTabButton.stBtn3{left:50%;}
+    .subTabButton.stBtn4{left:75%;transform:none;}
+    .accordion_layer{margin:45px 15px 15px;}
+    .disease_links a{font-size:14px;line-height:16px;}
+    .strongInfoText strong{font-size:18px;line-height:20px;}
+    footer{padding:25px 15px;font-size:13px;line-height:20px; word-break:keep-all;}
+}
+@media all and (max-width:580px) {
+    body{background-size:auto 500px;}
+    main{padding:25px 0 45px;}
+    .sd_occurrence h3{display:block;width:100%;margin:0 0 15px;}
+    .sd_occurrence ul{width:100%;}
+    .sd_occurrence ul li:first-child:before{display:none;}
+}
+@media all and (max-width:550px) {
+    body{background-position:100% 0;background-size:auto 290px;}
+    .move_link{width:100%;margin:15px 0 0;text-align:center;}
+    /*.move_link a{margin:0 5px;}*/
+    /*.move_link .pollLink{width:200px;}*/
+    /*.move_link .wwwLink{width:100px;}*/
+    .sdSns{width:100%;text-align:center;}
+    .subTab{margin:30px 20px 0;padding:45px 0 1px;}
+    .subTabButton{top:50px;width:calc(33.333333% - 4px);}
+    .subTabButton.stBtn1{left:0;}
+    .subTabButton.stBtn2{left:33.333333%;}
+    .subTabButton.stBtn3{left:66.666666%;}
+    .subTabButton.stBtn4{top:5px;left:0;width:calc(100% - 4px);transform:none;}
+    .subTabButton:before{display:inline-block;width:0;height:100%;vertical-align:middle;}
+    .subTabButton span{line-height:16px;vertical-align:middle;}
+
+
+	.m_scroll{ overflow-x: scroll;}
+
+}

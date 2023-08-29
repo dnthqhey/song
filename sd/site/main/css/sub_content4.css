@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* (주)한신정보기술 현진명 - 2020.08.06 */
+
+/*보호수*/
+.cts1469 .table tbody td{word-break:keep-all;}
+.cts1469 .img_frame .box_item{display:inline-block; position:relative; margin:15px 0;}
+.cts1469 .img_frame .box_item img{margin:0;}
+.cts1469 .img_frame .box_item span{position:absolute; top:0; right:14px; height:30px; padding:0 1px 12px 16px; background-color:#fff; text-align:right; line-height:18px; letter-spacing:-0.025em; color:#323f4c;}
+@media all and (max-width:640px){
+    .cts1469 .img_frame .box_item span{right:0;}
+}
+
+/*구청사 생태연못*/
+.cts1470 .dl > li .title{width:90px;}
+.cts1470 .img_frame .box_item{display:inline-block; position:relative; margin:15px 0;}
+.cts1470 .img_frame .box_item img{margin:0;}
+.cts1470 .img_frame .box_item span{position:absolute; bottom:0; right:14px; height:29px; padding:9px 1px 0 18px; background-color:#fff; text-align:right; line-height:18px; letter-spacing:-0.025em; color:#323f4c; font-size:16px;}
+@media all and (max-width:640px){
+    .cts1470 .img_frame .box_item span{right:0;}
+}
+
+/*교육비전*/
+.cts1482_box{position:relative; height:271px; padding-top:95px; padding-left:110px; background:url('../images/contents/cts1482_img.jpg') no-repeat; background-size:cover; background-position:70%;}
+.cts1482_box:before{display:block; position:absolute; top:45px; left:-17px; width:127px; height:1px; background-color:#fff; transform:rotate(45deg);}
+.cts1482_box p{font-size:36px; font-weight:200; line-height:38px; letter-spacing:-0.025em; color:#000;}
+.cts1482_box p span{margin-top:7px; font-size:40px; font-weight:600;}
+.cts1482_box p .point_blue{color:#0076da;}
+.cts1482_box p .point_green{color:#018517;}
+.cts1482_vision{position:relative; height:120px; margin-top:64px; background-color:#f9f9f9; text-align:center;}
+.cts1482_vision:before, .cts1482_vision:after{display:block; position:absolute; top:0; height:120px; background-repeat:no-repeat;}
+.cts1482_vision:before{left:0; width:236px; background-image:url('../images/contents/cts1482_bg01.png');}
+.cts1482_vision:after{right:0; width:162px; background-image:url('../images/contents/cts1482_bg02.png');}
+.cts1482_vision .title{position:relative; margin-top:-27px;}
+.cts1482_vision p{position:relative; z-index:10; margin-top:23px; font-size:22px; line-height:24px; font-weight:500; color:#50575c; letter-spacing:-0.025em;}
+.cts1482_talent{position:relative; height:250px; padding-top:42px; margin-top:69px;}
+.cts1482_talent:before{display:block; position:absolute; top:0; left:0; width:100%; height:2px;background: rgb(69,66,158); background: -moz-linear-gradient(left,  rgba(69,66,158,1) 0%, rgba(7,151,226,1) 25%, rgba(255,193,4,1) 50%, rgba(253,94,37,1) 75%, rgba(242,4,56,1) 100%); background: -webkit-linear-gradient(left,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); background: linear-gradient(to right,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45429e', endColorstr='#f20438',GradientType=1 );}
+.cts1482_talent ul{height:100%;}
+.cts1482_talent ul li{position:relative; float:left; width:33.33%; height:100%; text-align:center;}
+.cts1482_talent ul li + li:before{display:block; position:absolute; top:0; left:-1px; width:2px; height:100%; background: rgb(69,66,158); background: -moz-linear-gradient(top,  rgba(69,66,158,1) 0%, rgba(7,151,226,1) 25%, rgba(255,193,4,1) 50%, rgba(253,94,37,1) 75%, rgba(242,4,56,1) 100%); background: -webkit-linear-gradient(top,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); background: linear-gradient(to bottom,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45429e', endColorstr='#f20438',GradientType=0 );}
+.cts1482_talent ul li:after{display:block; position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; background-repeat:no-repeat;}
+.cts1482_talent ul li:nth-child(1):after{top:94px; width:67px; height:84px; background-image:url('../images/contents/cts1482_icon01.png');}
+.cts1482_talent ul li:nth-child(2):after{top:106px; width:89px; height:63px; background-image:url('../images/contents/cts1482_icon02.png');}
+.cts1482_talent ul li:nth-child(3):after{top:101px; width:84px; height:71px; background-image:url('../images/contents/cts1482_icon03.png');}
+.cts1482_talent ul li .title{margin-top:9px;}
+.cts1482_talent ul li .title .text{display:block; font-size:24px; line-height:26px; font-weight:500; color:#000; letter-spacing:-0.025em;}
+.cts1482_talent ul li:nth-child(1) .title .text span{color:#0788e2;}
+.cts1482_talent ul li:nth-child(2) .title .text span{color:#009eb1;}
+.cts1482_talent ul li:nth-child(3) .title .text span{color:#684fd3;}
+.cts1482_talent ul li .title .subtext{display:block; margin-top:5px; font-size:18px; line-height:20px; color:#8d8c8c; letter-spacing:-0.025em;}
+
+.cts1482_city{position:relative; margin-top:25px; padding-top:64px;}
+.cts1482_city:before{display:block; position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; width:823px; height:213px; background:url('../images/contents/cts1482_arrow.png') no-repeat; background-size:contain;}
+.cts1482_city ul{margin-left:-23px;}
+.cts1482_city ul li{float:left; width:16.66%; padding-left:23px; text-align:center;}
+.cts1482_city ul li .inner{position:relative; padding-top:171px; letter-spacing:-0.025em;}
+.cts1482_city ul li .inner:before{display:block; position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; width:144px; height:144px; background-repeat:no-repeat; background-size:contain;}
+.cts1482_city ul li:nth-child(1) .inner:before{background-image:url('../images/contents/cts1482_icon04.png');}
+.cts1482_city ul li:nth-child(2) .inner:before{background-image:url('../images/contents/cts1482_icon05.png');}
+.cts1482_city ul li:nth-child(3) .inner:before{background-image:url('../images/contents/cts1482_icon06.png');}
+.cts1482_city ul li:nth-child(4) .inner:before{background-image:url('../images/contents/cts1482_icon07.png');}
+.cts1482_city ul li:nth-child(5) .inner:before{background-image:url('../images/contents/cts1482_icon08.png');}
+.cts1482_city ul li:nth-child(6) .inner:before{background-image:url('../images/contents/cts1482_icon09.png');}
+.cts1482_city ul li .inner .title{display:block; font-size:20px; line-height:22px; color:#222; font-weight:500;}
+.cts1482_city ul li .inner .text{display:block; position:relative; margin-top:18px; padding:18px 10px 0; font-size:16px; line-height:19px; color:#444; word-break:keep-all;}
+.cts1482_city ul li .inner .text:before{display:block; position:absolute; top:0; left:0; right:0; width:23px; height:1px; margin-left:auto; margin-right:auto; background-color:#4c4c4c;}
+
+@media all and (max-width:1300px) {
+    .cts1482_box{height:250px; padding-top:85px; padding-left:70px;}
+    .cts1482_box:before{top:27px; left:-10px; width:77px;}
+    .cts1482_box p{font-size:34px;}
+    .cts1482_box p span{font-size:36px;}
+    .cts1482_talent{margin-top:50px;}
+    .cts1482_city:before{width:630px; height:180px;}
+    .cts1482_city ul li{width:33.33%;}
+    .cts1482_city ul li:nth-child(n + 4){margin-top:20px; }
+}
+@media all and (max-width:800px){
+    .cts1482_box{height:200px; padding-top:70px; padding-left:60px;}
+    .cts1482_box p{font-size:28px; line-height:30px;}
+    .cts1482_box p span{font-size:30px;}
+    .cts1482_vision{height:100px; margin-top:45px;}
+    .cts1482_vision:before, .cts1482_vision:after{height:100%;}
+    .cts1482_vision .title{width:120px;}
+    .cts1482_vision p{font-size:18px; line-height:20px;}
+    .cts1482_talent{height:210px; padding-top:30px;}
+    .cts1482_talent ul li:nth-child(1):after{top:78px;}
+    .cts1482_talent ul li:nth-child(2):after{top:92px;}
+    .cts1482_talent ul li:nth-child(3):after{top:85px;}
+    .cts1482_talent ul li .title .text{font-size:20px; line-height:22px;}
+    .cts1482_talent ul li .title .subtext{font-size:14px; line-height:16px;}
+    .cts1482_city{padding-top:45px;}
+    .cts1482_city:before{width:510px; height:140px;}
+    .cts1482_city ul li .inner{padding-top:130px;}
+    .cts1482_city ul li .inner:before{width:115px; height:115px;}
+    .cts1482_city ul li .inner .title{font-size:18px; line-height:20px;}
+    .cts1482_city ul li .inner .text{margin-top:12px; padding-top:12px; padding-left:0; padding-right:0; font-size:14px;}
+}
+@media all and (max-width:640px){
+    .cts1482_box{height:150px; padding-top:50px; padding-left:40px;}
+    .cts1482_box:before{top:12px; left:-5px; width:37px;}
+    .cts1482_box p{font-size:22px; line-height:24px;}
+    .cts1482_box p span{font-size:24px;}
+    .cts1482_vision p{font-size:16px;}
+    .cts1482_talent{height:190px; margin-top:30px; padding-top:25px;}
+    .cts1482_talent ul li:after{background-size:contain;}
+    .cts1482_talent ul li:nth-child(1):after{width:50px; height:66px;}
+    .cts1482_talent ul li:nth-child(2):after{top:90px; width:66px; height:47px;}
+    .cts1482_talent ul li:nth-child(3):after{width:64px; height:58px;}
+    .cts1482_talent ul li .title .text{font-size:18px;}
+    .cts1482_city:before{width:390px; height:100px;}
+    .cts1482_city ul li{width:50%;}
+    .cts1482_city ul li:nth-child(n + 3){margin-top:20px;}
+    .cts1482_city ul li .inner{padding-top:120px; }
+    .cts1482_city ul li .inner:before{width:105px; height:105px;}
+}
+@media all and (max-width:480px){
+    .cts1482_box{padding-left:24px;}
+    .cts1482_box p{font-size:18px; line-height:20px;}
+    .cts1482_box p span{font-size:18px;}
+    .cts1482_vision{height:auto; padding-bottom:30px; padding-left:30px; padding-right:30px;}
+    .cts1482_vision .title{width:105px;}
+    .cts1482_vision p{margin-top:13px; font-size:14px; word-break:keep-all;}
+    .cts1482_talent ul li:nth-child(1):after{width:40px; height:53px;}
+    .cts1482_talent ul li:nth-child(2):after{top:87px; width:53px; height:39px;}
+    .cts1482_talent ul li:nth-child(3):after{width:51px; height:46px;}
+    .cts1482_talent ul li + li:before{width:1px;}
+    .cts1482_talent ul li .title .text{font-size:16px; line-height:20px;}
+    .cts1482_talent ul li .title .subtext{font-size:12px; line-height:14px;}
+    .cts1482_city{margin-top:15px; padding-top:30px;}
+    .cts1482_city:before{width:280px; height:80px;}
+    .cts1482_city ul li .inner{padding-top:100px;}
+    .cts1482_city ul li .inner:before{width:90px; height:90px;}
+    .cts1482_city ul li .inner .title{font-size:16px;}
+    .cts1482_city ul li .inner .text{margin-top:10px; padding-top:9px; font-size:13px;}
+}
+
+/*분야별정보 > 일자리 > 취업박람회 > 박람회 안내*/
+.cts1516 .box .box_text p span{font-weight:500;}
+.cts1516 .dl > li .title{width:95px;}
+
+@media all and (max-width:1300px){
+    .cts1516 .box .box_text p br{display:none;}
+}
+
+/*분야별정보 > 일자리 > 일자리카페*/
+.cts1520 .cts1520_box:before{background:url('../images/contents/cts1520_icon.png') no-repeat center;}
+.cts1520 .cts1520_box .box_text p{word-break:keep-all;}
+.cts1520 .box.img{padding-bottom:42px;}
+.cts1520 .box.img .row + .row{margin-top:20px;}
+.cts1520 .box.img .img_cts{min-width:190px;}
+.cts1520 .qna.type_b .qna_item{margin-bottom:20px;}
+.cts1520 .step.length4{margin-top:30px;}
+.cts1520 .step.length4 .step_item{min-height:127px; padding-left:15px; padding-right:15px;}
+.cts1520 .step.length4 .step_title{padding:0; word-break:keep-all;}
+.cts1520 .step.length4 .step_title span{font-size:16px;}
+
+.cts1520 .img_introduce2 .area_img{width:247px; text-align:center;}
+.cts1520 .img_introduce2 .area_img h4{display:inline-block;}
+.cts1520 .img_introduce2 .area_info{padding-left:35px;}
+.cts1520 .img_introduce2 .area_info .line{margin-bottom:18px;}
+.cts1520 .img_introduce2 .num.dl > li .text{word-break:keep-all;}
+.cts1520 .img_introduce2.n1 .num.dl > li .title{width:152px;}
+.cts1520 .img_introduce2.n1 .num.dl > li:last-child .text{letter-spacing:-0.035em;}
+.cts1520 .img_introduce2.n2{margin-top:30px;}
+.cts1520 .img_introduce2.n2 .area_info{padding-right:30px;}
+.cts1520 .img_introduce2.n2 .num.dl > li .title{width:175px;}
+.cts1520 .img_introduce2.type2:before{right:auto; left:0;}
+.cts1520 .img_introduce2.type2:after{right:0; left:auto;}
+.cts1520 .img_introduce2.type2 .area_info h5{margin-top:19px !important; margin-bottom:13px !important;}
+.cts1520 .img_introduce2.type2 .area_info .bu.dl{margin-top:13px;}
+.cts1520 .img_introduce2.type2 .area_info .line{margin-bottom:16px;}
+.cts1520 .img_introduce2.type2 .area_info .num.dl{margin-top:16px;}
+.cts1520 .img_introduce2.n3 .area_info .num.dl > li .title{width:152px;}
+.cts1520 .img_introduce2.n4 .area_info .num.dl > li .title{width:215px;}
+
+@media all and (max-width:1300px){
+    .cts1520 .step.length4 .step_title span{word-break:break-all;}
+    .cts1520 .step.length4 .step_item:last-child .step_title br{display:none;}
+}
+@media all and (max-width:800px){
+    .cts1520 .img_introduce2 .area_img{width:215px;}
+    .cts1520 .img_introduce2.n1 .num.dl > li .title, .cts1520 .img_introduce2.n2 .num.dl > li .title{display:block;}
+    .cts1520 .img_introduce2.n1 .num.dl > li .title:before, .cts1520 .img_introduce2.n2 .num.dl > li .title:before{display:none;}
+    .cts1520 .img_introduce2.n1 .num.dl > li .text, .cts1520 .img_introduce2.n2 .num.dl > li .text{display:block;}
+}
+@media all and (max-width:640px){
+    .cts1520 .img_introduce2 .area_info{padding-left:20px;}
+    .cts1520 .img_introduce2 .area_img{width:100%;}
+    .cts1520 .img_introduce2 .area_img h4{display:block;}
+    .cts1520 .step.length4 .step_title span{font-size:13px;}
+    .cts1520 .step.length4 .step_item:last-child .step_title br{display:block;}
+}
+
+/*찾아가는 동주민센터 사업*/
+.cts3605 .box.type2:before{background:url('../images/contents/cts3605_icon.png') no-repeat center top;}
+.cts3605 .box.type2 .box_text p{word-break:keep-all;}
+.cts3605 .cts3605_box{padding:50px 0 56px; border:1px solid #ccc; border-radius:10px; text-align:center;}
+.cts3605 .cts3605_box .top_box{margin:0 107px;}
+.cts3605 .cts3605_box .top_box .item{position:relative; width:calc(50% - 62px); padding-top:87px; font-size:22px; line-height:26px; font-weight:500; letter-spacing:-0.025em; vertical-align:top;}
+.cts3605 .cts3605_box .top_box .item.n1{float:left; color:#3e3e3e;}
+.cts3605 .cts3605_box .top_box .item.n2{float:right; color:#5981cb;}
+.cts3605 .cts3605_box .top_box .item:before{display:inline-block; position:absolute; left:0; right:0; margin:0 auto; background-repeat:no-repeat;}
+.cts3605 .cts3605_box .top_box .item.n1:before{top:9px; width:43px; height:57px; background-image:url('../images/contents/cts3605_icon02.png');}
+.cts3605 .cts3605_box .top_box .item.n2:before{top:6px; width:71px; height:63px; background-image:url('../images/contents/cts3605_icon03.png');}
+.cts3605 .cts3605_box .top_box .item.n1:after{display:inline-block; position:absolute; top:60px; right:-88px; width:54px; height:40px; background:url('../images/contents/cts3605_arrow.png') no-repeat;}
+
+.cts3605 .cts3605_box .mid_box{position:relative; margin-top:18px; padding:0 65px 64px;}
+.cts3605 .cts3605_box .mid_box:before{display:inline-block; position:absolute; bottom:0; left:0; right:0; width:257px; height:60px; margin:0 auto; background:url('../images/contents/cts3605_arrow02.png') no-repeat;}
+.cts3605 .cts3605_box .mid_box ul{font-size:0; line-height:0;}
+.cts3605 .cts3605_box .mid_box ul li{display:inline-block; width:180px; height:180px; padding:0 25px; border-radius:100%; font-size:16px; line-height:24px; color:#fff; vertical-align:top; word-break:keep-all;}
+.cts3605 .cts3605_box .mid_box ul li:before{display:inline-block; height:100%; content:''; vertical-align:middle;}
+.cts3605 .cts3605_box .mid_box ul li + li{margin-left:54px;}
+.cts3605 .cts3605_box .mid_box ul li.n1{background-color:#6792cc;}
+.cts3605 .cts3605_box .mid_box ul li.n2{background-color:#18a1a3;}
+.cts3605 .cts3605_box .mid_box ul li.n3{background-color:#18a36d;}
+.cts3605 .cts3605_box .mid_box ul li span{vertical-align:middle;}
+.cts3605 .cts3605_box .bottom_box{margin:13px 180px 0; padding:22px 10px 21px; border:4px solid #cfcfcf; border-radius:60px; font-size:20px; line-height:26px; font-weight:500; letter-spacing:-0.025em; color:#4f4f4f; text-align: center;}
+
+.cts3605 .history.n1 .history_daily{padding-left:135px;}
+.cts3605 .history.n2 .history_daily{padding-left:100px;}
+
+@media all and (max-width:1300px){
+    .cts3605 .cts3605_box .top_box{margin-left:40px; margin-right:40px;}
+    .cts3605 .cts3605_box .top_box .item{font-size:20px; line-height:24px;}
+    .cts3605 .cts3605_box .mid_box{padding-left:0; padding-right:0;}
+    .cts3605 .cts3605_box .mid_box ul li{width:160px; height:160px;  font-size:15px; line-height:22px;}
+    .cts3605 .cts3605_box .mid_box ul li + li{margin-left:45px;}
+    .cts3605 .cts3605_box .bottom_box{margin-left:80px; margin-right:80px; padding-top:15px; padding-bottom:15px; font-size:18px; line-height:24px;}
+}
+@media all and (max-width:640px){
+    .cts3605 .cts3605_box .top_box{margin-left:20px; margin-right:20px;}
+    .cts3605 .cts3605_box .top_box .item{width:calc(50% - 40px); font-size:18px; line-height:22px;}
+    .cts3605 .cts3605_box .top_box .item.n1:after{top:45px; right:-68px; width:44px; height:33px; background-size:contain;}
+    .cts3605 .cts3605_box .mid_box ul li{width:140px; height:140px; padding-left:10px; padding-right:10px; font-size:14px; line-height:20px;}
+    .cts3605 .cts3605_box .mid_box ul li + li{margin-left:15px;}
+    .cts3605 .cts3605_box .bottom_box{margin-left:30px; margin-right:30px; padding-top:10px; padding-bottom:10px; font-size:16px; line-height:22px;}
+}
+@media all and (max-width:500px){
+    .cts3605 .cts3605_box{padding-top:30px; padding-bottom:35px;}
+    .cts3605 .cts3605_box .top_box .item{width:100%; word-break:keep-all;}
+    .cts3605 .cts3605_box .top_box .item.n1{float:none; margin-bottom:80px;}
+    .cts3605 .cts3605_box .top_box .item.n1:after{top:auto; bottom:-57px; right:50%; width:39px; height:29px; transform:rotate(90deg); margin-right:-21px;}
+    .cts3605 .cts3605_box .top_box .item.n2{float:none;}
+    .cts3605 .cts3605_box .mid_box ul li{width:150px; height:150px;}
+    .cts3605 .cts3605_box .mid_box ul li + li{margin-left:20px;}
+    .cts3605 .cts3605_box .mid_box ul li.n3{margin-left:0;}
+    .cts3605 .cts3605_box .bottom_box{word-break:keep-all;}
+}
+@media all and (max-width:360px){
+    .cts3605 .cts3605_box .mid_box{margin:20px;}
+    .cts3605 .cts3605_box .mid_box ul li{width:100%; height:auto; padding:20px; border-radius:0;}
+    .cts3605 .cts3605_box .mid_box ul li + li{margin-top:10px; margin-left:0;}
+}
+
+/*성동형 의료복지체계 구축*/
+.cts3609 .box.type2.n2{margin-top:50px;}
+.cts3609 .box.type2.n3{margin-top:50px;}
+.cts3609 .box.type2.n1:before{background-image:url('../images/contents/cts3609_icon01.png');}
+.cts3609 .box.type2.n2:before{background-image:url('../images/contents/cts3609_icon02.png');}
+.cts3609 .box.type2.n3:before{background-image:url('../images/contents/cts3609_icon03.png');}
+.cts3609 .box.no_icon.tiny .dl > li .title{width:90px;}
+.cts3609 .box.no_icon.tiny .dl > li .text{color:#555;}
+.cts3609 .box.no_icon.tiny .dl > li .text ul li{position:relative; padding-left:17px; line-height:22px; color:#666;}
+.cts3609 .box.no_icon.tiny .dl > li .text ul li:before{left:0; top:11px; width:7px; height:2px; background-color:#97a8be;}
+.cts3609 .box.no_icon.tiny .bu > li{color:#555;}
+.cts3609 p + .box_img{margin-top:27px;}
+.cts3609 h3 + .dl > li .title{width:120px;}
+.cts3609 .dl.u_health li .title{width:70px;}
+.cts3609 .emphasis .emphasis_list.manage .lump{margin-right:55px;}
+.cts3609 .emphasis .emphasis_list.manage .lump:nth-child(3){margin-right:0;}
+
+@media all and (max-width:1300px){
+    .cts3609 .box.type2.n3 br{display:none;}
+    .cts3609 .emphasis .emphasis_list.manage .lump:nth-child(2){margin-right:0;}
+}
+@media all and (max-width:1000px){
+    .cts3609 .emphasis .emphasis_list.manage .lump:nth-child(2){margin-right:55px;}
+}
+@media all and (max-width:800px){
+    .cts3609 .emphasis .emphasis_list.manage .lump{display:block;}
+}
+@media all and (max-width:640px){
+    .cts3609 .emphasis .emphasis_list.manage .lump{margin-right:0;}
+    .cts3609 .emphasis .emphasis_list.manage .lump:nth-child(2){margin-right:0;}
+    .cts3609 .emphasis .emphasis_list.manage .lump + .lump{margin-top:10px;}
+}
+
+/*평생건강누림센터 운영*/
+.cts3610 .box.type2:before{background-image:url('../images/contents/cts3610_icon.png');}
+.cts3610 .dl > li .title{width:180px;}
+
+@media all and (max-width:1300px){
+    .cts3610 .box.type2 br{display:none;}
+}
+
+/*재정공시*/
+.cts1329 .cts1329_box:before{background-image:url('../images/contents/cts1329_icon.png');}
+.cts1329 .box.list{min-height:120px;}
+.cts1329 .box.list .dl > li .title{width:90px;}
+.cts1329 .warning_box{margin-top:15px;}
+.cts1329 .quick.link.small{margin-top:23px;}
+.cts1329 .search_box.type2{margin-top:88px;}
+
+@media all and (max-width:1300px){
+    .cts1329 .warning_box br{display:none;}
+}
+@media all and (max-width:800px){
+    .cts1329 .search_box.type2{margin-top:30px;}
+}
+@media screen and (min-width: 640px){
+    .cts1329 .search_box.type2 select{filter:none;}
+}
+
+/*공유재산목록*/
+.cts1332 .box.type3{padding:48px 10px 34px 75px;}
+.cts1332 .box.type3 .btn{width:260px; margin-top:9px;}
+.cts1332 .search_box.type2{padding-left:57px; padding-right:57px;}
+.cts1332 .search_box .search_piece{width:100%;}
+.cts1332 .search_box .search_col{float:left;width:50%;}
+.cts1332 .search_box .title{position:relative; margin-right:15px; padding-left:14px; font-size:16px; line-height:22px; font-weight:500; color:#333; letter-spacing:-0.025em; vertical-align:middle;}
+.cts1332 .search_box .title:before{display:inline-block; position:absolute; top:10px; left:0; width:4px; height:4px; border-radius:100%; background-color:#4289e6;}
+.cts1332 .search_box .sd_input{width:auto;}
+.cts1332 .search_box .sd_input.n1 select{width:110px;}
+.cts1332 .search_box .sd_input.n1 select:last-child{width:80px;}
+.cts1332 .search_box .sd_input.n1 select + select{margin-left:6px;}
+.cts1332 .search_box .sd_input.n2 select{width:100px;}
+.cts1332 .search_box .sd_input.withbtn input[type="text"]{width:190px; margin-left:5px;}
+.cts1332 .search_box .search_btn__box{display:inline-block;}
+
+@media screen and (min-width: 640px){
+    .cts1332 .search_box.type2 select{filter:none;}
+}
+@media all and (max-width:1300px){
+    .cts1332 .box.type3{padding:59px 100px 41px 77px;}
+    .cts1332 .search_box .search_col{float:none; width:100%;}
+    .cts1332 .search_box .search_col + .search_col{margin-top:10px;}
+}
+@media all and (max-width:640px){
+    .cts1332 .box.type3{padding:20px 25px;}
+    .cts1332 .search_box.type2{padding-left:0; padding-right:0;}
+}
+@media all and (max-width:480px){
+    .cts1332 .search_box .title{margin-right:5px;}
+    .cts1332 .search_box .sd_input.n1 select{width:80px;}
+    .cts1332 .search_box .sd_input.n2 select{width:100px;}
+    .cts1332 .search_box.type2 .search_piece.double .withbtn{width:auto;}
+    .cts1332 .search_box .sd_input.withbtn input[type="text"]{width:165px;}
+    .cts1332 .search_box.type2 .search_piece.double .withbtn + .search_btn__box{display:block; margin-top:15px;  text-align:center;}
+}
+
+/*부조리신고*/
+.cts1247 .cts1247_box:before{background-image:url('../images/contents/cts1247_icon.png');}
+.cts1247 .dl > li .title{width:65px;}
+.cts1247 .box.type3{margin-top:53px; margin-bottom:30px;}
+.cts1247 .box.type3 .blt{margin-top:22px;}
+.cts1247 .box.type3 .blt .btn{margin-top:0; margin-left:15px; padding-left:20px; padding-right:20px;}
+
+@media all and (max-width:1300px){
+    .cts1247 .box.type3 br{display:none;}
+}
+
+/*구민고충처리위원회*/
+.cts1252 .box.type3 .btn{min-width:210px;}
+.cts1252 p{word-break:keep-all;}
+
+/*갑질 등 통합 익명신고센터 안내*/
+.cts1253 .box{margin-bottom:30px;}
+.cts1253 .box:before{background:url('/site/minwon/images/contents/cts2050_icon.png') no-repeat;}
+.cts1253 .dl > li .title{width:90px;}
+.cts1253 .cts1253_box.desktop{position:relative; margin-top:27px; padding-top:83px; padding-bottom:69px; border-radius:0 0 50px 0; background:url('/site/minwon/images/contents/cts2050_bg.jpg') no-repeat; font-size:0; line-height:0;}
+.cts1253 .cts1253_box.desktop .logo{position:absolute; top:20px; right:25px;}
+.cts1253 .cts1253_box.desktop .text_box{position:relative; padding-left:460px;}
+.cts1253 .cts1253_box.desktop .title{width:426px; height:45px; background:url('/site/minwon/images/contents/cts2050_img01.png') no-repeat; font-size:0; line-height:0; color:transparent;}
+.cts1253 .cts1253_box.desktop .text{display:block; margin:33px 0 34px;}
+.cts1253 .cts1253_box.desktop .qrcode{position:absolute; top:0; right:27px;}
+.cts1253 .cts1253_box .cts1253_link{padding:5px; background: -moz-linear-gradient(left,  rgba(69,66,158,1) 0%, rgba(7,151,226,1) 25%, rgba(255,193,4,1) 50%, rgba(253,94,37,1) 75%, rgba(242,4,56,1) 100%); background: -webkit-linear-gradient(left,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); background: linear-gradient(to right,  rgba(69,66,158,1) 0%,rgba(7,151,226,1) 25%,rgba(255,193,4,1) 50%,rgba(253,94,37,1) 75%,rgba(242,4,56,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45429e', endColorstr='#f20438',GradientType=1 ); box-sizing:border-box; }
+.cts1253 .cts1253_box .cts1253_link span{position:relative; padding-left:37px; padding-right:53px; background-color:#fff; font-size:16px; line-height:37px; color:#000; letter-spacing:-0.025em;}
+.cts1253 .cts1253_box .cts1253_link span:before{display:block; position:absolute; top:50%; right:37px; width:5px; height:9px; margin-top:-5px; background:url('/site/minwon/images/contents/cts2050_arrow.png') no-repeat;}
+.cts1253 .cts1253_box.mobile{display:none;}
+
+@media all and (max-width:1300px){
+    .cts1253 .cts1253_box.desktop{padding-top:34px; padding-bottom:30px; background-size:100%;}
+    .cts1253 .cts1253_box.desktop .text_box{padding-left:45%;}
+    .cts1253 .cts1253_box.desktop .qrcode{top:40px;}
+    .cts1253 .cts1253_box.desktop .title{width:235px;}
+    .cts1253 .cts1253_box.desktop .text{margin-top:25px; margin-bottom:25px;}
+}
+@media all and (max-width:800px){
+    .cts1253 .cts1253_box.desktop .title{margin-left:-28px; transform:scale(0.75);}
+    .cts1253 .cts1253_box.desktop .text{margin-top:15px; margin-bottom:20px;}
+    .cts1253 .cts1253_box.desktop .cts1253_link span{padding-left:22px; padding-right:33px; font-size:14px; line-height:32px;}
+    .cts1253 .cts1253_box.desktop .cts1253_link span:before{right:17px; margin-top:-4px;}
+}
+@media all and (max-width:640px){
+    .cts1253 .box{margin-bottom:20px;}
+    .cts1253 .cts1253_box.desktop{display:none;}
+    .cts1253 .cts1253_box.mobile{display:block;}
+    .cts1253 .cts1253_box.mobile .cts1253_link{margin-top:20px;}
+    .cts1253 .cts1253_box .cts1253_link{padding:3px;}
+    .cts1253 .cts1253_box .cts1253_link span{padding-left:27px; padding-right:43px; font-size:14px; line-height:30px;}
+    .cts1253 .cts1253_box .cts1253_link span:before{right:20px; margin-top:-3px;}
+}
+
+/*어르신*/
+.cts1541 .dl > li .title{width:90px;}
+
+/*도시재생 - 아카이브 - 소식지*/
+.cts1770 .p-nav{margin-bottom:30px;}
+
+/*성동안심상가 - 오시는길*/
+@media all and (min-width:641px){
+    .cts1747 .emphasis .emphasis_list.place{min-height:98px; padding-top:0;}
+    .cts1747 .emphasis .emphasis_list.place .emphasis_title{word-break:keep-all;}
+    .cts1747 .emphasis .emphasis_list.place .emphasis_title:before{top:50%; margin-top:0; transform:translateY(-50%);}
+    .cts1747 .emphasis .emphasis_list.place .emphasis_title, .cts1747 .emphasis .emphasis_list.place .emphasis_num{vertical-align:middle;}
+    .cts1747 .emphasis .emphasis_list.place .emphasis_num{padding-bottom:0;}
+    .cts1747 .emphasis .emphasis_num:before{top:50%; transform:translateY(-50%);}
+}
+
+/*주민참여예산제를 통한 건전한 재정운영*/
+.page3599 .tab_menu.type2 .tab_item.active .tab_anchor{padding-left:25px; padding-right:25px;}
+.page3599 .tab_menu.type2 .tab_item.active .tab_anchor span{word-break:keep-all;}
+
+@media all and (max-width:1300px){
+    .page3599 .tab_menu.type2 .tab_item.active .tab_anchor{padding-left:10px; padding-right:10px;}
+}
+
+/*협의체 참여기관*/
+.cts3900 .table tbody tr td{text-align:left;}
+
+/*정보공개제도 안내*/
+@media all and (max-width:1300px) and (min-width:641px){
+    .cts1258 .quick.small .quick_title{min-height:96px;}
+}
+
+/*어르신*/
+@media all and (max-width:1300px){
+    .cts1541 .table tbody tr td br{display:none;}
+}
+
+/* 분야별정보 > 복지 > 성동초등돌봄 > 비전 및 추진과제 */
+.cts1609_title {margin-left:-21px; text-align:center;}
+#contents .cts1609_title .title {display:inline-block; padding-left:21px; font-size:22px; font-weight:500; color:#052071; letter-spacing:0.24em; line-height:46px;}
+#contents .cts1609_title .title:before {display:block; top:0; left:0; z-index:-10; width:46px; height:46px; background:url('/site/main/images/contents/cts1609_icon.png') no-repeat left top / contain;}
+#contents .cts1609_title .title:after {display:block; width:30px; height:3px; margin:12px auto 0; background-color:#052071;}
+#contents .cts1609_title .title em {color:#fff;}
+.cts1609_vision {margin-top:38px; padding:27px 70px; border:1px solid #a4bee0; border-radius:80px; background:url('/site/main/images/contents/cts1609_bg.png') no-repeat right top / contain; text-align:center;}
+.cts1609_vision p {font-size:22px; color:#000; word-break:keep-all;}
+.cts1609_vision + .cts1609_title {margin-top:54px;}
+.cts1609_assignment {margin-top:60px; padding:0 32px; font-size:0;}
+.cts1609_assignment .assignment_item {display:inline-block; width:calc(33.33% - 19px); margin-right:28px; vertical-align:top;}
+.cts1609_assignment .assignment_item:last-child {margin:0;}
+.cts1609_assignment .assignment_item:before {display:block; width:100%; height:360px; border-radius:26px; background:no-repeat center / cover;}
+.cts1609_assignment .assignment_item p {margin-top:23px; font-size:20px; color:#000; line-height:30px; text-align:center;}
+.cts1609_assignment .assignment_item.n1:before {background-image:url('/site/main/images/contents/cts1609_img.png');}
+.cts1609_assignment .assignment_item.n2:before {background-image:url('/site/main/images/contents/cts1609_img2.png');}
+.cts1609_assignment .assignment_item.n3:before {background-image:url('/site/main/images/contents/cts1609_img3.png');}
+@media all and (max-width:1300px){
+    .cts1609_assignment {padding:0;}
+}
+@media all and (max-width:1800px){
+    .cts1609_assignment .assignment_item p br {display:none;}
+}
+@media all and (max-width:640px){
+    .cts1609_title {margin-left:-15px;}
+    #contents .cts1609_title .title {padding-left:15px; font-size:20px; line-height:36px;}
+    #contents .cts1609_title .title:before {width:36px; height:36px;}
+    #contents .cts1609_title .title:after {margin-top:5px;}
+
+    .cts1609_vision {margin-top:20px; padding-top:15px; padding-bottom:15px;}
+    .cts1609_vision p {font-size:16px;}
+
+    .cts1609_assignment {margin-top:20px;}
+    .cts1609_assignment .assignment_item {display:block; width:auto; margin-right:0; margin-bottom:15px;}
+    .cts1609_assignment .assignment_item:before {height:200px; background-size:contain;}
+    .cts1609_assignment .assignment_item p {margin-top:15px; font-size:16px;}
+}
+
+/*옥외광고업등록안내*/
+@media all and (max-width:1300px) and (min-width:641px){
+    .cts1706 .quick.small .quick_inner{height:145px;}
+    .cts1706 .quick.small .quick_title{height:100%;}
+}
+
+/*도시재생 - 아카이브 - 소식지*/
+.cts1770 .sd_newsletter .list_box .gallery_item .img_area img{width:100%;}
+
+/*부동산 - 토지등급열람*/
+.cts1814 .search_box.type2 .sd_input{vertical-align:middle;}
+.cts1814 .search_box.type2 .search_btn__box{vertical-align:middle;}
+
+/*부동산 - 바뀐지번찾기*/
+.cts1815 .search_box.type2 .sd_input{vertical-align:middle;}
+.cts1815 .search_box.type2 .search_btn__box{vertical-align:middle;}
+
+@media screen and (min-width: 640px) {
+    .cts1815 .search_box.type2 select.sd_input{filter:initial;}
+}

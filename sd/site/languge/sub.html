@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/site/languge/css/sub.css" />
+    <!--[if lt IE 9]><script src="/common/js/html5.js"></script><![endif]-->
+    <script src="/common/js/jquery-1.12.4.min.js"></script>
+    <script src="/common/js/jquery.easing.1.3.min.js"></script>
+    <script src="/common/js/plugins.js"></script>
+    <script src="/common/js/program.min.js"></script>
+    <script>
+        var site = {
+            id : '@@{siteInfo.siteId}',
+            key : '@@{key}',
+            layout : '@@{layout}',
+            order : '@@{menuInfo.naviList[0].menuOrdr}',
+            login : '<% if( null != loginVO ) { %>true<% }else{ %>false<% } %>'
+        };
+        site.id = 'languge' // 개발시 삭제 해주세요!
+    </script>
+    <script src="/common/js/layout.js"></script>
+    <script src="/site/languge/js/common.js"></script>
+    <script src="/site/wide/js/sub.js"></script>
+    <script src="/site/languge/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+<body id="@@{layout}@@{menuInfo.naviList[0].menuOrdr}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+    <header id="header">
+        <h1 class="skip">@@{siteInfo.siteNm}</h1>
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="home">
+
+            <div class="gnb">
+                <div class="wrap clearfix">
+                    <div class="link">
+                        <ul class="link_list clearfix">
+                            <li class="link_item"><a href="#n" class="link_anchor">HOME</a></li>
+                            <li class="link_item"><a href="#n" class="link_anchor">SITEMAP</a></li>
+                            <li class="link_item language">
+                                <button type="button" class="language_button">LANGUAGE</button>
+                                <div class="language_panel">
+                                    <ul class="language_list">
+                                        <li class="language_item"><a href="#n" class="language_anchor">English</a></li>
+                                        <li class="language_item"><a href="#n" class="language_anchor">中文</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo">
+                <div class="wrap">
+                    <a href="./index.do" class="logo_anchor">
+                        <span class="logo_image">
+                            <span class="skip">seongdong-gu logo</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="lnb" class="lnb">
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="link">
+                            <ul class="link_list clearfix">
+                                <li class="link_item"><a href="#n" class="link_anchor">KOR</a></li>
+                                <li class="link_item"><a href="#n" class="link_anchor">EN</a></li>
+                                <li class="link_item"><a href="#n" class="link_anchor">CHN</a></li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                            <ul class="sns_list clearfix">
+                                <li class="sns_item n1"><a href="#n" class="sns_anchor">페이스북</a></li>
+                                <li class="sns_item n2"><a href="#n" class="sns_anchor">트위터</a></li>
+                                <li class="sns_item n3"><a href="#n" class="sns_anchor">네이버블로그</a></li>
+                                <li class="sns_item n4"><a href="#n" class="sns_anchor">유투브</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="depth depth1"> <!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>Seongdong-gu</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">History of seongdong-gu</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Symbol of seongdong-gu</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Civil complaint information</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Information on the Ward Office Premises</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Directions to the Ward Office</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>Life & Living</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Counseling service center with foreign language interpreters</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Free counseling service centers</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">The Community Health Center</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">Pregnancy, child delivery, and infant and children’s health</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Small Multicultural Library</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Foreign currency transfer center</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Korean language education programs</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Emergency telephone number</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Alien registration guide</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">Major hospitals and emergency rooms</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>Culture & Tourism</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="sitemap">
+                <div class="wrap">
+                    <a href="#n" class="sitemap_anchor"><span class="skip">사이트맵</span></a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div id="container">
+        <div class="wrap clearfix">
+            <div class="visual">
+
+                <div class="visual_title">
+                    <!-- 마지막 차수 추가해 주세요 -->
+                    <span>Counseling service center with foreign language interpreters</span>
+                </div>
+
+                <div class="path">
+                    <div class="wrap">
+                        <div class="path_home"><a href="./index.do"><span class="skip">HOME</span></a></div>
+                        <ol class="path_list">
+                            <li class="path_item n1">
+                                <button type="button" class="path_button">seongdong-gu</button><!-- 현재 메뉴 링크 -->
+                                <div class="path_panel basic">
+                                    <ul class="basic_list">
+                                        <!-- 1차 전체 메뉴 -->
+                                        <li class="basic_item"><a href="" class="basic_anchor">seongdong-gu</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Life & Living</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Culture & Tourism</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="path_item n2">
+                                <button type="button" class="path_button">Free counseling service centers</button><!-- 현재 메뉴 링크 -->
+                                <div class="path_panel basic">
+                                    <ul class="basic_list">
+                                        <!-- 1차메뉴 선택시 해당 2차 메뉴 -->
+                                        <li class="basic_item"><a href="" class="basic_anchor">Counseling service center with foreign language interpreters</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Free counseling service centers</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Small Multicultural Library</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Foreign currency transfer center</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Korean language education programs</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Emergency telephone number</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Alien registration guide</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Major hospitals and emergency rooms</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="path_item n3">
+                                <button type="button" class="path_button">Pregnancy, child delivery, and infant and children’s health</button><!-- 현재 메뉴 링크 -->
+                                <div class="path_panel basic">
+                                    <ul class="basic_list">
+                                        <!-- 1차메뉴 선택시 해당 3차 메뉴 -->
+                                        <li class="basic_item"><a href="" class="basic_anchor">The Community Health Center</a></li>
+                                        <li class="basic_item"><a href="" class="basic_anchor">Pregnancy, child delivery, and infant and children’s health</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+            <main class="colgroup">
+                <article>
+                    <div id="contents" class="cts@@{key}">
+                        인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다. 인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+                        인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다. 인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+
+        <div class="wrap">
+            <div class="footer_content">
+                <div class="logo">
+                    <span class="logo_image">
+                        <span class="skip">seongdong-gu logo</span>
+                    </span>
+                </div>
+
+                <div class="sns">
+                    <ul class="sns_list clearfix">
+                        <li class="sns_item n1"><a href="" class="sns_anchor"><span class="skip">페이스북</span></a></li>
+                        <li class="sns_item n2"><a href="" class="sns_anchor"><span class="skip">트위터</span></a></li>
+                        <li class="sns_item n3"><a href="" class="sns_anchor"><span class="skip">네이버블로그</span></a></li>
+                        <li class="sns_item n4"><a href="" class="sns_anchor"><span class="skip">유투브</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_info">
+                    <address><span class="address">270 GOSANJA-RO, SEONGDONG-GU SEOUL <span class="zipcode">ZIPCODE : 04750</span></span><span class="tel n1">TEL. 82-2-2286-5114</span><span class="tel n2">FAX. 82-2-2286-5700</span></address>
+                    <p class="copyright">SEONGDONG-GU. ALL RIGHTS RESERVED</p>
+                </div>
+                <!--
+                <div class="footer_info">
+                    <address><span class="address">@@{siteInfo.insttAdres}</span><span class="tel n1">TEL. 82-2-2286-5114</span><span class="tel n2">TEL. 82-2-2286-5700</span></address>
+                    <p class="copyright">@@{siteInfo.insttAdres}</p>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>
