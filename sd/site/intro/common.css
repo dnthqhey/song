@@ -1,6 +1,0 @@
-@charset "utf-8";
-
-/* 로고 */
-.home .logo_anchor{border-color:#846f65;}
-.home .logo_anchor:before{background-position:left 66.66%; background-size:100% 846.34%;}
-.home .logo_anchor:after{background-color:#846f65;}
