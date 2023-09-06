@@ -60,7 +60,7 @@ request.setAttribute("siteInfo", siteInfo);
 				url: '/site/${siteInfo.siteId}/css/sub.css',
 				success : function(data) {
 					data = data.replace("@import url('/site/${siteInfo.siteId}/css/common.css');", "");
-					data = data.replace("@import url('/site/${siteInfo.siteId}/css/sub_layout.css');", "");
+					data = data.replace("@import url('/site/${siteInfo.siteId}/css/sublayout.css');", "");
 					data += "@import url('/common/css/print.css');";
 					$.tag.head.append("<style>" + data + "</style>");
 				}
