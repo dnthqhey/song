@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="영등포구" />
+    <meta name="description" content="영등포구" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/font_ie8.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/sub.css" />
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.responsive.min.js"></script>
+	<script src="js/program.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="./js/sub.js"></script>
+    <title>영등포구 통합검색</title>
+</head>
+
+<body id="sub" class="sub">
+<div class="accessibility">
+	<a href="#contents">본문 바로가기</a>
+</div>
+<div id="wrapper">
+    <header id="header">
+        <div class="header_top">
+			<div class="wrap clearfix">
+				<ul class="gnb_left clearfix">
+					<li class="on"><a href="/www/index.do" target="_blank" title="새창" class="ydp"><span>영등포구청</span></a></li>
+					<li><a href="" class="rsvt"><span>통합예약</span></a></li>
+					<li><a href="" class="map"><span>시설안내지도</span></a></li>
+				</ul>
+				<ul class="gnb_right clearfix">
+					<li><a href="" class="login">로그인</a></li>
+					<li><a href="" class="join">회원가입</a></li>
+					<li><a href="" class="sitemap">사이트맵</a></li>
+					<li class="active_box language">
+						<button type="button" class="active_btn">LANGUAGE</button>
+						<div class="active_content">
+							<ul>
+								<li><a href="">English</a></li>
+								<li><a href="">Chinese</a></li>
+								<li><a href="">Japanese</a></li>
+							</ul>
+						</div>					
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header_box">
+			<div class="wrap">
+				<h1 class="logo"><a href=""><span class="ir">탁트인 영등포</span><span class="department">통합검색</span></a></h1>
+				<section class="searchbox">
+					<form action=""><!--action 항목이 비어있지 않도록 개발요망!!-->
+						<fieldset>
+							<legend>통합검색</legend>
+							<div class="search clearfix">
+								<h2 class="skip">통합검색</h2>
+								<div class="serach_wrap">
+									<label for="total_search" class="skip">검색어 입력</label>
+									<input type="search" name="total_search" id="total_search" class="total_search" placeholder="영등포" />
+									<button type="button" class="removetext">검색어 제거</button>
+									<input type="submit" value="검색" class="search_submit" />
+								</div>
+								<div class="popular_keyword clearfix">
+									<h3 class="title">추천검색어</h3>
+									<div class="list clearfix">
+										<div class="slide"><a href="">대형폐기물, </a></div>
+										<div class="slide"><a href="">주택과, </a></div>
+										<div class="slide"><a href="">지방세납세, </a></div>
+										<div class="slide"><a href="">여권</a></div>
+									</div>
+								</div>
+								<button type="button" class="detail_search">상세검색</button>
+								<div class="research">
+									<span class="temp_checkbox">
+										<input type="checkbox" id="" />
+									<label for="">결과 내 재검색</label>
+									</span>
+								</div>
+							</div>
+							<div class="detailbox">
+								<div class="innerbox">
+									<ul>
+										<li class="list list01 period">
+											<span class="icon">검색기간</span>
+											<div class="listbox clearfix">
+												<div class="itembox item01">
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_001" />
+														<label for="check_001">전체기간</label>
+													</span>
+												</div>
+												<div class="itembox item02">
+													<div class="p-date-group textbox">
+                                                        <div class="p-form-group p-date" data-date="datepicker">
+                                                            <input type="text" title="검색기간 시작일" class="p-input period_start" placeholder="yyyy-mm-dd" />
+                                                            <div class="p-input__split">
+                                                                <button type="button" class="p-input__item p-date__icon">달력 열기</button>
+                                                            </div>
+                                                        </div>
+                                                        <span class="p-form__split">~</span>
+                                                        <div class="p-form-group p-date"  data-date="datepicker">
+                                                            <input type="text" title="검색기간 종료일" class="p-input period_end" placeholder="yyyy-mm-dd" />
+                                                            <div class="p-input__split">
+                                                                <button type="button" class="p-input__item p-date__icon">달력 열기</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+												</div><!--//.itembox-->
+												<div class="itembox item03">
+													<button type="button" class="period_btn" data-period="w">1주</button>
+													<button type="button" class="period_btn" data-period="m">1개월</button>
+													<button type="button" class="period_btn" data-period="y">1년</button>
+												</div><!--//.itembox-->
+											</div>
+										</li>
+										<li class="list list02">
+											<span class="icon">검색방법</span>
+											<div class="listbox clearfix">
+												<div class="itembox item01">
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_002" />
+														<label for="check_002">하나라도 포함된 결과(OR)</label>
+													</span>
+												</div>
+												<div class="itembox item02">
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_003" />
+														<label for="check_003">제외하는 단어</label>
+													</span>
+													<span class="textbox">
+														<label for="" class="skip">제외하는 단어</label>
+														<input type="text" id="" class="p-input" />
+													</span>
+												</div>
+											</div>
+										</li>
+										<li class="list list03">
+											<span class="icon">검색범위</span>
+											<div class="listbox">
+												<div class="itembox range item01">
+													<span class="temp_checkbox">
+														<input type="checkbox" data-all="y" id="check_004" />
+														<label for="check_004">전체</label>
+													</span>
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_005" />
+														<label for="check_005">제목</label>
+													</span>
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_006" />
+														<label for="check_006">내용</label>
+													</span>
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_007" />
+														<label for="check_007">파일명</label>
+													</span>
+													<span class="temp_checkbox">
+														<input type="checkbox" id="check_008" />
+														<label for="check_008">파일내용</label>
+													</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<button type="button" class="detail_close">닫기</button>
+							</div>
+						</fieldset>
+					</form>
+				</section><!--//search-->
+				<div class="lnb">
+                <nav class="menu">
+                    <h2 class="skip">주메뉴</h2>
+                    <div class="depth depth1">
+                        <ul class="depth_list depth1_list clearfix">
+                            <li class="depth_item depth1_item active"><a href="" class="depth_text depth1_text">통합검색</a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">메뉴검색</a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">직원 및 담당업무</a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">영등포소식</a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">민원서식</a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">웹페이지</a></li>
+							<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">게시판</a></li>
+							<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">멀티미디어</a></li>
+							<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">SNS</a></li>
+							<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">통합예약</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+			</div><!--//wrap-->
+		</div>
+	</header>
+	<div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+                        <div class="sub_title">
+                            <h2>검색어 <strong>“영등포”</strong>에 대한 통합검색결과는 <mark>“30,251”</mark>건입니다.</h2>
+                        </div>
+					</header>
+					<div id="contents">
+						<section class="result">
+                            <h3>영등포1번가</h3>
+							<div class="bannerbox">
+								<div class="conbox">
+									<h4 class="title">소통공감 플랫폼 영등포1번家</h4>
+									<ul class="bu">
+										<li>영등포신문고 : 1,000명 이상 공감한 청원은 구청장이 직접 답변을 드립니다.</li>
+										<li>탁트인소통실 :  구청장에게 하고 싶은 말씀을 들려주세요.</li>
+										<li>찬반투표 :  영등포구에서 추진하는 각종 정책의 찬반 의견을 듣고있습니다.</li>
+									</ul>
+									<div class="link"><a href="http://www.ydp.go.kr/one/main.do" target="_blank" title="새창"><span>홈페이지  : http://www.ydp.go.kr/one/main.do</span></a></div>
+								</div>
+							</div>
+                        </section>
+						<section class="result">
+                            <h3>영등포소식 (총<mark class="em_red">26,882</mark>건)</h3>
+                            <div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						<section class="result staff">
+                            <h3>직원 및 담당업무 (총 <mark class="em_red">326</mark>건)</h3>
+                            <table class="p-table simple staff_list" data-table="rwd" data-tabletype="simple" data-breakpoint="765">
+                                <caption>직원 및 담당업무 - 부서명, 성명/직위, 전화번호, 업무내용, 부서위치</caption>
+                                <colgroup>
+                                    <col style="width:15%;" />
+                                    <col style="width:15%;" />
+                                    <col style="width:10%;" />
+                                    <col />
+                                    <col style="width:20%;" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">부서명</th>
+                                    <th scope="col">성명/직위</th>
+                                    <th scope="col">전화번호</th>
+                                    <th scope="col">업무내용</th>
+                                    <th scope="col">부서위치</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                <tr>
+                                    <td>일자리경제과<br />기업지원팀</td>
+                                    <td><strong>박소연</strong><br />주무관</td>
+                                    <td>02-2670-3422</td>
+                                    <td class="text_left">지식산업센터 설립 등록 공장등록-<br />
+									<mark class="em_red">영등포</mark>구 소상공인회 지원</td>
+                                    <td>영등포구청 본관 5층</td>
+                                </tr>
+                                <tr>
+                                    <td>가로경관과<br />가로경관팀</td>
+                                    <td><strong>박열</strong><br />주무관</td>
+                                    <td>0001</td>
+                                    <td class="text_left">가로정비 단속(C조)<br />
+									<mark class="em_red">영등포</mark>전지역 가로정비 단속 및 순찰 등</td>
+                                    <td>영등포구청 별관 4층</td>
+                                </tr>
+								<tr>
+                                    <td>가로경관과<br />가로경관팀</td>
+                                    <td><strong>박소연</strong><br />팀장</td>
+                                    <td>0001</td>
+                                    <td class="text_left">가로정비 단속(B조)<br />
+									<mark class="em_red">영등포</mark>전지역 가로정비 단속 및 순찰 등</td>
+                                    <td>영등포구청 별관 1층</td>
+                                </tr>
+								<tr>
+                                    <td>가로경관과<br />가로경관팀</td>
+                                    <td><strong>김용근</strong><br />주무관</td>
+                                    <td>0001</td>
+                                    <td class="text_left">가로정비 단속<br />
+									<mark class="em_red">영등포</mark>전지역 가로정비 단속 및 순찰 등<br />행정차량(87소0687) 유지 관리</td>
+                                    <td>영등포구청 본관 2층</td>
+                                </tr>
+								<tr>
+                                    <td>가로경관과<br />가로경관팀</td>
+                                    <td><strong>김선훈</strong><br />주무관</td>
+                                    <td>0001</td>
+                                    <td class="text_left">가로정비 단속(B조)<br />
+									<mark class="em_red">영등포</mark>전지역 가로정비 단속 및 순찰 등</td>
+                                    <td>영등포구청 본관 1층</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="" class="more">더보기</a>
+                        </section>
+						<section class="result menu_result">
+                            <h3>메뉴검색 (총<mark class="em_red">875</mark>건)</h3>
+                            <ul class="bu">
+                                <li>
+									<a href="" title="새창" target="_blank">
+										<span class="site">[영등포구청]</span>
+										<span class="path_text">&gt; 민원안내 &gt; 민원서식 &gt; 민원사무편람</span>
+									</a>
+								</li>
+                                <li>
+									<a href="" title="새창" target="_blank">
+										<span class="site">[영등포구보건소]</span>
+										<span class="path_text">&gt; 진료민원상담 &gt; 민원서식</span>
+									</a>
+								</li>
+								 <li>
+									<a href="" title="새창" target="_blank">
+										<span class="site">[영등포구청]</span>
+										<span class="path_text">&gt; 민원안내 &gt; 민원서식 &gt; 민원서식(민원24)</span>
+									</a>
+								</li>
+								 <li>
+									<a href="" title="새창" target="_blank">
+										<span class="site">[영등포구청]</span>
+										<span class="path_text">&gt; 민원신청 &gt; 전자민원창구 &gt; 민원신청</span>
+									</a>
+								</li>
+								 <li>
+									<a href="" title="새창" target="_blank">
+										<span class="site">[영등포구청]</span>
+										<span class="path_text">&gt; 민원신청 &gt; 전자민원창구 &gt; 민원신청</span>
+									</a>
+								</li>
+                            </ul>
+                            <a href="" class="more">더보기</a>
+                        </section>
+						<section class="result">
+                            <h3>웹페이지 (총<mark class="em_red">26,882</mark>건)</h3>
+                            <div class="resultbox">
+                                <div class="title"><a href="">지역특성</a></div>
+								<div class="text">현재의 영등포구 지역은 조선시대에는 주로 경기도 시흥현 하북면(영등포동, 신길동), 상북면(당산동, 도림동, 문래동, 양평동, 대림동), 남산면(양화동)에 속하였다. 그러나 여의동은 한성부 연희방에 4년(1910년)일제가 우리나라를 강점하면서 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력 …</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 지역특성</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">지역특성</a></div>
+								<div class="text">현재의 영등포구 지역은 조선시대에는 주로 경기도 시흥현 하북면(영등포동, 신길동), 상북면(당산동, 도림동, 문래동, 양평동, 대림동), 남산면(양화동)에 속하였다. 그러나 여의동은 한성부 연희방에 4년(1910년)일제가 우리나라를 강점하면서 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력 …</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 지역특성</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">지역특성</a></div>
+								<div class="text">현재의 영등포구 지역은 조선시대에는 주로 경기도 시흥현 하북면(영등포동, 신길동), 상북면(당산동, 도림동, 문래동, 양평동, 대림동), 남산면(양화동)에 속하였다. 그러나 여의동은 한성부 연희방에 4년(1910년)일제가 우리나라를 강점하면서 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력해주세요 3줄이내 출력 …</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 지역특성</div>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						<section class="result board">
+                            <h3>게시판 (총<mark class="em_red">26,882</mark>건)</h3>
+                            <div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle icons folder">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle icons folder">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">[<mark class="em_red">영등포</mark>소식] <mark class="em_red">영등포</mark>구 마을자치센터 직원 채용공고</a></div>
+								<div class="text">「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와 민관협치로 마을공동체 활성화와 주민자치를 촉진하여 민주주의 발전에 기여하고 인간존중, 소통과 「사단법인 마을」은 <mark class="em_red">영등포</mark>구로부터 <mark class="em_red">영등포</mark>마을자치센터 수탁기관에 선정되었습니다. 주민주도와...</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">[공고문] 영등포마을자치센터직원채용공고[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+										<li>
+											<div class="filetitle icons folder">[붙임] 응시원서 개인정보동의서[1].hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="path">[영등포구청] 영등포소개 &gt; 구정소식 &gt; 영등포소식</div>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						<section class="result board">
+                            <h3>민원서식 (총<mark class="em_red">26,882</mark>건)</h3>
+                            <div class="resultbox">
+                                <div class="title"><a href="">통신판매업신고</a></div>
+								<div class="text">통신판매업자의 신규 신고 서식</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">구매안전서비스 비적용 대상 확인서.hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">통신판매업신고</a></div>
+								<div class="text">통신판매업자의 신규 신고 서식</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">구매안전서비스 비적용 대상 확인서.hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="resultbox">
+                                <div class="title"><a href="">통신판매업신고</a></div>
+								<div class="text">통신판매업자의 신규 신고 서식</div>
+								<div class="filebox">
+									<ul class="bu">
+										<li>
+											<div class="filetitle icons folder">구매안전서비스 비적용 대상 확인서.hwp</div>
+											<div class="downbox">
+												<a href="" class="down"><span>hwp 파일</span></a>
+												<a href="" class="view">미리보기</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						<section class="result">
+                            <h3>멀티미디어 (총 <mark class="em_red">329</mark>건)</h3>
+                            <div class="photo">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank" style="background-image:url('images/sub/photo_item.jpg');">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="" title="새창" target="_blank">
+                                            <span class="photo_title"><mark class="em_red">영등포</mark>-평화의 소녀상<br />후원의 밤</span>
+                                            <time datetime="2019-08-15">[2019-08-15]</time>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="" class="more">더보기</a>
+                        </section>
+						<section class="result">
+							<h3>SNS (총 <mark class="em_red">329</mark>건)</h3>
+							<div class="sns_result">
+								<ul>
+									<li class="list blog">
+										<div class="icon">블로그</div>
+										<div class="conbox">
+											<div class="text">구민여러분~ 영등포구 법률홈닥터 및 서울금융복지상담센터 사무실이 이전하게 되어 알려드립니다!!변경 전 영등포구청 3층에 위치했던 법률홈닥터, 서울금융복지상담센터는 영등포구청 7층 재무과 옆으로 이전했습니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다...</div>
+											<div class="linkbox">
+												<a href="http://blog.naver.com/iloveydp/221639331409" target="_blank" title="새창"><span>http://blog.naver.com/iloveydp/221639331409</span></a>
+											</div>
+										</div>
+									</li>
+									<li class="list twitter">
+										<div class="icon">트위터</div>
+										<div class="conbox">
+											<div class="text">구민여러분~ 영등포구 법률홈닥터 및 서울금융복지상담센터 사무실이 이전하게 되어 알려드립니다!!변경 전 영등포구청 3층에 위치했던 법률홈닥터, 서울금융복지상담센터는 영등포구청 7층 재무과 옆으로 이전했습니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다...서울금융복지상담센터는 영등포구청 7층 재무과 옆으로 이전했습니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다...</div>
+											<div class="linkbox">
+												<a href="http://blog.naver.com/iloveydp/221639331409" target="_blank" title="새창"><span>http://blog.naver.com/iloveydp/221639331409</span></a>
+											</div>
+										</div>
+									</li>
+									<li class="list facebook">
+										<div class="icon">페이스북</div>
+										<div class="conbox">
+											<div class="text">구민여러분~ 영등포구 법률홈닥터 및 서울금융복지상담센터 사무실이 이전하게 되어 알려드립니다!!변경 전 영등포구청 3층에 위치했던 법률홈닥터, 서울금융복지상담센터는 영등포구청 7층 재무과 옆으로 이전했습니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다 최대3줄출력합니다...</div>
+											<div class="linkbox">
+												<a href="http://blog.naver.com/iloveydp/221639331409" target="_blank" title="새창"><span>http://blog.naver.com/iloveydp/221639331409</span></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						<section class="result">
+							<h3>통합예약 (총 <mark class="em_red">329</mark>건)</h3>
+							<div class="reservation_result">
+								<ul class="clearfix">
+									<li class="list education ing"><!-- 교육강좌:education, 온라인접수:online, 접수중:ing, 접수대기:standby, 접수마감:closed -->
+										<div class="statebox">
+											<span class="icon group">교육강좌</span>
+											<span class="icon state">접수중</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">[창업특강]쇼핑몰 상세 페이지제작&amp;관리,홍보</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+									<li class="list education standby">
+										<div class="statebox">
+											<span class="icon group">교육강좌</span>
+											<span class="icon state">접수대기</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">컴퓨터 기초속성반</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+									<li class="list online closed">
+										<div class="statebox">
+											<span class="icon group">온라인접수</span>
+											<span class="icon state">접수마감</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">2019년 제7회차 영등포 토요누리체험단 방방곡곡 참가자 모집</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+									<li class="list education ing">
+										<div class="statebox">
+											<span class="icon group">교육강좌</span>
+											<span class="icon state">접수중</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">[창업특강]쇼핑몰 상세 페이지제작&amp;관리,홍보</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+									<li class="list education standby">
+										<div class="statebox">
+											<span class="icon group">교육강좌</span>
+											<span class="icon state">접수대기</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">컴퓨터 기초속성반</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+									<li class="list online ing">
+										<div class="statebox">
+											<span class="icon group">온라인접수</span>
+											<span class="icon state">접수중</span>
+										</div>
+										<div class="titlebox">
+											<div class="title"><a href="">2019년 제7회차 영등포 토요누리체험단 방방곡곡 참가자 모집</a></div>
+										</div>
+										<div class="textbox">
+											<ul class="bu">
+												<li>모집인원 : 50명</li>
+												<li>모집방식 : 선착순</li>
+												<li>접수기간 : 2019-09-01~2019-09-12</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<a href="" class="more">더보기</a>
+						</section>
+						
+						<div class="p-pagination">
+							<div class="p-page">
+								<span class="p-page__control">
+									<a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+									<a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+									<a href="#" class="p-page__link prev-one">이전 페이지</a>
+								</span>
+								<span class="p-page__link-group">
+									<strong title="현재 1페이지" class="p-page__link">1</strong>
+									<a href="" title="2페이지 이동" class="p-page__link active">2</a>
+									<a href="" title="3페이지 이동" class="p-page__link">3</a>
+									<a href="" title="4페이지 이동" class="p-page__link">4</a>
+									<a href="" title="5페이지 이동" class="p-page__link">5</a>
+									<a href="" title="6페이지 이동" class="p-page__link">6</a>
+									<a href="" title="7페이지 이동" class="p-page__link">7</a>
+									<a href="" title="8페이지 이동" class="p-page__link">8</a>
+									<a href="" title="9페이지 이동" class="p-page__link">9</a>
+									<a href="" title="10페이지 이동" class="p-page__link">110</a>
+								</span>
+								<span class="p-page__control">
+									<a href="#" class="p-page__link next-one">다음 페이지</a>
+									<a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+									<a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+								</span>
+							</div>
+						</div>
+
+					</div>
+				</article>
+			</main>
+			<div class="side">
+                <div class="rank">
+                    <h2>인기검색어</h2>
+                    <div class="tab_menu">
+                        <div class="tab_nav">
+                            <a href="#day" class="active">일간</a>
+                            <a href="#week">주간</a>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="day" class="tab_content active">
+                                <ol>
+                                    <li>
+                                        <a href="#n">어린이(1)</a>
+                                        <span class="rank_state"><span class="up">상승</span>4</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="down">하락</span>1</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="new">NEW</span></span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div id="week" class="tab_content">
+                                <ol>
+                                    <li>
+                                        <a href="#n">어린이(2)</a>
+                                        <span class="rank_state"><span class="up">상승</span>4</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="down">하락</span>1</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="new">NEW</span></span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href="#n">어린이</a>
+                                        <span class="rank_state"><span class="same">동일</span>0</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my">
+                    <h2>내가찾은검색어</h2>
+                    <div class="my_content">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#n" class="my_query">영등포</a>
+                                <a href="#n" class="my_delete">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#n" class="my_query">새올</a>
+                                <a href="#n" class="my_delete">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#n" class="my_query">규제신고센터</a>
+                                <a href="#n" class="my_delete">삭제</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<!-- //#container -->
+	<footer id="footer">
+		<div class="wrap">
+			<div class="footer_info">
+				<p class="copyright">COPYRIGHT(C) YEONGDEUNGPO-GU. ALL RIGHTS RESERVED.</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- //#wrapper -->
+</body>
+</html>

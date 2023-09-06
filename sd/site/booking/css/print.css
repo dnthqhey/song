@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+page{display:block; margin:0 auto; min-height:27cm;}
+page[size="A4"]{width:21cm; min-height:27cm;}
+.print_area{-webkit-print-color-adjust:exact;}
+.certificate{position:relative; height:1122.52px; margin:0 auto; padding:0 3px; box-sizing:border-box; color:#000; letter-spacing:0; font-family:'NanumMyeongjo';}
+.waiver:before{display:block; position:absolute; top:0; left:0; width:100%; height:100%; background:url('/site/booking/images/program/certificate_bg.png') no-repeat top center / contain;}
+.waiver:after{display:block; position:absolute; top:-30px; left:0; bottom:0; right:0; width:400px; height:335px; margin:auto; background:url('/site/booking/images/program/certificate_deco.png') no-repeat center center / contain;}
+
+.certificate .inner_box{padding:39px 32px;}
+.certificate .header h1 .number{display:block; margin-bottom:103px; font-size:18px; line-height:26px;}
+.certificate .header h1 .title{display:block; margin-bottom:106px; font-size:70px; line-height:75px; text-align:center;}
+
+.certificate .contents .certificate_info{margin-bottom:94px; padding-left:30px; padding-right:30px;}
+.certificate .contents .certificate_info li{font-size:22px; line-height:26px;}
+.certificate .contents .certificate_info li+li{margin-top:15px;}
+.certificate .contents .certificate_info li .dd{position:relative; padding-left:15px;}
+.certificate .contents .certificate_info li .dd:before{display:block; position:absolute; top:0; left:0; line-height:26px; content:':'}
+.certificate .contents .certificate_text{margin-left:-12px; font-size:26px; line-height:40px; letter-spacing:-0.035em; text-align:center;}
+
+.certificate .footer .date{position:absolute; bottom:208px; left:0; right:0; font-size:25px; text-align:center;}
+.certificate .footer .mayor{position:absolute; bottom:115px; left:0; right:0; font-size:35px; text-align:center;}
+
+@media page {
+    body, page{size:auto; margin: 0;}
+}

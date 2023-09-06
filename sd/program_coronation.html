@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" type="text/css" href="site/booking/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="site/booking/css/sub.css" />
+    <!--[if lt IE 9]><script src="common/js/html5.js"></script><![endif]-->
+    <script src="common/js/jquery-1.12.4.min.js"></script>
+    <script src="common/js/jquery.easing.1.3.min.js"></script>
+    <script src="common/js/plugins.js"></script>
+    <script src="common/js/program.min.js"></script>
+    <script>
+        var site = {
+            id : '@@{siteInfo.siteId}',
+            key : '@@{key}',
+            layout : '@@{layout}',
+            order : '@@{menuInfo.naviList[0].menuOrdr}',
+            login : '<% if( null != loginVO ) { %>true<% }else{ %>false<% } %>'
+        };
+    </script>
+    <script src="site/booking/js/layout.js"></script>
+    <script src="site/booking/js/common.js"></script>
+    <script src="site/booking/js/sub.js"></script>
+    <script src="site/booking/js/zoom.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+<body id="@@{layout}@@{menuInfo.naviList[0].menuOrdr}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+    <header id="header">
+        <h1 class="skip">@@{siteInfo.siteNm}</h1>
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="home">
+            <div class="logo">
+                <a href="site/booking/main.html" class="logo_anchor">
+                    <span class="logo_image"><img src="site/booking/images/common/logo.png" alt="성동구" /></span>
+                    <span class="logo_name">통합예약</span>
+                </a>
+            </div>
+            <div class="link">
+                <ul class="link_list clearfix">
+                    <li class="link_item login"><a href="#n" class="link_anchor">로그인</a></li>
+                    <!--<li class="link_item"><a href="#n" class="link_anchor">회원가입</a></li>-->
+                </ul>
+            </div>
+
+            <div id="lnb" class="lnb">
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="m_logo">
+                            <a href="site/booking/main.html" class="logo_anchor">
+                                <span class="logo_image"><img src="site/booking/images/common/logo_m.png" alt="성동구" /></span>
+                                <span class="logo_name">통합예약</span>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <ul class="link_list clearfix">
+                                <li class="link_item"><a href="#n" class="link_anchor"><span>로그인</span></a></li>
+                                <li class="link_item"><a href="#n" class="link_anchor"><span>나의예약 바로가기</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="site">
+                            <div class="site_item"><a href="#n" class="site_anchor"><span>성동구청 바로가기</span></a></div>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="depth depth1"> <!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>교육/강좌</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">교육/강좌</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list cut">
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_blank" title="새창" class="depth_text depth4_text">4차메뉴명 4차메뉴명 4차메뉴명 4차메뉴명(새창)</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창링크</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>체험/견학</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">체험/견학</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="site/booking/program3_5.html" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>시설예약</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">시설예약</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="site/booking/program3_5.html" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>행사접수</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">행사접수</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="site/booking/program3_5.html" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>공유(도서/물품)</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">공유(도서/물품)</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="site/booking/program3_5.html" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>생활서비스</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">생활서비스</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창" class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text"><span>공지사항</span></a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_subject">공지사항</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text"><span><em>2차메뉴</em></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+
+                <div class="my_reserve">
+                    <a href="#" class="reserve_btn">나의예약 바로가기</a>
+                </div>
+
+            </div>
+
+            <div class="gnb">
+                <div class="sitemap">
+                    <a href="#n" class="sitemap_anchor">전체메뉴</a>
+                </div>
+                <div class="site">
+                    <div class="site_item n1"><a href="#n" class="site_anchor">성동구청</a></div>
+                    <div class="link_zoom">
+                        <span class="zoom_title">화면 크게</span>
+                        <ul class="zoom_list">
+                            <li class="zoom_item plus"><button type="button" onclick="Zoom.exec(1); return false;">축소</button></li>
+                            <li class="zoom_item minus"><button type="button" onclick="Zoom.exec(-1); return false;">확대</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div id="container">
+        <div class="wrap clearfix">
+
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+
+                        <div class="sub_info">
+                            <div class="sub_title">
+                                <h2>1차메뉴명</h2>
+                                <span>모든 예약을 쉽고 빠르게!</span>
+                            </div>
+
+                            <div class="path">
+                                <ul class="path_list clearfix">
+                                    <li class="path_home"><a href="index.do">홈</a></li>
+                                    <li class="list list01">
+                                        <button type="button" title="목록열기" class="path_btn"><span>현재 1차 메뉴명</span></button>
+                                        <div class="layer">
+                                            <ul>
+                                                <li><a href="" target="_self"><span>1차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>1차메뉴 1차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>1차메뉴 1차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>1차메뉴 1차메뉴</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list list02">
+                                        <button type="button" title="목록열기" class="path_btn"><span>현재 2차 메뉴명</span></button>
+                                        <div class="layer">
+                                            <ul>
+                                                <li><a href="" target="_self"><span>2차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>2차메뉴 2차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>2차메뉴 2차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>2차메뉴 2차메뉴</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list list03">
+                                        <button type="button" title="목록열기" class="path_btn"><span>현재 3차 메뉴명</span></button>
+                                        <div class="layer">
+                                            <ul>
+                                                <li><a href="" target="_self"><span>3차메뉴</span></a></li>
+                                                <li class="active"><a href="" target="_self"><span>3차메뉴 3차메뉴</span></a></li><!--현재 메뉴에 active 클래스 추가 -->
+                                                <li><a href="" target="_self"><span>3차메뉴 3차메뉴</span></a></li>
+                                                <li><a href="" target="_self"><span>3차메뉴 3차메뉴</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="path_m"><!-- 모바일용 path -->
+                                    <li class="path_home"><a href="index.do">홈</a></li>
+                                    <li class="list2 list01">
+                                        <a href="#n" class="path_m01">현재 1차 메뉴명</a>
+                                    </li>
+                                    <li class="list2 list02">
+                                        <a href="#n" class="path_m02">현재 2차 메뉴명</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </header>
+                    <div id="contents" class="cts@@{key}">
+
+                        <!-- 대관 목록-->
+                        <div class="p-wrap program_list eduform">
+
+                            <form name="r" id="r" action="" method="">
+                                <fieldset>
+                                    <legend>게시물 검색</legend>
+                                    <div class="card card--bgcolor">
+                                        <div class="search_wrap">
+                                            <div class="search_band n1">
+                                                <label for="aa">운영기관</label>
+                                                <select name="aa" id="aa" class="p-input p-input--auto yeyak" title="운영기관 선택">
+                                                    <option value="">전체</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                </select>
+                                            </div>
+                                            <div class="search_band n2">
+                                                <label for="bb">서비스유형</label>
+                                                <select name="bb" id="bb" class="p-input p-input--auto yeyak" title="구분 선택">
+                                                    <option value="">전체</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                </select>
+                                            </div>
+                                            <div class="search_band n3">
+                                                <label for="cc">지역명</label>
+                                                <select name="cc" id="cc" class="p-input p-input--auto yeyak" title="지역명 선택">
+                                                    <option value="">전체</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                    <option value="">---</option>
+                                                </select>
+                                            </div>
+                                            <div class="search_band n4">
+                                                <label for="dd">이용요금</label>
+                                                <select name="dd" id="dd" class="p-input p-input--auto yeyak" title="이용요금 선택">
+                                                    <option value="">전체</option>
+                                                    <option value="">무료</option>
+                                                    <option value="">유료</option>
+                                                </select>
+                                            </div>
+                                            <div class="search_band n5">
+                                                <label for="ee">운영상태</label>
+                                                <select name="ee" id="ee" class="p-input p-input--auto yeyak" title="운영상태 선택">
+                                                    <option value="">전체</option>
+                                                    <option value="">접수대기</option>
+                                                    <option value="">접수중</option>
+                                                    <option value="">대기자접수</option>
+                                                    <option value="">추가접수</option>
+                                                    <option value="">접수마감</option>
+                                                    <option value="">운영중</option>
+                                                    <option value="">종료</option>
+                                                    <option value="">폐강</option>
+                                                </select>
+                                            </div>
+                                            <div class="search_band n6">
+                                                <label for="ff">프로그램명</label>
+                                                <input type="text" name="ff" id="ff" class="p-input search_input" value="" title="검색단어 입력">
+                                                <button type="submit" class="p-button">검색</button>
+                                            </div>
+                                        </div>
+                                        <div class="life_cycle">
+                                            <p class="select_cycle">생애주기선택</p>
+                                            <div class="select_btn-wrap">
+                                                <div class="select_btn_list">
+                                                    <button type="button">전체</button>
+                                                    <button type="button">유아</button>
+                                                    <button type="button">취학전어린이</button>
+                                                    <button type="button">초등학생</button>
+                                                    <button type="button">중학생</button>
+                                                    <button type="button">고등학생</button>
+                                                    <button type="button">성인</button>
+                                                    <button type="button">어르신</button>
+                                                </div>
+                                            </div>
+
+                                            <!--모바일에서부터 셀렉트 나타남-->
+                                            <select name="" id="p" title="생애주기선택" class="p-input p-input--auto">
+                                                <option value="" class="hide_option">생애주기선택</option>
+                                                <option value="">전체</option>
+                                                <option value="">유아</option>
+                                                <option value="">취학전어린이</option>
+                                                <option value="">초등학생</option>
+                                                <option value="">중학생</option>
+                                                <option value="">고등학생</option>
+                                                <option value="">성인</option>
+                                                <option value="">어르신</option>
+                                            </select>
+                                            <!--//모바일에서부터 셀렉트 나타남-->
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="tab">
+                                <div class="teb_menu">
+                                    <button class="tab_select"><span>교육/강좌</span></button><!-- 현재메뉴명 입력해주세요 -->
+                                    <div class="tab_panel margin_t_55 margin_b_30">
+                                        <ul class="tab_list">
+                                            <li class="tab_item active"><button type="button" class="tab_button thumbnail"><span>섬네일보기</span></button></li>
+                                            <li class="tab_item"><button type="button" class="tab_button list"><span>리스트보기</span></button></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab_content active">
+                                        <div class="box_list">
+                                            <div class="box_item" data-category="category1">
+                                                <a href="site/booking/program1_6.html">
+                                                    <div class="box_top">
+                                                        <div class="box_img">
+                                                            <img src="site/booking/images/program/coronation01.jpg" alt="추천서비스 이미지1" />
+                                                        </div>
+                                                        <div class="box_cate">
+                                                            <span class="cate_service s50">성동50플러스센터</span>
+                                                            <!-- cate_service n1교육·강좌 n2체험·교육 n3시설예약 n4행사접수 n5공연 -->
+                                                            <span class="cate_progress n1">접수대기</span>
+                                                            <!-- cate_progress n1접수대기 n2접수중 n3대기자접수 n4접수마감 n5운영중 n6종료 n7폐강-->
+                                                            <span class="cate_price n1">유료</span>
+                                                            <!-- cate_price n1유료 n2무료 -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_bottom">
+                                                        <div class="box_title">성동50플러스센터_스튜디오</div>
+                                                        <!-- box_date n1 모집기간 n2 교육기간-->
+                                                        <p class="box_date n1">
+                                                            <span class="date_box">모집기간</span>2023-03-20 ~ 2023-03-31</p>
+                                                        <p class="box_date n2">
+                                                            <span class="date_box">교육기간</span>2023-04-03 ~ 2023-12-31</p>
+                                                        <a href="site/booking/program1_6.html" target="_self" class="box_anchor"><span>자세히보기</span></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="box_item" data-category="category2">
+                                                <a href="site/booking/program1_6.html">
+                                                    <div class="box_top">
+                                                        <div class="box_img">
+                                                            <img src="site/booking/images/program/coronation02.jpg" alt="추천서비스 이미지2" />
+                                                        </div>
+                                                        <div class="box_cate">
+                                                            <span class="cate_service s50">성동50플러스센터</span>
+                                                            <!-- cate_service n1교육·강좌 n2체험·교육 n3시설예약 n4행사접수 n5공연 -->
+                                                            <span class="cate_progress n1">접수대기</span>
+                                                            <!-- cate_progress n1접수대기 n2접수중 n3대기자접수 n4접수마감 n5운영중 n6종료 n7폐강-->
+                                                            <span class="cate_price n2">무료</span>
+                                                            <!-- cate_price n1유료 n2무료 -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_bottom">
+                                                        <div class="box_title">성동50플러스센터_강의실</div>
+                                                        <!-- box_date n1 모집기간 n2 교육기간-->
+                                                        <p class="box_date n1">
+                                                            <span class="date_box">모집기간</span>2023-03-20 ~ 2023-03-31</p>
+                                                        <p class="box_date n2">
+                                                            <span class="date_box">교육기간</span>2023-04-03 ~ 2023-12-31</p>
+                                                        <a href="site/booking/program1_6.html" target="_self" class="box_anchor"><span>자세히보기</span></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="box_item" data-category="category3">
+                                                <a href="site/booking/program1_6.html">
+                                                    <div class="box_top">
+                                                        <div class="box_img">
+                                                            <img src="site/booking/images/program/coronation03.jpg" alt="추천서비스 이미지3" />
+                                                        </div>
+                                                        <div class="box_cate">
+                                                            <span class="cate_service s50">성동50플러스센터</span>
+                                                            <!-- cate_service n1교육·강좌 n2체험·교육 n3시설예약 n4행사접수 n5공연 -->
+                                                            <span class="cate_progress n2">접수중</span>
+                                                            <!-- cate_progress n1접수대기 n2접수중 n3대기자접수 n4접수마감 n5운영중 n6종료 n7폐강-->
+                                                            <span class="cate_price n2">무료</span>
+                                                            <!-- cate_price n1유료 n2무료 -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_bottom">
+                                                        <div class="box_title">성동50플러스센터_정보화교실</div>
+                                                        <!-- box_date n1 모집기간 n2 교육기간-->
+                                                        <p class="box_date n1">
+                                                            <span class="date_box">모집기간</span>2023-03-20 ~ 2023-03-31</p>
+                                                        <p class="box_date n2">
+                                                            <span class="date_box">교육기간</span>2023-04-03 ~ 2023-12-31</p>
+                                                        <a href="site/booking/program1_6.html" target="_self" class="box_anchor"><span>자세히보기</span></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="box_item" data-category="category4">
+                                                <a href="site/booking/program1_6.html">
+                                                    <div class="box_top">
+                                                        <div class="box_img">
+                                                            <img src="site/booking/images/program/coronation04.jpg" alt="추천서비스 이미지4" />
+                                                        </div>
+                                                        <div class="box_cate">
+                                                            <span class="cate_service s50">성동50플러스센터</span>
+                                                            <!-- cate_service n1교육·강좌 n2체험·교육 n3시설예약 n4행사접수 n5공연 -->
+                                                            <span class="cate_progress n2">접수중</span>
+                                                            <!-- cate_progress n1접수대기 n2접수중 n3대기자접수 n4접수마감 n5운영중 n6종료 n7폐강-->
+                                                            <span class="cate_price n1">유료</span>
+                                                            <!-- cate_price n1유료 n2무료 -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_bottom">
+                                                        <div class="box_title">성동50플러스센터_배움터3</div>
+                                                        <!-- box_date n1 모집기간 n2 교육기간-->
+                                                        <p class="box_date n1">
+                                                            <span class="date_box">모집기간</span>2023-03-20 ~ 2023-03-31</p>
+                                                        <p class="box_date n2">
+                                                            <span class="date_box">교육기간</span>2023-04-03 ~ 2023-12-31</p>
+                                                        <a href="site/booking/program1_6.html" target="_self" class="box_anchor"><span>자세히보기</span></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <div class="p_table_wrap">
+                                            <div class="thead_wrap">
+                                                <table class="p-table simple thead" data-table="rwd" data-tabletype="simple">
+                                                    <caption>대관/강좌목록 - no, 시설구분, 시설명, 접수기간, 대상, 수용인원, 이용요금, 접수방법, 선별방법, 운영상태 제공</caption>
+                                                    <colgroup>
+                                                        <col class="w5p">
+                                                        <col class="w10p">
+                                                        <col class="w15p">
+                                                        <col class="w20p">
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col">No.</th>
+                                                        <th scope="col">시설구분</th>
+                                                        <th scope="col">시설명</th>
+                                                        <th scope="col">접수기간</th>
+                                                        <th scope="col">대상</th>
+                                                        <th scope="col">수용인원</th>
+                                                        <th scope="col">이용요금</th>
+                                                        <th scope="col">접수방법</th>
+                                                        <th scope="col">선별방법</th>
+                                                        <th scope="col">운영상태</th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <!-- 반응형에서 가로 스크롤 각각 따로 움직임 -->
+                                            </div>
+                                            <div class="scroll_wrap">
+                                                <table class="p-table simple tbody" data-table="rwd" data-tabletype="simple">
+                                                    <caption>대관/강좌목록 - no, 시설구분, 시설명, 접수기간, 대상, 수용인원, 이용요금, 접수방법, 선별방법, 운영상태 제공</caption>
+                                                    <colgroup>
+                                                        <col class="w5p">
+                                                        <col class="w10p">
+                                                        <col class="w15p">
+                                                        <col class="w20p">
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+
+                                                    <tbody class="text_center">
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>강의실</td>
+                                                        <td class="subject" data-content="시설명">
+                                                            <a href="#">금호도서관 문화강좌실2</a>
+                                                        </td>
+                                                        <td>2023-04-20 10:00 ~ 2023-04-28 14:00</td>
+                                                        <td>제한없음</td>
+                                                        <td>20</td>
+                                                        <td>33,000원(부가세포함)</td>
+                                                        <td>신청서 제출(방문, 이메일)</td>
+                                                        <td>선착순</td>
+                                                        <td><span class="cate_progress n2">접수중</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>공연장</td>
+                                                        <td class="subject" data-content="시설명">
+                                                            <a href="#">성수아트홀 모듬연습실1</a>
+                                                        </td>
+                                                        <td>2023-04-20 10:00 ~ 2023-04-28 14:00</td>
+                                                        <td>제한없음</td>
+                                                        <td>20</td>
+                                                        <td>3시간 450,000</td>
+                                                        <td>유선 문의후 신청서 제출(방문,이메일)</td>
+                                                        <td>선착순</td>
+                                                        <td><span class="cate_progress n1">접수대기</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>다목적실</td>
+                                                        <td class="subject" data-content="시설명">
+                                                            <a href="#">성동50플러스센터_다목적실</a>
+                                                        </td>
+                                                        <td>2023-04-20 10:00 ~ 2023-04-28 14:00</td>
+                                                        <td>제한없음</td>
+                                                        <td>30</td>
+                                                        <td>무료</td>
+                                                        <td>유선 문의후 신청서 제출(방문,이메일)</td>
+                                                        <td>심사</td>
+                                                        <td><span class="cate_progress n3">대기자접수</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>전시실</td>
+                                                        <td class="subject" data-content="시설명">
+                                                            <a href="#">성수아뜰리에 외부미디어장치</a>
+                                                        </td>
+                                                        <td>2023-04-20 10:00 ~ 2023-04-28 14:00</td>
+                                                        <td>제한없음</td>
+                                                        <td>제한없음</td>
+                                                        <td>1일 50,000원</td>
+                                                        <td>유선 문의후 신청서 제출(방문,이메일)</td>
+                                                        <td>심사</td>
+                                                        <td><span class="cate_progress n5">운영중</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>강의실</td>
+                                                        <td class="subject" data-content="시설명">
+                                                            <a href="#">성동지역경제혁신센터 3층 세미나실</a>
+                                                        </td>
+                                                        <td>2023-04-20 10:00 ~ 2023-04-28 14:00</td>
+                                                        <td>제한없음</td>
+                                                        <td>30</td>
+                                                        <td>무료</td>
+                                                        <td>이메일 또는 팩스제출 후 유선확인</td>
+                                                        <td>심사</td>
+                                                        <td><span class="cate_progress n2">접수중</span></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="lecture_list">
+                                            <div class="lecture_item">
+                                                <div class="lecture_receipt"><span class="cate_progress n2">접수중</span>접수기간 : 2023-05-22 10:00 ~2023-05-31 14:00</div>
+                                                <div class="lecture_wrap">
+                                                    <div class="lecture_condition title">기초반 - 왕초보 컴퓨터 배우기(컴퓨터 기초)</div>
+                                                    <div class="lecture_condition"><span>주소:</span>금호2-3가동 주민센터 5층</div>
+                                                    <div class="lecture_condition"><span>대상:</span>성인</div>
+                                                    <div class="lecture_condition"><span>이용요금:</span>10,000원</div>
+                                                    <div class="lecture_condition"><span>선별방법:</span>선착순</div>
+                                                </div>
+                                                <div class="application">
+                                                    <a href="site/booking/program1_1.html" class="btn type4"><span>신청하기</span></a>
+                                                    <a href="site/booking/program1_1.html" class="btn type5"><span>자세히보기</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="lecture_item">
+                                                <div class="lecture_receipt"><span class="cate_progress n5">운영중</span>접수기간 : 2023-05-22 10:00 ~2023-05-31 14:00</div>
+                                                <div class="lecture_wrap">
+                                                    <div class="lecture_condition title">기초반 - 왕초보 컴퓨터 배우기(컴퓨터 기초)</div>
+                                                    <div class="lecture_condition"><span>주소:</span>금호2-3가동 주민센터 5층</div>
+                                                    <div class="lecture_condition"><span>대상:</span>성인</div>
+                                                    <div class="lecture_condition"><span>이용요금:</span>10,000원</div>
+                                                    <div class="lecture_condition"><span>선별방법:</span>선착순</div>
+                                                </div>
+                                                <div class="application">
+                                                    <a href="site/booking/program1_1.html" class="btn type5"><span>자세히보기</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="lecture_item">
+                                                <div class="lecture_receipt"><span class="cate_progress n1">접수대기</span>접수기간 : 2023-05-22 10:00 ~2023-05-31 14:00</div>
+                                                <div class="lecture_wrap">
+                                                    <div class="lecture_condition title">기초반 - 왕초보 컴퓨터 배우기(컴퓨터 기초)</div>
+                                                    <div class="lecture_condition"><span>주소:</span>금호2-3가동 주민센터 5층</div>
+                                                    <div class="lecture_condition"><span>대상:</span>성인</div>
+                                                    <div class="lecture_condition"><span>이용요금:</span>10,000원</div>
+                                                    <div class="lecture_condition"><span>선별방법:</span>선착순</div>
+                                                </div>
+                                                <div class="application">
+                                                    <a href="site/booking/program1_1.html" class="btn type5"><span>자세히보기</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="lecture_item">
+                                                <div class="lecture_receipt"><span class="cate_progress n3">대기자접수</span>접수기간 : 2023-05-22 10:00 ~2023-05-31 14:00</div>
+                                                <div class="lecture_wrap">
+                                                    <div class="lecture_condition title">기초반 - 왕초보 컴퓨터 배우기(컴퓨터 기초)</div>
+                                                    <div class="lecture_condition"><span>주소:</span>금호2-3가동 주민센터 5층</div>
+                                                    <div class="lecture_condition"><span>대상:</span>성인</div>
+                                                    <div class="lecture_condition"><span>이용요금:</span>10,000원</div>
+                                                    <div class="lecture_condition"><span>선별방법:</span>선착순</div>
+                                                </div>
+                                                <div class="application">
+                                                    <a href="#n" class="btn type4"><span>신청하기</span></a>
+                                                    <a href="#n" class="btn type5"><span>자세히보기</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_center">
+                                            <a href="#" class="btn more mt40">더보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-pagination">
+                                <div class="p-page">
+                                    <div class="p-page__control">
+                                        <a href="#" class="p-page__link prev-end"><span class="skip">처음</span></a>
+                                        <a href="#" class="p-page__link prev"><span class="skip">이전</span></a>
+                                    </div>
+                                    <div class="p-page__link-group">
+                                        <a href="" title="현재 1페이지" class="p-page__link active">1</a>
+                                        <a href="" title="2페이지 이동" class="p-page__link">2</a>
+                                        <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                        <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                        <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                        <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                        <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                        <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                        <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                        <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                    </div>
+                                    <div class="p-page__control">
+                                        <a href="#" class="p-page__link next"><span class="skip">다음</span></a>
+                                        <a href="#" class="p-page__link next-end"><span class="skip">끝</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function(){
+                                $(window).on('load resize',function(){
+                                    var cultList = document.querySelector('.p-wrap .p_table_wrap'),
+                                        theadCol = cultList.querySelectorAll('table.thead col'),
+                                        th = cultList.querySelectorAll('table.thead th'),
+                                        td = cultList.querySelectorAll('table.tbody td');
+
+                                    td.forEach((ele,i)=>{ /* table responsive - tbody 테이블에 th text 전달*/
+                                        var tr = ele.parentElement.children;
+                                        Array.from(tr).forEach((e,index)=>e.dataset.content = th[index].textContent);
+                                    });
+
+                                    theadCol.forEach((ele, i)=>{ /* list 테이블 정렬 */
+                                        var bodyCol = cultList.querySelectorAll('table.tbody col')[i],
+                                            colWidth = ele.getBoundingClientRect().width;
+                                        if(window.innerWidth > 765){
+                                            bodyCol.style.width = colWidth+'px';
+                                        }else{
+                                            bodyCol.removeAttribute('style');
+                                        };
+                                    });
+                                });
+                            });
+                        </script>
+                        <!-- //대관 목록-->
+
+
+                        <!-- 대관 > 상세정보-->
+                        <div class="p-wrap calender place">
+
+                            <!-- 접수중인 대관명 -->
+                            <div class="process_title">
+                                <span class="process_type">접수중</span>
+                                <span class="process_text">성동50플러스센터_스튜디오</span>
+                            </div>
+                            <!-- //접수중인 대관명 -->
+                            <form name="s" id="s" action="" method="">
+                                <div class="info_wrap clearfix">
+                                    <div class="info_left">
+                                        <!--     슬라이드-->
+                                        <div class="info_slide">
+                                            <div class="info_list">
+                                                <div class="info_item">
+                                                    <div class="info_image">
+                                                        <img src="site/booking/images/program/popup_image.jpg" alt="팝업존 이미지 대체텍스트">
+                                                    </div>
+                                                </div>
+                                                <div class="info_item">
+                                                    <div class="info_image">
+                                                        <img src="site/booking/images/program/popup_image.jpg" alt="팝업존 이미지 대체텍스트">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info_control">
+                                                <div class="info_count">
+                                                    <span class="info_current"></span>&nbsp;-&nbsp;<span class="info_total"></span>
+                                                </div>
+                                                <button type="button" class="info_prev" style=""><span class="skip">이전</span></button>
+                                                <button type="button" class="info_next" style=""><span class="skip">다음</span></button>
+                                            </div>
+                                        </div>
+                                        <!--     //슬라이드-->
+                                        <!--     qr코드  -->
+                                        <div class="qr_code clearfix">
+                                            <div class="qr_text">
+                                                <a href="#" class="btn link" target="_self">강좌 바로가기</a>
+                                                <a href="#" class="btn down" target="_self">QR코드 다운로드</a>
+                                            </div>
+                                        </div>
+                                        <!--     //qr코드  -->
+
+                                        <!-- 접수기간 달력 -->
+                                        <div class="info_cal place">
+                                            <div class="p-calendar" id="monthCal">
+                                                <div class="program_title">
+                                                    <span class="p-on">접수기간</span>
+                                                    <span class="p-off">예약불가</span>
+                                                </div>
+                                                <div class="calender_header">
+                                                    <button class="calender_button prev">이전</button>
+                                                    <span class="calender_text"><em>2023</em>.<em>05</em></span>
+                                                    <button class="calender_button next">다음</button>
+                                                </div>
+
+                                                <table class="date_table">
+                                                    <caption>달력 - 일요일 ~ 토요일 일정 포함</caption>
+                                                    <colgroup>
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                        <col style="width:14.28%">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col" class="sun">일</th>
+                                                        <th scope="col">월</th>
+                                                        <th scope="col">화</th>
+                                                        <th scope="col">수</th>
+                                                        <th scope="col">목</th>
+                                                        <th scope="col">금</th>
+                                                        <th scope="col" class="sat">토</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="p-end p-off"><span class="day">1</span></td>
+                                                        <td class="p-off">
+                                                            <span class="day">2</span>
+                                                        </td>
+                                                        <td class="p-off"><span class="day">3</span></td>
+                                                        <td class="p-off"><span class="day">4</span></td>
+                                                        <td class="p-off"><span class="day">5</span></td>
+                                                        <td class="p-off">
+                                                            <span class="day sat">6</span><!-- 토요일에 'sat' 클래스 붙여주세요 -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-off">
+                                                            <span class="day sun">7</span><!-- 일요일에 'sun' 클래스 붙여주세요 -->
+                                                        </td>
+                                                        <td class="p-off"><span class="day">8</span> </td>
+                                                        <td class="p-off"><span class="day">9</span></td>
+                                                        <td class="p-off"><span class="day">10</span></td>
+                                                        <td class="p-off"><span class="day">11</span></td>
+                                                        <td class="p-off"><span class="day">12</span></td>
+                                                        <td class="p-off"><span class="day sat">13</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-off"><span class="day sun">14</span></td>
+                                                        <td class="p-off"><span class="day">15</span></td>
+                                                        <td class="p-off"><span class="day">16</span></td>
+                                                        <td class="p-off"><span class="day">17</span></td>
+                                                        <td class="p-off"><span class="day">18</span></td>
+                                                        <td class="p-off"><span class="day">19</span></td>
+                                                        <td class="p-off"><span class="day sat">20</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-off"><span class="day sun">21</span></td>
+                                                        <td class="p-off"><span class="day">22</span></td>
+                                                        <td class="p-on first"><span class="day">23</span></td><!-- 접수기간일때 'p-on' 클래스 붙여주세요 -->
+                                                        <!--   첫번쨰 p-on 시작에 first 클래스 붙여 주세요-->
+                                                        <td class="p-on"><span class="day">24</span></td>
+                                                        <td class="p-on"><span class="day">25</span></td>
+                                                        <td class="p-on"><span class="day">26</span></td>
+                                                        <td class="p-on"><span class="day sat">27</span></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td class="p-on"><span class="day sun">28</span></td>
+                                                        <td class="p-on"><span class="day">29</span></td>
+                                                        <td class="p-on last"><span class="day">30</span></td><!-- 끝나는 마지막 'p-end' 에 last 클래스 붙여주세요 -->
+                                                        <td class="p-end"><span class="day">31</span></td><!-- 접수기간이 아닐때 'p-end' 클래스 붙여주세요 -->
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //접수기간 달력 -->
+                                    </div>
+
+                                    <div class="info_right coronation">
+
+                                        <!-- 해당 과정 상세정보 -->
+                                        <div class="box_line type2">
+                                            <div class="info_content">
+                                                <table class="table lecture">
+                                                    <caption>시설상세정보 - 시설구분, 사용구분, 이용대상, 수용인원, 접수기간, 이용기간, 이용시간, 이용요금, 선별방법, 예약방법, 문의전화, 신청서류서식 순으로 정보제공 </caption>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">시설구분</th>
+                                                        <td>
+                                                            <ul class="bu">
+                                                                <li>스튜디오</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사용구분</th>
+                                                        <td>촬영</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">이용대상</th>
+                                                        <td>개인, 단체</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">수용인원</th>
+                                                        <td>1-2명</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">접수기간</th>
+                                                        <td>2023-06-23 09:00 ~ 2023-07-31 13:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">이용기간</th>
+                                                        <td>시설안내 내용확인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">이용시간</th>
+                                                        <td>시설안내 내용확인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">이용요금</th>
+                                                        <td>시설안내 내용확인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">선별방법</th>
+                                                        <td>심사</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">예약방법</th>
+                                                        <td>온라인/전화</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">문의전화</th>
+                                                        <td>02-640-0000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">신청서류서식</th>
+                                                        <td>
+                                                            <ul class="file_list">
+                                                                <li class="file_item">
+                                                                    <div class="file_name">
+                                                                        <a href="#" title="다운로드">
+                                                                            <span class="p-form__required--icon">필수</span>
+                                                                            <span>시설사용 허가신청서.hwp(606 Kbyte)</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="file_item">
+                                                                    <div class="file_name">
+                                                                        <a href="" title="다운로드">
+                                                                            <span>이용요금 감면신청서.hwp(712 Kbyte)</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="file_item">
+                                                                    <div class="file_name">
+                                                                        <a href="" title="다운로드">
+                                                                            <span class="p-form__required--icon">필수</span>
+                                                                            <span>시설 및 부대시설 사용료.hwp(685 Kbyte)</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <!-- //해당 과정 상세정보 -->
+
+                                        <!-- 신청자 수, 신청하기 버튼 -->
+                                        <div class="info_person">
+                                            <div class="reserve_wrap">
+                                                <!--                                                <div class="person_list">-->
+                                                <!--                                                <span class="person_count num">-->
+                                                <!--                                                    <span class="person_title">신청자 :</span> <span>0</span>/<span class="person_total">30</span>-->
+                                                <!--                                                </span>-->
+                                                <!--                                                    <span class="person_count wait">-->
+                                                <!--                                                    <span class="person_title">대기 :</span> <span>0</span>/<span class="person_total">10</span>-->
+                                                <!--                                                </span>-->
+                                                <!--                                                </div>-->
+                                                <a href="site/booking/program1_1.html" class="btn type4"><span>예약하기</span></a>
+                                                <a href="site/booking/program1_1.html" class="btn notice"><span>공지사항</span></a>
+                                                <a href="site/booking/program1_1.html" class="btn list2"><span>목록</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- //신청자 수, 신청하기 버튼 -->
+
+                                    </div>
+                                </div>
+
+                                <!-- 탭메뉴 -->
+                                <div class="tab">
+                                    <div class="teb_menu">
+                                        <button class="tab_select"><span>운영내용</span></button><!-- 현재메뉴명 입력해주세요 -->
+                                        <div class="tab_panel">
+                                            <ul class="tab_list">
+                                                <li class="tab_item active"><button type="button" class="tab_button"><span>시설안내</span></button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button"><span>위치안내</span></button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button"><span>주의사항</span></button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab_content active">
+                                            <div class="box_line simple operate">
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">대관비용안내</span>
+                                                        <span class="dd"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">이용시간안내</span>
+                                                        <span class="dd"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">면적 및 수용인원  등 시설안내</span>
+                                                        <span class="dd"></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="text_center">
+                                                <a href="#" class="btn list ">목록</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab_content">
+                                            <div class="box_line simple">
+                                                <span class="map_title">성동50플러스센터</span>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">주소</span>
+                                                        <span class="dd">서울 성동구 왕십리로 241 3층</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">전화번호</span>
+                                                        <span class="dd">02-640-5334</span>
+                                                    </li>
+                                                </ul>
+                                                <!-- * 카카오맵 - 지도퍼가기 -->
+                                                <!-- 1. 지도 노드 -->
+                                                <div class="mapapi">
+                                                    <div class="map_btn">
+                                                        <a href="http://kko.to/HjIGaT126A" target="_blank" title="새창" rel="noopener noreferrer" class="btn search">길찾기</a>
+                                                    </div>
+                                                    <div id="daumRoughmapContainer1688963736391" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                                    <!-- 3. 실행 스크립트 -->
+                                                    <script charset="UTF-8">
+                                                        new daum.roughmap.Lander({
+                                                            "timestamp" : "1688963736391",
+                                                            "key" : "2fgd8",
+                                                        }).render();
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            <div class="text_center">
+                                                <a href="#" class="btn list ">목록</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab_content">content3</div>
+                                    </div>
+                                </div>
+                                <!-- //탭메뉴 -->
+                            </form>
+
+
+
+                            <!-- 신청하기 버튼 -->
+                            <div class="up show">
+                                <a href="#wrapper" class="up_button">강좌 신청하기</a>
+                            </div>
+                        </div>
+
+                        <!-- //대관 > 상세정보-->
+
+                        <!-- 대관 > 상세정보 (일정선택)-->
+                        <div class="p-wrap schedule">
+                            <!-- 접수중인 대관명 -->
+                            <div class="process_title">
+                                <span class="process_type">접수중</span>
+                                <span class="process_text">성동50플러스센터_스튜디오</span>
+                            </div>
+                            <!-- //접수중인 대관명 -->
+
+                            <form name="" id="" action="" method="">
+                                <!-- 달력 -->
+                                <div class="calendar_wrap">
+
+                                    <!-- 날짜선택 -->
+                                    <!--                                    <div class="program_title cal">날짜선택</div>-->
+                                    <div class="p-calendar schedule" id="monthCal2">
+                                        <div class="calender_header">
+                                            <button class="calender_button prev">이전</button>
+                                            <span class="calender_text"><em>2023</em>년 <em>6</em>월</span>
+                                            <button class="calender_button next">다음</button>
+                                        </div>
+
+                                        <div class="table_scroll">
+                                            <table class="date_table type2">
+                                                <caption>달력 - 일요일 ~ 토요일 일정 포함</caption>
+                                                <colgroup>
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                    <col style="width:14.28%">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col" class="sun">일</th>
+                                                    <th scope="col">월</th>
+                                                    <th scope="col">화</th>
+                                                    <th scope="col">수</th>
+                                                    <th scope="col">목</th>
+                                                    <th scope="col">금</th>
+                                                    <th scope="col" class="sat">토</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="p-on">
+                                                        <span class="day sat">1</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-on"><!-- 일요일에 'sun' 클래스 붙여주세요 -->
+                                                        <span class="day sun">2</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">3</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on"><!-- 신청가능할경우 'p-on' 클래스 붙여주세요 -->
+                                                        <span class="day">4</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end"><!-- 마감일경우 'p-end' 클래스 붙여주세요 -->
+                                                        <span class="day">5</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day off">6</span><!-- 공휴일경우 'off' 클래스 붙여주세요 -->
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end">
+                                                        <span class="day">7</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                    <td class="p-on"><!-- 토요일에 'sat' 클래스 붙여주세요 -->
+                                                        <span class="day sat">8</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-on">
+                                                        <span class="day sun">9</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">10</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">11</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end">
+                                                        <span class="day">12</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">13</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">14</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day sat">15</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-on">
+                                                        <span class="day sun">16</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">17</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">18</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end">
+                                                        <span class="day">19</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">20</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">21</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day sat">22</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-on">
+                                                        <span class="day sun">23</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">24</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">25</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">26</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">27</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-on">
+                                                        <span class="day">28</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end">
+                                                        <span class="day sat">29</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-on">
+                                                        <span class="day sun">30</span>
+                                                        <button type="button" class="apply_btn">신청가능</button>
+                                                    </td>
+                                                    <td class="p-end">
+                                                        <span class="day">31</span>
+                                                        <button type="button" class="apply_btn">신청마감</button>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- //날짜선택 -->
+
+                                    <!-- 시간선택, 신청가능버튼 클릭시 표출-->
+                                    <div class="time_wrap">
+                                        <h3 class="program_title time type2">시간선택</h3>
+                                        <div class="time_inner">
+                                            <ul class="time_list">
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time1" id="time1" value="" disabled="">
+                                                    <label for="time1" class="p-form-checkbox__label">09:00 ~ 10:00</label>
+                                                </li>
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time2" id="time2" value="" disabled="">
+                                                    <label for="time2" class="p-form-checkbox__label">10:00 ~ 11:00</label>
+                                                </li>
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time3" id="time3" value="">
+                                                    <label for="time3" class="p-form-checkbox__label">11:00 ~ 12:00</label>
+                                                </li>
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time4" id="time4" value="">
+                                                    <label for="time4" class="p-form-checkbox__label">12:00 ~ 13:00</label>
+                                                </li>
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time5" id="time5" value="">
+                                                    <label for="time5" class="p-form-checkbox__label">13:00 ~ 14:00</label>
+                                                </li>
+                                                <li class="p-form-checkbox p-form-checkbox--button time_item">
+                                                    <input type="checkbox" class="p-form-checkbox__input" name="time6" id="time6" value="">
+                                                    <label for="time6" class="p-form-checkbox__label">14:00 ~ 15:00</label>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <!-- //시간선택 -->
+
+                                    <script>
+                                        $('.calendar_wrap .date_table td:not(.p-end)').on('click', function(){
+
+
+                                            $(document).on('click','#monthCal:not(".noselect") .date_table td:not(.p-end)', function() {
+
+                                                // $('.date_table td:not(.p-end)').removeClass('active').removeAttr('title');
+                                                $(this).addClass('active').attr('title', '선택됨');
+
+                                                var count = $('.date_table td:not(.p-end).active').length;
+                                                console.log(count);
+
+                                                if(count > 2){
+                                                    $('.calendar_wrap .date_table td:not(.p-end)').removeClass('active');
+                                                }
+
+                                            });
+
+
+
+                                            $('.calendar_wrap .time_wrap').addClass('active');
+                                        });
+
+                                    </script>
+
+                                </div>
+                                <!-- //달력 -->
+                                <!-- 취소,다음 버튼 -->
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn type2">다음</a>
+                                    <a href="#" class="btn">취소</a>
+                                </div>
+                                <!-- //취소,다음 버튼 -->
+                            </form>
+
+                        </div>
+                        <!-- //대관 > 상세정보 (일정선택)--->
+
+                        <!--대관 > 개인정보동의 -->
+                        <div class="program edu">
+                            <div class="p-wrap">
+                                <div class="p-step">
+                                    <ul class="step_list">
+                                        <li class="step_item active">
+                                            <div class="step_inner">
+                                                <span>개인정보 수집 및 동의</span>
+                                            </div>
+                                        </li>
+                                        <li class="step_item">
+                                            <div class="step_inner">
+                                                <span>신청자 정보입력</span>
+                                            </div>
+                                        </li>
+                                        <li class="step_item">
+                                            <div class="step_inner">
+                                                <span>결제정보</span>
+                                            </div>
+                                        </li>
+                                        <li class="step_item">
+                                            <div class="step_inner">
+                                                <span>예약신청 완료</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- 접수중인 대관명 -->
+                                <div class="process_title">
+                                    <span class="process_type">접수중</span>
+                                    <span class="process_text">2023년 9월 강남축구공원 천연잔디구장</span>
+                                </div>
+                                <!-- //접수중인 대관명 -->
+
+                                <!-- 개인정보 수집 및 동의 -->
+                                <div class="accordion_item active margin_b_30">
+                                    <div class="title_wrap">
+                                        <h3>개인정보 수집 및 동의(필수)</h3>
+                                        <button type="button" class="accordion_btn"></button>
+                                    </div>
+                                    <div class="text_wrap">
+                                        <div class="box_line privacy">
+                                            <div class="privacy_wrap">
+                                                <p>성동구 신속예약시스템 홈페이지 서비스 이용을 위해 입력하시는 정보는 예약접수 처리와 예약정보 안내를 위한 목적으로 수집 및 이용되며, 또한 서비스 통계 및 만족도 조사 등의 정책 활용의 목적으로
+                                                    이용하고 있습니다.</p>
+                                                <ul class="privacy">
+                                                    <li class="dt">수집정보
+                                                        <ul>
+                                                            <li>- 예약자 정보 : 성명, 생년월일, 휴대폰번호, 주소, 학교, 성별</li>
+                                                            <li>- 예약자 결제 정보 : 성명, 카드번호, 은행명, 계좌번호</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dt">개인정보처리 및 보유기간
+                                                        <ul>
+                                                            <li>- 예약자 정보 : 1년간 보관 후 즉시 파기(성명, 단체명, 생년월일, 휴대폰번호, 주소, 학교, 성별)</li>
+                                                            <li>- 예약자 결제정보 : 3년간 보관 후 즉시 파기(성명, 카드번호, 은행명, 계좌번호)</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row margin_b_25">
+                                    <div class="col-24 privacy text_center">
+                                        <span class="p-form-radio type1 agree">
+                                        <input type="radio" name="aa" id="agree" class="p-form-radio__input">
+                                        <label for="agree" class="p-form-radio__label margin_r_20">동의 합니다.</label>
+                                    </span>
+                                        <span class="p-form-radio type1 agree not">
+                                        <input type="radio" name="aa" id="agree-2" class="p-form-radio__input">
+                                        <label for="agree-2" class="p-form-radio__label">동의하지 않습니다.</label>
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion_item">
+                                    <div class="title_wrap">
+                                        <h3>개인정보 제 3자 제공 동의(필수)</h3>
+                                        <button type="button" class="accordion_btn"></button>
+                                    </div>
+                                    <div class="text_wrap">
+                                        <div class="box_line privacy">
+                                            <div class="privacy_wrap">
+                                                <p>개인정보보호법 제17조에 따라 아래와 같은 사항을 안내하고 동의를 받아 귀하의 개인정보를 이용·제공할 수 있도록 합니다.</p>
+                                                <ul>
+                                                    <li>1. 제공받는자: 성동구시 산하 실과 · 사업소, 동주민센터</li>
+                                                    <li>2. 제공받는 자의 수집·이용 목적 : 성동구 신속예약시스템 서비스 예약자 확인 및 관리</li>
+                                                    <li>3. 제공하는 개인정보 항목
+                                                        <ul class="privacy except">
+                                                            <li>- 예약자 정보 : 성명, 생년월일, 휴대폰번호, 주소, 학교, 성별</li>
+                                                            <li>- 예약자 결제 정보 : 성명, 카드번호, 은행명, 계좌번호</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>4. 개인정보 보유 및 이용기간
+                                                        <ul class="privacy">
+                                                            <li>- 예약자 정보 : 1년간 보관 후 즉시 파기(성명, 단체명, 생년월일, 휴대폰번호, 주소, 학교, 성별)</li>
+                                                            <li>- 예약자 결제정보 : 3년간 보관 후 즉시 파기(성명, 카드번호, 은행명, 계좌번호) </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>5. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용 : 개인정보 수집 및 이용·제공에 대해 동의를 거부할 권리가 있으며, 동의 거부 시에는 예약 서비스 이용이 제한됩니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin_b_55">
+                                    <div class="col-24 privacy text_center">
+                                        <span class="p-form-radio type1 agree">
+                                            <input type="radio" name="aa" id="agree2_1" class="p-form-radio__input">
+                                            <label for="agree2_1" class="p-form-radio__label margin_r_20">동의 합니다.</label>
+                                        </span>
+                                        <span class="p-form-radio type1 agree not">
+                                            <input type="radio" name="aa" id="agree2_2" class="p-form-radio__input">
+                                            <label for="agree2_2" class="p-form-radio__label">동의하지 않습니다.</label>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="row agree point_box">
+                                    <div class="col-24 text_center">
+                                        <span>모든 약관에 동의합니다.</span>
+                                        <span class="p-form-checkbox">
+                                            <input type="checkbox" name="checkbox" id="check1" value="check1">
+                                            <label for="check1" class="agree_check"><span class="all_agree">전체동의</span></label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- //개인정보 수집 및 동의 -->
+
+                                <!-- 취소,다음 버튼 -->
+                                <div class="btn_wrap margin_t_45">
+                                    <a href="site/booking/program2_2.html" class="btn move type2">다음</a>
+                                    <a href="site/booking/program2_5.html" class="btn move">이전</a>
+                                </div>
+                                <!-- //취소,다음 버튼 -->
+
+                            </div>
+                        </div>
+                        <!--//대관 > 개인정보동의 -->
+
+                        <!--대관 > 신청자 정보입력 -->
+                        <div class="p-wrap p-write p-place-write">
+                            <div class="p-step">
+                                <ul class="step_list">
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>개인정보 수집 및 동의</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item active">
+                                        <div class="step_inner">
+                                            <span>신청자 정보입력</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>결제정보</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>예약신청 완료</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 접수중인 대관명 -->
+                            <div class="process_title">
+                                <span class="process_type">접수중</span>
+                                <span class="process_text">2023년 9월 강남축구공원 천연잔디구장</span>
+                            </div>
+                            <!-- //접수중인 대관명 -->
+
+                            <!-- 선택된 대관정보 -->
+                            <h3 class="type2">대관정보</h3>
+                            <table class="p-table except">
+                                <colgroup>
+                                    <col style="width:15%;">
+                                    <col style="width:35%;">
+                                    <col style="width:15%;">
+                                    <col style="width:35%;">
+                                </colgroup>
+                                <caption>대관 정보 - 사용기간, 시간 순으로 제공</caption>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">사용기간</th>
+                                    <td>2023-09-28 ~ 2023-10-25</td>
+                                    <th scope="row" class="hide_tr">시간</th>
+                                    <td class="hide_tr">15:00 ~ 17:00</td>
+                                </tr>
+                                <tr class="show_tr">
+                                    <th scope="row">시간</th>
+                                    <td>15:00 ~ 17:00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- //선택된 대관정보 -->
+
+                            <!-- 예약자 정보 입력 -->
+                            <h3 class="type2">예약자 정보 입력</h3>
+                            <span class="h3_add"><span class="p-form__required--icon except">필수</span>표시는 필수 입력 항목입니다.</span>
+                            <table class="p-table mobile margin_b_20 except">
+                                <caption>예약자 정보입력 - 성명, 단체명, 연락처, 주소, 사용구분(용도), 사용목적(행사명), 부대시설, 신청서류 첨부, 감면신청, 기타요청사항 순으로 정보 제공</caption>
+                                <colgroup>
+                                    <col class="except_col">
+                                    <col style="width:38%" />
+                                    <col style="width:12%;">
+                                    <col style="width:38%" />
+                                </colgroup>
+                                <tbody class="p-table--th-left">
+                                <tr class="p-table__subject">
+                                    <th scope="row">
+                                        <label for="a1" class="p-form__label">성명 <span class="p-form__required--icon">필수</span></label>
+                                    </th>
+                                    <td>
+                                        <div>
+                                            <input type="text" name="b" id="a1" class="p-input w100">
+                                        </div>
+                                    </td>
+                                    <th scope="row" class="hide_tr">
+                                        <label for="b1" class="p-form__label">단체명 <span class="p-form__required--icon">필수</span></label>
+                                    </th>
+                                    <td class="hide_tr">
+                                        <div>
+                                            <input type="text" name="b" id="b1" class="p-input w100">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="show_tr">
+                                    <th scope="row">
+                                        <label for="b2" class="p-form__label">단체명 <span class="p-form__required--icon">필수</span></label>
+                                    </th>
+                                    <td>
+                                        <div>
+                                            <input type="text" name="b" id="b2" class="p-input w100">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="c1" class="p-form__label">연락처 <span class="p-form__required--icon">필수</span></label></th>
+                                    <td colspan="3">
+                                        <div class="row tel">
+                                            <div class="col-10">
+                                                <div class="p-form-group">
+                                                    <select name="c1" id="c1" class="p-input yeyak tel" title="연락처 첫번째 번호 선택">
+                                                        <option value="">010</option>
+                                                        <option value="">011</option>
+                                                        <option value="">016</option>
+                                                    </select>
+                                                    <span class="p-form__split">- </span>
+                                                    <input type="number" maxlength="4" name="d" id="c2" class="p-input p-input--auto tel" value="1234" title="연락처 중간번호 입력">
+                                                    <span class="p-form__split">- </span>
+                                                    <input type="number" maxlength="4" name="d" id="c3" class="p-input p-input--auto tel" value="1234" title="연락처 마지막번호 입력">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="d1" class="p-form__label">주소 <span class="p-form__required--icon">필수</span></label></th>
+                                    <td colspan="3">
+                                        <div class="row">
+                                            <div class="col-24">
+                                                <input type="text" id="d1" name="d" size="10" readonly="readonly" title="인풋박스 비활성" disabled class="p-input yeyak zipcode margin_b_5" >
+                                                <a href="#" onclick="" class="btn type3 margin_b_5">주소검색</a>
+                                                <br/><input type="text" id="d2" name="d" size="10" readonly="readonly" title="인풋박스 비활성" disabled class="p-input yeyak zipcode margin_b_5" >
+                                                <div class="col-20 padding_l_0">
+                                                    <input type="text" id="d3" name="d" readonly="readonly" class="p-input p-form__address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="e" class="p-form__label">사용구분(용도) <span class="p-form__required--icon">필수</span></label></th>
+                                    <td colspan="3">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="p-form-group">
+                                                    <select name="e" id="e" class="p-input yeyak" title="사용구분(용도)">
+                                                        <option value="">체육경기</option>
+                                                        <option value="">체육경기</option>
+                                                        <option value="">체육경기</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="f" class="p-form__label">사용목적(행사명) <span class="p-form__required--icon">필수</span></label></th>
+                                    <td colspan="3">
+                                        <div>
+                                            <input type="text" id="f" class="p-input yeyak w100">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="g1" class="p-form__label">부대시설 <span class="p-form__required--icon">필수</span></label></th>
+                                    <td colspan="3">
+                                        <span class="p-form-radio">
+                                            <input type="radio" name="g" id="g1" value="">
+                                            <label for="g1"><span>사용</span></label>
+                                        </span>
+                                        <span class="p-form-radio margin_l_50">
+                                            <input type="radio" name="d" id="g2" value="">
+                                            <label for="g2"><span>사용안함</span></label>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청서류 첨부</th>
+                                    <td colspan="3">
+                                        <ul class="file_list">
+                                            <li class="file_item">
+                                                <div class="file_name">
+                                                    <a href="#">
+                                                        <span class="p-form__required--icon">필수</span>
+                                                        <span>시설사용 허가신청서.hwp(606 Kbyte)</span>
+                                                    </a>
+                                                </div>
+                                                <div class="file_input_wrap">
+                                                    <input type="text" class="upload_name" readonly>
+                                                    <input type="file" id="file1" required>
+                                                    <label for="file1" class="file_btn">파일찾기</label>
+                                                    <button type="button" class="p-upload__clear clear btn">삭제</button>
+                                                </div>
+                                            </li>
+                                            <li class="file_item">
+                                                <div class="file_name">
+                                                    <a href="#">
+                                                        <span>이용요금 감면신청서.hwp(712 Kbyte)</span>
+                                                    </a>
+                                                </div>
+                                                <div class="file_input_wrap">
+                                                    <input type="text" class="upload_name" readonly>
+                                                    <input type="file" id="file2" required>
+                                                    <label for="file2" class="file_btn">파일찾기</label>
+                                                    <button type="button" class="p-upload__clear clear btn">삭제</button>
+                                                </div>
+                                            </li>
+                                            <li class="file_item">
+                                                <div class="file_name">
+                                                    <a href="#">
+                                                        <span class="p-form__required--icon">필수</span>
+                                                        <span>시설 및 부대시설 사용료.hwp(685 Kbyte)</span>
+                                                    </a>
+                                                </div>
+                                                <div class="file_input_wrap">
+                                                    <input type="text" class="upload_name" readonly>
+                                                    <input type="file" id="file3" required>
+                                                    <label for="file3" class="file_btn">파일찾기</label>
+                                                    <button type="button" class="p-upload__clear clear btn">삭제</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="h1" class="p-form__label">감면신청</label></th>
+                                    <td colspan="3">
+                                        <span class="p-form-radio">
+                                            <input type="radio" name="d" id="h1" value="">
+                                            <label for="h1"><span>신청</span></label>
+                                        </span>
+                                        <span class="p-form-radio margin_l_50">
+                                            <input type="radio" name="d" id="h2" value="">
+                                            <label for="h2"><span>신청안함</span></label>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="i" class="p-form__label">기타요청사항</label></th>
+                                    <td colspan="3">
+                                        <input type="text" id="i" class="p-input yeyak w100">
+                                    </td>
+                                </tbody>
+                            </table>
+                            <!-- //신청자 정보 입력 -->
+
+
+                            <!-- 취소,다음 버튼 -->
+                            <div class="btn_wrap margin_t_45">
+                                <a href="site/booking/program2_3.html" class="btn move type2">다음</a>
+                                <a href="site/booking/program2_1.html" class="btn move">이전</a>
+                            </div>
+                            <!-- //취소,다음 버튼 -->
+
+                        </div>
+                        <!-- //대관 > 신청자 정보입력 -->
+
+                        <!--대관 > 결제정보 -->
+                        <div class="p-wrap pay">
+                            <div class="p-step">
+                                <ul class="step_list">
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>개인정보 수집 및 동의</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>신청자 정보입력</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item active">
+                                        <div class="step_inner">
+                                            <span>결제정보</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>예약신청 완료</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 접수중인 대관명 -->
+                            <div class="process_title">
+                                <span class="process_type">접수중</span>
+                                <span class="process_text">2023년 9월 강남축구공원 천연잔디구장</span>
+                            </div>
+                            <!-- //접수중인 대관명 -->
+
+                            <!-- 결제정보 -->
+                            <h3 class="type2">결제정보</h3>
+                            <div class="row point_box">
+                                <div class="col-24">
+                                    <ul class="pay_list">
+                                        <li class="pay_item">
+                                            <span class="pay_title">기본요금</span>
+                                            <p class="pay_info">1회 2시간 100,000원</p>
+                                        </li>
+                                        <li class="pay_item">
+                                            <span class="pay_title">할인/할증 정보</span>
+                                            <p class="pay_info">2시간 초과시 1시간당 20,000 가산</p>
+                                        </li>
+                                        <li class="pay_item">
+                                            <span class="pay_title">부대시설</span>
+                                            <p class="pay_info">사용</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="notice">관리자 심사 후 승인이 나면 최종 이용요금(결제금액)을 안내해 드리며, 나의 예약현황에서 확인할 수 있습니다. 승인까지는 2~3일 소요됩니다.</p>
+                            <!-- //결제정보 -->
+
+                            <!-- 환불규정 -->
+                            <h3 class="type2">환불규정</h3>
+                            <div class="box_line simple">
+                                <ul class="padding_l_5">
+                                    <li>- 90% 환불 : 교육 예정일 7일전 까지 취소</li>
+                                    <li>- 50% 환불 : 교육 예정일 5일전 까지 취소</li>
+                                    <li>- 10% 환불 : 교육 예정일 1일전 까지 취소</li>
+                                </ul>
+                            </div>
+                            <!-- //환불규정 -->
+
+                            <!--결제수단 선택-->
+                            <h3 class="type2">결제수단 선택</h3>
+                            <div class="box_line simple text_center select_btn">
+                                <button type="button" class="pay_btn active">무료</button>
+                                <button type="button" class="pay_btn">카드</button>
+                                <button type="button" class="pay_btn">무통장 입금</button>
+                                <button type="button" class="pay_btn">현장결제</button>
+                                <button type="button" class="pay_btn">가상계좌</button>
+                            </div>
+                            <!--//결제수단 선택-->
+
+                            <!-- 취소,다음 버튼 -->
+                            <div class="btn_wrap margin_t_45">
+                                <a href="site/booking/program2_4.html" class="btn move type2">다음</a>
+                                <a href="site/booking/program2_2.html" class="btn move">이전</a>
+                            </div>
+                            <!-- //취소,다음 버튼 -->
+
+                        </div>
+                        <!--대관 > 결제정보 -->
+
+                        <!-- 예약신청완료 -->
+                        <div class="p-wrap reserve_confirm">
+                            <div class="p-step">
+                                <ul class="step_list">
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>개인정보 수집 및 동의</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>신청자 정보입력</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item">
+                                        <div class="step_inner">
+                                            <span>결제정보</span>
+                                        </div>
+                                    </li>
+                                    <li class="step_item active">
+                                        <div class="step_inner">
+                                            <span>예약신청 완료</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 접수중인 강좌명 -->
+                            <div class="process_title">
+                                <span class="process_type">접수중</span>
+                                <span class="process_text">성동50플러스센터_다목적실</span>
+                            </div>
+                            <!-- //접수중인 강좌명 -->
+
+                            <!-- 예약번호 -->
+                            <h3 class="type2">예약정보 확인</h3>
+                            <div class="row point_box type2">
+                                <div class="col-24 text_center">
+                                    <!--                                <span class="pay_text">신청 및 결제</span>-->
+                                    <div class="pay_info">
+                                        예약번호 GNSS0831-001
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //예약번호 -->
+
+                            <!-- 예약정보 확인 -->
+                            <div class="box_line simple">
+                                <div class="info_content">
+                                    <table class="table lecture">
+                                        <caption>예약정보 확인 - 예약번호, 예약일시, 운영기관, 시설명, 사용기관, 이용요금, 신청자, 연락처 순으로 제공</caption>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">예약번호</th>
+                                            <td>
+                                                <ul class="bu">
+                                                    <li>GNSS0831-001</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">예약일시</th>
+                                            <td>2023년 08월 31일 10:35:25</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">운영기관</th>
+                                            <td>사용</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">시설명</th>
+                                            <td>성동50플러스센터_다목적실</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">사용기간</th>
+                                            <td>2023년 09월 15일 15:00 ~ 17:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이용요금</th>
+                                            <td>별도안내</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">신청자</th>
+                                            <td>김성동</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">문의전화</th>
+                                            <td class="tel"><span></span>02-640-2222</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text_center">
+                                    <p class="warning type2 ">예약정보 수정, 예약취소 및 결제는 &ldquo;나의 예약현황 &rdquo;에서 가능합니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 취소,다음 버튼 -->
+                            <div class="btn_wrap">
+                                <a href="#" class="btn move type2 n1">완료</a>
+                            </div>
+                            <!-- //취소,다음 버튼 -->
+                        </div>
+                        <!-- //예약신청완료 -->
+                    </div>
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="wrap">
+            <div class="site">
+                <ul class="site_list clearfix">
+                    <li class="site_item n1">
+                        <button type="button" class="site_open"><span>부서별 홈페이지</span></button>
+                        <div class="site_panel">
+                            <ul class="clearfix">
+                                <li><a href="#n" target="_self">감사담당관</a></li>
+                                <li><a href="#n" target="_self">건강관리과</a></li>
+                                <li><a href="#n" target="_self">건축과</a></li>
+                                <li><a href="#n" target="_self">공동주택과</a></li>
+                                <li><a href="#n" target="_self">공보담당관</a></li>
+                                <li><a href="#n" target="_self">공원녹지과</a></li>
+                                <li><a href="#n" target="_self">교육지원과</a></li>
+                                <li><a href="#n" target="_self">교통지도과</a></li>
+                                <li><a href="#n" target="_self">교통행정과</a></li>
+                                <li><a href="#n" target="_self">기초복지과</a></li>
+                                <li><a href="#n" target="_self">기획예산과</a></li>
+                                <li><a href="#n" target="_self">도시계획과</a></li>
+                                <li><a href="#n" target="_self">도시재생과</a></li>
+                                <li><a href="#n" target="_self">마을공동체과</a></li>
+                                <li><a href="#n" target="_self">맑은환경과</a></li>
+                                <li><a href="#n" target="_self">문화체육과</a></li>
+                                <li><a href="#n" target="_self">민원여권과</a></li>
+                                <li><a href="#n" target="_self">보건위생과</a></li>
+                                <li><a href="#n" target="_self">보건의료과</a></li>
+                                <li><a href="#n" target="_self">복지정책과</a></li>
+                                <li><a href="#n" target="_self">세무1과</a></li>
+                                <li><a href="#n" target="_self">세무2과</a></li>
+                                <li><a href="#n" target="_self">시책추진과</a></li>
+                                <li><a href="#n" target="_self">아동청년과</a></li>
+                                <li><a href="#n" target="_self">안전관리과</a></li>
+                                <li><a href="#n" target="_self">어르신&middot;장애인복지과</a></li>
+                                <li><a href="#n" target="_self">여성가족과</a></li>
+                                <li><a href="#n" target="_self">일자리정책과</a></li>
+                                <li><a href="#n" target="_self">자치행정과</a></li>
+                                <li><a href="#n" target="_self">재무과</a></li>
+                                <li><a href="#n" target="_self">정보통신과</a></li>
+                                <li><a href="#n" target="_self">주거정비과</a></li>
+                                <li><a href="#n" target="_self">지속발전과</a></li>
+                                <li><a href="#n" target="_self">지역경제과</a></li>
+                                <li><a href="#n" target="_self">질병예방과</a></li>
+                                <li><a href="#n" target="_self">청소행정과</a></li>
+                                <li><a href="#n" target="_self">총무과</a></li>
+                                <li><a href="#n" target="_self">치수과</a></li>
+                                <li><a href="#n" target="_self">토목과</a></li>
+                                <li><a href="#n" target="_self">토지관리과</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site_item n2">
+                        <button type="button" class="site_open"><span>동주민센터</span></button>
+                        <div class="site_panel">
+                            <ul class="clearfix">
+                                <li><a href="#n">금호1가동</a></li>
+                                <li><a href="#n">금호2,3가동</a></li>
+                                <li><a href="#n">금호4가동</a></li>
+                                <li><a href="#n">마장동</a></li>
+                                <li><a href="#n">사근동</a></li>
+                                <li><a href="#n">성수1가제1동</a></li>
+                                <li><a href="#n">성수1가제2동</a></li>
+                                <li><a href="#n">성수2가제1동</a></li>
+                                <li><a href="#n">성수2가제3동</a></li>
+                                <li><a href="#n">송정동</a></li>
+                                <li><a href="#n">옥수동</a></li>
+                                <li><a href="#n">왕십리도선동</a></li>
+                                <li><a href="#n">왕십리제2동</a></li>
+                                <li><a href="#n">용답동</a></li>
+                                <li><a href="#n">응봉동</a></li>
+                                <li><a href="#n">행당제1동</a></li>
+                                <li><a href="#n">행당제2동</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site_item n3">
+                        <button type="button" class="site_open"><span>서울시 자치구</span></button>
+                        <div class="site_panel">
+                            <ul class="clearfix">
+                                <li><a href="http://www.seoul.go.kr" target="_blank" title="새창" rel="noopener noreferrer">서울시</a></li>
+                                <li><a href="http://www.gangnam.go.kr" target="_blank" title="새창" rel="noopener noreferrer">강남구</a></li>
+                                <li><a href="http://www.gangdong.go.kr" target="_blank" title="새창" rel="noopener noreferrer">강동구</a></li>
+                                <li><a href="http://www.gangbuk.go.kr" target="_blank" title="새창" rel="noopener noreferrer">강북구</a></li>
+                                <li><a href="http://www.gangseo.seoul.kr" target="_blank" title="새창" rel="noopener noreferrer">강서구</a></li>
+                                <li><a href="http://www.gwanak.go.kr" target="_blank" title="새창" rel="noopener noreferrer">관악구</a></li>
+                                <li><a href="http://www.gwangjin.go.kr" target="_blank" title="새창" rel="noopener noreferrer">광진구</a></li>
+                                <li><a href="http://www1.guro.go.kr" target="_blank" title="새창" rel="noopener noreferrer">구로구</a></li>
+                                <li><a href="http://www.geumcheon.go.kr" target="_blank" title="새창" rel="noopener noreferrer">금천구</a></li>
+                                <li><a href="http://www.nowon.seoul.kr" target="_blank" title="새창" rel="noopener noreferrer">노원구</a></li>
+                                <li><a href="http://www.dobong.go.kr" target="_blank" title="새창" rel="noopener noreferrer">도봉구</a></li>
+                                <li><a href="http://www.ddm.go.kr" target="_blank" title="새창" rel="noopener noreferrer">동대문구</a></li>
+                                <li><a href="http://www.dongjak.go.kr" target="_blank" title="새창" rel="noopener noreferrer">동작구</a></li>
+                                <li><a href="http://www.mapo.go.kr" target="_blank" title="새창" rel="noopener noreferrer">마포구</a></li>
+                                <li><a href="http://www.sdm.go.kr" target="_blank" title="새창" rel="noopener noreferrer">서대문구</a></li>
+                                <li><a href="http://www.seocho.go.kr" target="_blank" title="새창" rel="noopener noreferrer">서초구</a></li>
+                                <li><a href="http://www.sd.go.kr" target="_blank" title="새창" rel="noopener noreferrer">성동구</a></li>
+                                <li><a href="http://www.sb.go.kr" target="_blank" title="새창" rel="noopener noreferrer">성북구</a></li>
+                                <li><a href="http://www.songpa.go.kr" target="_blank" title="새창" rel="noopener noreferrer">송파구</a></li>
+                                <li><a href="http://www.yangcheon.go.kr" target="_blank" title="새창" rel="noopener noreferrer">양천구</a></li>
+                                <li><a href="http://www.ydp.go.kr" target="_blank" title="새창" rel="noopener noreferrer">영등포구</a></li>
+                                <li><a href="http://www.yongsan.go.kr" target="_blank" title="새창" rel="noopener noreferrer">용산구</a></li>
+                                <li><a href="http://www.eunpyeong.seoul.kr" target="_blank" title="새창" rel="noopener noreferrer">은평구</a></li>
+                                <li><a href="http://www.jongno.go.kr" target="_blank" title="새창" rel="noopener noreferrer">종로구</a></li>
+                                <li><a href="http://www.junggu.seoul.kr" target="_blank" title="새창" rel="noopener noreferrer">중구</a></li>
+                                <li><a href="http://www.jungnang.go.kr" target="_blank" title="새창" rel="noopener noreferrer">중랑구</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site_item n4">
+                        <button type="button" class="site_open"><span>유관기관</span></button>
+                        <div class="site_panel">
+                            <ul class="clearfix">
+                                <li><a href="http://sharehub.kr" target="_blank" title="새창" rel="noopener noreferrer">공유허브</a></li>
+                                <li><a href="http://helpcall.mnd.mil.kr/" target="_blank" title="새창" rel="noopener noreferrer">국방헬프콜</a></li>
+                                <li><a href="http://seongdonggu.liveinkorea.kr" target="_blank" title="새창" rel="noopener noreferrer">다문화가족지원센터</a></li>
+                                <li><a href="https://www.gov.kr" target="_blank" title="새창" rel="noopener noreferrer">대한민국정부포털</a></li>
+                                <li><a href="http://www.safe182.go.kr/home/lcm/lcmMssList.do?rptDscd=2" target="_blank" title="새창" rel="noopener noreferrer">미아찾기(경찰청)</a></li>
+                                <li><a href="http://www.kkulmat.com/" target="_blank" title="새창" rel="noopener noreferrer">사이버가정학습</a></li>
+                                <li><a href="http://www.spo.go.kr/eastseoul/" target="_blank" title="새창" rel="noopener noreferrer">서울동부지방검찰청</a></li>
+                                <li><a href="http://www.seoulmaeul.org" target="_blank" title="새창" rel="noopener noreferrer">서울시마을공동체종합지원센터</a></li>
+                                <li><a href="http://www.hissf.or.kr" target="_blank" title="새창" rel="noopener noreferrer">서울장학재단</a></li>
+                                <li><a href="http://www.nec.go.kr/portal/main.do" target="_blank" title="새창" rel="noopener noreferrer">선거관리위원회</a></li>
+                                <li><a href="http://www.smpa.go.kr/sd" target="_blank" title="새창" rel="noopener noreferrer">성동경찰서</a></li>
+                                <li><a href="http://www.sensd.go.kr" target="_blank" title="새창" rel="noopener noreferrer">성동교육지원청</a></li>
+                                <li><a href="http://seongdong-gu.seoulcci.korcham.net/" target="_blank" title="새창" rel="noopener noreferrer">성동구상공회</a></li>
+                                <li><a href="http://www.sdsenior.or.kr" target="_blank" title="새창" rel="noopener noreferrer">성동노인종합복지관</a></li>
+                                <li><a href="http://www.ssdc.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성동문화원</a></li>
+                                <li><a href="http://www.seongdongedu.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성동발달장애인평생교육센터</a></li>
+                                <li><a href="http://sd.dfsc.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성동장애인가족지원센터</a></li>
+                                <li><a href="http://www.omni.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성동장애인복지관</a></li>
+                                <li><a href="https://www.linksd.net:56892/index.php" target="_blank" title="새창" rel="noopener noreferrer">성동종합사회복지관</a></li>
+                                <li><a href="http://www.hycusc.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성수종합사회복지관</a></li>
+                                <li><a href="http://fire.seoul.go.kr/seongdong/main/main.do" target="_blank" title="새창" rel="noopener noreferrer">성동 소방서</a></li>
+                                <li><a href="http://www.oksoocwc.or.kr" target="_blank" title="새창" rel="noopener noreferrer">옥수종합사회복지관</a></li>
+                                <li><a href="http://www.smwc.or.kr" target="_blank" title="새창" rel="noopener noreferrer">외국인근로자센터</a></li>
+                                <li><a href="http://www.sungdongyc.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">청소년문화의집</a></li>
+                                <li><a href="http://www.sdyc.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">청소년수련관</a></li>
+                                <li><a href="http://www.kesco.or.kr" target="_blank" title="새창" rel="noopener noreferrer">한국전기안전공사</a></li>
+                                <li><a href="http://www.sdjh.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">서울성동지역자활센터</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site_item n5">
+                        <button type="button" class="site_open"><span>관련누리집</span></button>
+                        <div class="site_panel">
+                            <ul class="clearfix">
+                                <li><a href="http://sdfc.familynet.or.kr" target="_blank" title="새창" rel="noopener noreferrer">건강가정지원센터</a></li>
+                                <li><a href="http://www.sdlib.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">구립도서관</a></li>
+                                <li><a href="http://design.sd.go.kr" target="_blank" title="새창" rel="noopener noreferrer">도시디자인</a></li>
+                                <li><a href="http://sdlib.or.kr/rainbow/" target="_blank" title="새창" rel="noopener noreferrer">무지개도서관</a></li>
+                                <li><a href="http://www.ssec.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">성동구사회적경제지원센터</a></li>
+                                <li><a href="http://job.seoul.go.kr/seongdong/" target="_blank" title="새창" rel="noopener noreferrer">성동구희망일자리센터</a></li>
+                                <li><a href="http://www.sdfac.or.kr/page/quick/sowol/?mode=originate" target="_blank" title="새창" rel="noopener noreferrer">소월아트홀</a></li>
+                                <li><a href="http://www.sdedu.kr" target="_blank" title="새창" rel="noopener noreferrer">원어민외국어학습지원센터</a></li>
+                                <li><a href="http://ccic.sd.go.kr/" target="_blank" title="새창" rel="noopener noreferrer">육아종합지원센터</a></li>
+                                <li><a href="https://www.sdvc.kr/" target="_blank" title="새창" rel="noopener noreferrer">자원봉사센터</a></li>
+                                <li><a href="http://jachi.sd.go.kr/" target="_blank" title="새창" rel="noopener noreferrer">자치회관</a></li>
+                                <li><a href="http://self.sd.go.kr/" target="_blank" title="새창" rel="noopener noreferrer">진로직업체험지원센터</a></li>
+                                <li><a href="http://www.sdedu.ac" target="_blank" title="새창" rel="noopener noreferrer">입시진학상담센터</a></li>
+                                <li><a href="http://sleic.sd.go.kr" target="_blank" title="새창" rel="noopener noreferrer">성동지역경제혁신센터</a></li>
+                                <li><a href="http://bogunso.sd.go.kr/04business/childrensports.jsp" target="_blank" title="새창" rel="noopener noreferrer">어린이운동물품대여</a></li>
+                                <li><a href="http://dokseodang.sd.go.kr/" target="_blank" title="새창" rel="noopener noreferrer">독서당 인문아카데미센터</a></li>
+                                <li><a href="http://sdsf.or.kr/" target="_blank" title="새창" rel="noopener noreferrer">(재)성동구인재육성장학재단</a></li>
+                                <li><a href="http://share.sd.go.kr" target="_blank" title="새창" rel="noopener noreferrer">성동공유센터</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn_close_box"><button type="button" class="close">닫기</button></div>
+            </div>
+            <div class="footer_content">
+                <div class="logo">
+                    <span class="logo_image"><img src="site/booking/images/common/logo_footer.png" alt="성동구" /></span>
+                    <span class="logo_name">통합예약</span>
+                </div>
+                <div class="link">
+                    <ul class="link_list clearfix">
+                        <li class="link_item n1"><a href="#n" class="link_anchor">개인정보처리방침</a></li>
+                        <li class="link_item n2"><a href="http://www.juso.go.kr" target="_blank" title="새창" rel="noopener noreferrer" class="link_anchor">도로명주소검색</a></li>
+                        <li class="link_item n3"><a href="#n" class="link_anchor">영상정보처리기기 관리방침</a></li>
+                        <li class="link_item n5"><a href="#n" class="link_anchor">홈페이지오류신고</a></li>
+                        <li class="link_item n6"><a href="#n" class="link_anchor">찾아오시는길</a></li>
+                        <li class="link_item n7"><a href="#n" class="link_anchor">직원검색</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info">
+                    <address>
+                        <span class="address">(04750) 서울특별시 성동구 고산자로 270 </span><br />
+                        <span class="tel n1">TEL. 02-2286-5114 (120 다산콜센터 연결)</span>
+                        <span class="divide">/</span>
+                        <span class="tel n2">02-2286-5200 (야간, 공휴일/당직실)</span>
+                    </address>
+                    <p class="copyright">Copyright (C) SEONGDONG-GU. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
+

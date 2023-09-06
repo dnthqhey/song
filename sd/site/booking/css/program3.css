@@ -1,0 +1,346 @@
+
+/* 교육 */
+.program.edu{}
+.program.edu .row.point_box .col-24.text_center .p-form-checkbox input[type="checkbox"] + label.agree_check .all_agree{padding-left:25px;}
+.p-form-checkbox, .p-form-radio{position:relative;}
+
+.tab .tab_content .box_list .box_anchor span:before{background-position:left 18.34%; background-size:862.5% 10183.33%;}
+.tab .tab_content .box_list .box_anchor:hover span:before{background-position:left 20.16%;}
+
+.p-table .subject a:hover{text-decoration:underline;}
+
+.p-wrap.calender .tab .tab_content{margin-top:0;}
+
+/* 교육 개인정보 동의 */
+@media all and (max-width:640px){
+    .accordion_item .text_wrap{display:none;}
+    .accordion_item.active .text_wrap{display:block;}
+
+    .box_line.privacy{overflow-y:scroll;}
+    .box_line.privacy .privacy_wrap{height:100px;}
+}
+
+/* program1_6 */
+.p-wrap.calender .tab .tab_panel{height:auto; margin-top:50px; margin-bottom:37px;}
+.p-wrap.calender .tab .tab_content{color:#000;}
+.p-wrap.calender .tab .tab_list{width:100%;}
+.p-wrap.calender .tab .tab_item{width:33.3%; height:auto;}
+.p-wrap.calender .tab .tab_item .tab_button{padding:17px 0;}
+.p-wrap.calender .tab .tab_item .tab_button span{vertical-align:top;}
+.p-wrap.calender .tab_content .box_line.simple.operate .dl > li .dt{color:#000;}
+.p-wrap.calender .tab_content .box_line.simple{margin-bottom:45px;}
+.p-wrap.calender .tab .tab_item.active .tab_button{border-color:#202b91;}
+.p-wrap.calender .btn.list{width:150px; padding-left:45px;}
+.p-wrap.calender .btn.list:after{right:45px;}
+.p-wrap .up{display:none;}
+@media all and (max-width:1500px){
+    .info_left{display:inline-block; width:400px; vertical-align:top;}
+    .info_right{float:right; margin-top:0; width:calc(100% - 430px);}
+    .info_slide .info_list{width:400px; height:auto;}
+    .info_slide .info_list .info_image img{width:auto; height:auto;}
+    .qr_code{margin-top:50px; margin-left:0;}
+}
+@media all and (max-width:1000px) {
+    .p-wrap.calender .process_title{margin-bottom:19px; padding-top:9px; border-top:2px solid #10386d;}
+    .p-wrap .process_text{font-size:16px; margin-bottom:0;}
+    .p-wrap .process_type{min-width:70px; margin-bottom:0; padding:4px 0; font-size:13px;}
+
+    .info_wrap{padding-bottom:20px; border-bottom:2px solid #10386d;}
+    .info_left{display:none; vertical-align:top;}
+    .info_right{float:none; margin-top:0; width:100%;}
+    .info_right{margin-top:30px;}
+    .info_right .box_line.type2{padding:0;}
+    .info_content{padding:0;}
+    .info_content .table.lecture{}
+    .info_content .table tbody th:first-child{}
+    .info_content .table.lecture tbody th{border-right:hidden;}
+    .info_content .table.lecture ul.bu{margin:0;}
+    .info_content .table.lecture .tel{vertical-align:top;}
+    .info_content .table.lecture .tel span{top:-1px; transform:scale(0.8); vertical-align:top;}
+    .info_person{margin-top:0;}
+    .info_person .reserve_wrap{margin-top:20px; padding:0; text-align:center;}
+    .info_person .reserve_wrap .btn{top:auto; right:auto;}
+    .info_person .reserve_wrap .btn:first-child{margin-left:0;}
+    .info_person{padding-top:0;}
+    .info_person .reserve_wrap .btn{padding:5px; min-width:90px;font-size:15px;}
+    .info_person .reserve_wrap .btn.person{top:-5px;min-width:110px;font-size:16px;}
+
+    .p-wrap .em_blue{line-height:17px; vertical-align:top;}
+    .p-wrap .em_blue > span{top:-1px; vertical-align:top;}
+
+    .p-wrap.calender .tab .tab_panel{margin-top:30px;}
+    .p-wrap.calender .tab .tab_item{width:33.3%; height:38px;}
+    .p-wrap.calender .tab .tab_item .tab_button{padding:0; line-height:38px;}
+    .p-wrap.calender .tab_content .box_line.simple{padding:20px 25px;}
+}
+@media all and (max-width:800px) {
+    .p-wrap.calender .tab .tab_item{padding:0;}
+}
+@media all and (max-width:640px) {
+    .p-wrap .up{display:block; opacity:1; visibility:visible; position:fixed; bottom:0; left:0; right:0; width:100%; height:80px; margin-left:auto; margin-right:auto; padding:17px 20px; background-color:rgba(200,229,251,0.5); transition-property:opacity, visibility, top; z-index:100;}
+    .p-wrap .up:before{display:block; position:absolute; top:0; left:-50vw; width:300vw; height:100%; background-color:rgba(200,229,251,0.5);}
+    .p-wrap .up .up_button{display:block; position:relative; width:100%; height:100%; background-color:#0e95ff; border-radius:15px; font-size:17px; line-height:45px; color:#fff; transition-property:top, background-color; text-align:center; z-index:1;}
+    .p-wrap .up.show{position:absolute; bottom:-25px; left:auto; right:auto;}
+    .p-wrap .up.show:before{background-color:#c9e5fb;}
+
+    .info_content .table.lecture tbody th{font-size:13px; line-height:17px;}
+    .info_content .table.lecture tbody td{font-size:13px; line-height:17px;}
+
+    .p-wrap .dl > li .dt{padding-left:10px; padding-right:5px; line-height:14px;}
+    .p-wrap .dl > li ul{padding-left:12px;}
+    .p-wrap .dl > li ul li{padding-left:10px; font-size:12px; line-height:14px;}
+    .p-wrap .dl > li ul li:before{top:5px; left:0;}
+
+    .p-wrap.calender{padding-bottom:40px;}
+    .p-wrap.calender .tab .tab_panel:after{display:block; position:absolute; top:0; left:-50vw; width:300vw; height:100%; background-color:#dfd6f6;}
+    .p-wrap.calender .tab .tab_list{padding-top:0;}
+    .p-wrap.calender .tab .tab_item{height:38px; margin-left:0;}
+    .p-wrap.calender .tab .tab_item .tab_button{position:relative; font-size:12px; line-height:14px; color:#303030; border:0; z-index:1;}
+    .p-wrap.calender .tab .tab_item.active .tab_button{background-color:#fff !important; border-color:unset; color:#1a2f60; font-weight:500;}
+    .p-wrap.calender .tab .tab_item .tab_button:before{display:none;}
+    .p-wrap.calender .tab .tab_item:first-child:before{display:none;}
+    .p-wrap.calender .tab .tab_item .tab_button span{display:block;}
+    .p-wrap.calender .tab_content .box_line.simple{margin-bottom:20px; padding:24px 17px; font-size:12px; line-height:14px;}
+    .p-wrap.calender .tab_content .box_line.simple.operate .dl > li .dd{line-height:14px;}
+    .p-wrap.calender .tab_content .box_line.simple.operate .dl > li .dt:before{top:3px; width:6px; height:6px; border-radius:100%;}
+
+
+    .map_title + .bu.dl{margin-top:10px;}
+    .map_title + .bu.dl > li .dt{font-size:12px; line-height:16px;}
+    .map_title + .bu.dl > li .dd{padding-left:10px;}
+    .p-wrap .dl > li .dd{ font-size:12px;}
+
+    .map_btn .btn.search{height:35px; padding-left:23px; font-size:13px; line-height:27px;}
+    .map_btn .btn.search:before{top:7px; transform:scale(0.8);}
+}
+
+
+/* 검색 */
+/* visual search */
+.visual_search_bar{margin-top:30px; text-align:center;}
+.visual_search_bar .search_form{height:auto; padding-left:0; padding-right:0;}
+.visual_search_bar .search_form:after{display:none;}
+.visual_search_bar .search_fieldset{position:relative; border:none; width:640px; margin:0 auto; padding:2px; border:1px solid #9b55d5; border-radius:5px; background-color:#fff; }
+.visual_search_bar .search_input{width:100%; padding:19px 65px 18px 30px; background-color:#fff; font-size:0; line-height:0;}
+.visual_search_bar .search_query{width:100%; height:28px; padding-left:5px; color:#464646; font-size:20px; line-height:28px; letter-spacing:-0.025em; font-weight:400; font-family:'Pretendard';}
+.visual_search_bar .search_query::placeholder{color:#464646; font-weight:400;}
+.visual_search_bar .search_query:-ms-input-placeholder{color:#464646; font-weight:400;}
+.visual_search_bar .search_label{font-size:0; line-height:0; z-index:auto;}
+.visual_search_bar .search_label:before{display:none;}
+.visual_search_bar .search_submit{display:block; position:absolute; top:11px; right:-11px; width:65px; height:65px; margin-top:auto; margin-bottom:auto; border-radius:3px; background:#9b55d5 url('/site/booking/images/main/search.png') no-repeat center center; font-size:0;}
+
+/* 공통 */
+.box_list .box_go{display: inline-block;width: calc(25% - 24px);margin-right: 32px;vertical-align:top;}
+.box_list .box_go:nth-child(4n){margin-right:0;}
+.box_list .box_item {}
+
+/* 교육 */
+.tab .tab_content .box_list .box_item a{width:100%;}
+
+.p-wrap .p-step{margin-bottom:35px;}
+.info_person .reserve_wrap{margin-top:35px;}
+
+/* 마이페이지 */
+.program.mypage{}
+.program.mypage .add-head{display:none;}
+.program.mypage .cancel_btn{padding:7px 17px; border:1px solid #b5b5b5; border-radius:5px; font-size:14px; line-height:20px;}
+.program.mypage .p_box.n2 .cancel_btn{margin-left:5px;}
+.program.mypage .p-table td a, .program.mypage .payment_btn{display:inline-block; padding:7px 17px; border:1px solid #4f4dba; border-radius:5px; font-size:14px; line-height:20px; color:#4f4dba;}
+.program.mypage .p-table caption+tbody th, .program.mypage .p-table colgroup+tbody th{background-color:#f3f3f9;}
+.program.mypage .p-table td{font-size:16px;}
+.program.mypage .p-table .subject{font-size:19px; color:#000; text-align:left; font-weight:500;}
+.program.mypage .p-table .subject.n2{text-align:center;}
+.program.mypage .p-wrap.program_list.eduform .p_table_wrap .p-table.simple.thead{z-index:999;}
+.program.mypage .p-wrap.program_list.eduform .p_table_wrap .scroll_wrap{height:auto; overflow-y:auto; overflow-x:auto;}
+.program.mypage .p-wrap.program_list.eduform .p_table_wrap .p-table.simple thead tr th{border-right:1px solid #eaeaea; border-bottom:1px solid #eaeaea;}
+.program.mypage .p-table caption+tbody tr:first-child td, .program.mypage .p-table caption+tbody tr:first-child th, .program.mypage .p-table colgroup+tbody tr:first-child td, .program.mypage .p-table colgroup+tbody tr:first-child th{border-top:1px solid #d2d2d2;}
+.program.mypage .program_list.eduform .card--bgcolor .search_band.n6{border-top:0; margin-bottom:5px;}
+.program.mypage .p-wrap.program_list.eduform .p_table_wrap .p-table.simple{table-layout:auto;}
+.program.mypage .program_list.eduform .p-table th{background-color:#f7f7f7;}
+.program.mypage.edit .program_list.eduform .p-table th{background-color:#f3f3f9;}
+.program.mypage.edit .program_list.eduform .p-table th, .program.mypage.edit .program_list.eduform .p-table td{padding:12px 15px;}
+.program.mypage .p-wrap.program_list.eduform .p_table_wrap .p-table.simple thead{z-index:999;}
+.program.mypage .p-table .em_pink{color:#cb309d;}
+.program.mypage .edit_btn_box{margin:40px 0;}
+.program.mypage .edit_btn{min-width:100px; height:auto; margin-right:20px; padding:15px; border-color:#596069; border-radius:10px; font-size:17px; line-height:20px; color:#55575a; text-align:center; box-shadow: 0px 16px 32px 0px rgba(11, 44, 90, 0.13);}
+.program.mypage .edit_btn:last-child{margin-right:0;}
+
+@media all and (max-width:1000px){
+    .program.mypage .p-wrap.program_list.eduform .p_table_wrap{display:block;}
+    .program.mypage .program_list.eduform .p-table th{font-size:15px;}
+    .program.mypage .p-table td{font-size:14px;}
+    .program.mypage .p-table .subject{font-size:15px;}
+    .program.mypage .program_list.eduform .p-table th, .program_list.eduform .p-table td{padding-top:7px; padding-bottom:7px;}
+}
+@media all and (max-width:640px){
+    .program.mypage .edit_btn_box{margin:15px 0;}
+    .program.mypage .edit_btn{min-width:0; margin-right:5px; font-size:14px; line-height:16px;}
+    .program.mypage.edit .p-table.except th{width:30%;}
+}
+
+/* 레이어팝업 */
+#mask{display:none; position:fixed; left:0; top:0; width:1000vw; height:1000vw; z-index:9999; background-color:rgba(0,0,0,0.5);}
+#p-layerpop{display:none; position:fixed; top:50%; left:50%; width:610px; max-height:660px; border-radius:25px; background-color:#fff; transform:translate(-50%, -50%); overflow:hidden;
+    z-index:10000;}
+#p-layerpop .layer_top{position:relative; padding:20px 20px 17px 25px; background-color:#1d234a; font-size:22px; line-height:24px; color:#fff; font-weight:500;}
+#p-layerpop .layer_top .close{display:block; position:absolute; top:17px; right:17px; width:30px; height:30px; background-image:url(/site/booking/images/program/layer_close.png); background-position:center center; background-repeat:no-repeat; font-size:0; line-height:0;}
+#p-layerpop .layer_bottom{padding:25px;}
+#p-layerpop .layer_bottom .inner_box{margin-bottom:25px; padding:25px 0; border:1px solid #d7d8d9; background-color:#f6f7f9; font-size:16px; line-height:24px; text-align:center;}
+#p-layerpop h3.type2.side{margin-top:0; margin-bottom:15px;}
+#p-layerpop .p-table caption+tbody tr:first-child td, #p-layerpop .p-table caption+tbody tr:first-child th, #p-layerpop .p-table colgroup+tbody tr:first-child td, #p-layerpop .p-table colgroup+tbody tr:first-child th{border-top:2px solid #000;}
+#p-layerpop .p-table caption+tbody tr:last-child td, #p-layerpop .p-table caption+tbody tr:last-child th, #p-layerpop .p-table colgroup+tbody tr:last-child td, #p-layerpop .p-table colgroup+tbody tr:last-child th{border-bottom-color:#808080;}
+#p-layerpop .p-table--th-left th{padding-left:40px;}
+#p-layerpop .p-table colgroup+tbody tr th{border-right:1px solid #d2d2d2;}
+#p-layerpop .p-table td, #p-layerpop .p-table th{min-height:60px; border-color:#d2d2d2; padding-top:15px; padding-bottom:15px; }
+#p-layerpop .p-table td{padding-top:10px; padding-bottom:10px; }
+#p-layerpop .p-table .p-input{height:40px; padding-left:10px;}
+#p-layerpop .btn_box{margin-top:20px; text-align:center;}
+#p-layerpop .btn_box input, #p-layerpop .btn_box button, #p-layerpop .btn_box a{width:140px; height:auto; margin-right:5px; padding:13px; border:1px solid #b6b6b7; border-radius:5px; font-size:17px; line-height:20px; color:#494949; }
+#p-layerpop .btn_box .p-button.write{border-color:#0e95ff; background-color:#0e95ff; color:#fff;}
+#p-layerpop .btn_box .p-button:last-child{margin-right:0;}
+#p-layerpop .cancel_box{height:200px;}
+#p-layerpop .cancel_box p{margin-top:100px; font-size:24px; line-height:30px; color:#000; font-weight:500; text-align:center;}
+
+@media all and (max-width:800px){
+    #p-layerpop{width:100%; height:100%;}
+    #p-layerpop .layer_bottom{padding:5%;}
+    #p-layerpop .layer_bottom .inner_box{margin-bottom:10px; padding:10px; word-break:keep-all;}
+    #p-layerpop .p-table td, #p-layerpop .p-table th{padding-top:7px; padding-bottom:7px; min-height:45px;}
+    #p-layerpop .btn_box{margin-top:10px;}
+    #p-layerpop .p-table--th-left th{padding-left:20px;}
+    #p-layerpop .btn_box input, #p-layerpop .btn_box button, #p-layerpop .btn_box a{width:auto; padding:7px; font-size:14px; line-height:16px;}
+}
+
+
+.p-wrap.program_list.eduform .tab_content .p_table_wrap .p-table.simple tbody tr td{letter-spacing:-0.09em;}
+
+/* 공간대여 뷰페이지 수정 */
+.page4832 .info_content .table.lecture tbody th{padding-top:23px; padding-bottom:23px;}
+.page4832 .info_person .reserve_wrap{margin-top:122px;}
+.page4832 .info_person .reserve_wrap .btn{top:auto; right:auto;}
+
+@media all and (max-width:1000px){
+    .page4832 .info_content .table.lecture tbody th{padding-top:8px; padding-bottom:8px;}
+    .page4832 .info_person .reserve_wrap{margin-top:35px;}
+}
+
+/* 교육/강좌 생애주기 초기화 버튼  */
+.program_list.eduform .life_cycle .select_btn-wrap button.reset{border-color:#10386d; background-color:#10386d; color:#fff;}
+
+@media all and (max-width:640px){
+    .page4832 .p-wrap .btn_wrap .btn{padding:7px;}
+}
+
+/* 프로그램 */
+.tab .tab_content .box_list .box_top{height:215px;}
+.tab .tab_content .box_list .box_img img{height:100%;}
+
+@media all and (max-width:640px){
+
+}
+
+/* 자치회관 프로그램 신청 */
+.page4903_wrap.program_list.eduform .box .box_item{margin-top:0; margin-bottom:0; width:100%;}
+.page4903_wrap.program_list.eduform .card--bgcolor select{width:180px; height:50px; margin-right:10px; padding:0 20px; border:1px solid #e0e0e0; border-radius:10px; background:#fff; font-size:14px; line-height:16px;}
+.page4903_wrap.program_list.eduform .search_band{width:100%; padding:14px 0; margin:0; text-align:center; font-size:14px;}
+.page4903_wrap.program_list.eduform .search_band .search_input{width:60%;}
+.page4903_wrap.program_list.eduform .life_cycle{font-size:16px; line-height:20px;}
+.page4903_wrap.program_list.eduform .life_cycle p.select_cycle{width:fit-content; line-height: normal;}
+.page4903_wrap.program_list.eduform .life_cycle p.select_cycle:before{top:0; background:url("/site/booking/images/program/icon_location.png") no-repeat left center / contain;}
+.page4903_wrap.program_list.eduform .life_cycle p.select_cycle:before{display:block;position:absolute;top: -2px;left: -2px;width: 25px;height: 19px;/* margin-left:10px; */background:url('/site/booking/images/program/p-icon2.png') no-repeat;background-position: -34px -39px;}
+.page4903_wrap.program_list.eduform .select_btn_list .sd_input{margin-right:10px;}
+
+.page4903_wrap .box_list{padding-right:35px;}
+.page4903_wrap .box_item{display:inline-block; position:relative; width:calc(50% - 37px); margin:35px 0; font-size:0; line-height:normal;}
+.page4903_wrap .box_item:nth-child(even){padding-left:74px;}
+.page4903_wrap .box_item:after{display:inline-block; position:absolute; left:0; bottom:-35px; width:100%; height:1px; background:#d7d8d9;}
+.page4903_wrap .box .box_item:after{display:none;}
+.page4903_wrap .img_wrap{display:inline-block; position:relative; width:230px; height:325px; border:1px solid #dadada; vertical-align:middle; transition:all 0.4s;}
+.page4903_wrap .img_wrap:after{display:inline-block; position:absolute; top:0; left:0; width:100%; height:100%; transition:all 0.4s;}
+.page4903_wrap .img_wrap .img{width:100%; height:100%;}
+.page4903_wrap .img_wrap .tag{position:absolute; top:0; left:0; padding:20px 12px; color:#fff; font-size:16px; font-weight:600; line-height:1;}
+.page4903_wrap .img_wrap .tag.n1{background:#179bf3;}
+.page4903_wrap .img_wrap .tag.n2{background:#c367f2;}
+.page4903_wrap .img_wrap a{opacity:0; position:absolute; top:50%; left:50%; z-index:-1; width:160px; border:2px solid #fff; border-radius:10px; background:url('/site/booking/images/program/facility_next.png') no-repeat 85% center / 6px; color:#fff; font-size:16px; font-weight:500; text-align:center; line-height:50px; transform:translate(-50%, -50%);transition:all 0.4s;}
+.page4903_wrap .img_wrap:hover:after, .page4903_wrap .img_wrap:focus:after{background:rgba(4, 37, 160, 0.7);}
+.page4903_wrap .img_wrap:hover a, .page4903_wrap .img_wrap a:focus{opacity:1; z-index:2;}
+.page4903_wrap .info_wrap{display:inline-block; width:calc(100% - 230px); margin:0; padding-bottom:10px; padding-left:35px; font-size:14px; vertical-align:bottom;}
+.page4903_wrap .info_wrap .title{padding-bottom:30px; border-bottom:1px solid #000; color:#000; font-size:26px; font-weight:600; line-height:32px; word-break:keep-all;}
+.page4903_wrap .info_wrap .info_list{margin-top:35px;}
+.page4903_wrap .info_wrap .info_item{font-size:0;}
+.page4903_wrap .info_wrap .info_item + .info_item{margin-top:3px;}
+.page4903_wrap .info_wrap .info_list span{display:inline-block; color:#797979; font-size:16px; vertical-align:middle;}
+.page4903_wrap .info_wrap .info_list .tag.n1 + span{color:#000; font-weight:600;}
+.page4903_wrap .info_wrap .info_list span.tag{width:50px; height:25px; margin-right:10px; border:1px solid; border-radius:5px; font-size:14px; text-align:center; line-height:23px; color:#000}
+.page4903_wrap .info_wrap .info_list span.tag.n2{border-color:#f09daf; color:#cf3939;}
+.page4903_wrap .info_wrap .info_list span.tag.n3{border-color:#9ce0cc; color:#04a480;}
+.page4903_wrap .info_wrap .info_list span.tag.n4{border-color:#9dbaf0; color:#424aaf;}
+.page4903_wrap .info_wrap .info_list span.tag.n5{border-color:#f8987b; color:#f14917;}
+.page4903_wrap .info_wrap .info_list span.tag.n6{border-color:#76cce6; color:#079dbd;}
+
+.page4903_wrap .p-table{margin-top:30px;}
+@media all and (max-width:1440px){
+    /* .page4903_wrap .program_list.eduform .card--bgcolor{padding:20px 0;} */
+    .page4903_wrap .program_list.eduform .card--bgcolor select{width:120px;}
+    .page4903_wrap .select_wrap{padding:15px 30px;}
+    .page4903_wrap .program_list.eduform .life_cycle .select_btn-wrap button{margin-bottom:5px;}
+    .page4903_wrap .box_list{padding:0 3%;}
+    .page4903_wrap .box_item{width:100%;}
+    .page4903_wrap .box_item:nth-child(even){padding-left:0;}
+    .page4903_wrap .info_wrap{border-bottom:none;}
+}
+@media all and (max-width:1000px){
+    .page4903_wrap.program_list.eduform .card--bgcolor select{width:auto; vertical-align:top;}
+    .page4903_wrap.program_list.eduform .life_cycle p.select_cycle{display:block; margin-bottom:5px; padding-left:20px;}
+    .page4903_wrap.program_list.eduform .life_cycle p.select_cycle:before{top:-2px; transform:scale(0.8);}
+    .page4903_wrap.program_list.eduform .search_band .search_input{width:40%; vertical-align:top;}
+    .page4903_wrap.program_list.eduform .life_cycle .select_btn-wrap{display:block; margin-left:0; text-align:left;}
+    .page4903_wrap.program_list.eduform .select_btn_list .sd_input{margin-bottom:5px;}
+}
+
+@media all and (max-width:800px){
+    .program_list.eduform .card--bgcolor .search_band:not(.search_band.n6) .search_input{width:40%; margin-top:0;}
+}
+
+@media all and (max-width:640px){
+    .page4903_wrap.program_list.eduform .card--bgcolor select{height:40px; padding:0 10px;}
+    .page4903_wrap.program_list.eduform .search_band .search_input{font-size:14px;}
+    .program_list.eduform .card--bgcolor .search_band .p-button{position:relative; bottom:auto; right:auto; width:65px; margin-top:0; margin-bottom:0; font-size:14px; border-radius:9px;}
+    .page4903_wrap.program_list.eduform .select_btn_list .sd_input{font-size:14px;}
+    .page4903_wrap .img_wrap{display:block; margin:0 auto;}
+    .page4903_wrap .info_wrap{width:100%; margin-top:25px; padding-left:0;}
+    .page4903_wrap .info_wrap .title{padding-bottom:26px;}
+    .page4903_wrap .info_wrap .info_list{margin-top:26px;}
+    .page4903_wrap .program_list.eduform .card--bgcolor{padding:10px 22px;}
+    .page4903_wrap .program_list.eduform .card--bgcolor .search_band{text-align:center;}
+    .page4903_wrap .program_list.eduform .search_band .search_input{width:74%;}
+    .page4903_wrap .program_list.eduform .card--bgcolor .search_band .p-button{position:initial; width:auto; height:50px; padding:0 19px; border-radius:9px; font-size:15px;}
+    .page4903_wrap .program_list.eduform .life_cycle p.select_cycle{margin-bottom:0;}
+}
+@media all and (max-width:484px){
+    .page4903_wrap .program_list.eduform .card--bgcolor{padding:10px;}
+    .page4903_wrap .program_list.eduform .card--bgcolor select{width:80px; padding:0 8px;}
+    .page4903_wrap .program_list.eduform .card--bgcolor .search_band:not(.search_band.n6) .search_input{width:40%;}
+}
+
+/* 구민정보화교육 */
+.page4804 .box .box_item{margin-top:0; margin-bottom:0; }
+.page4903 .btn_wrap{margin:20px 0; text-align:center;}
+.page4903 .edu .detail_state {border-radius: 5px;  background-color: #5c74a0;  font-size: 16px;  color: #fff;  padding: 2px 10px; vertical-align:top;}
+
+/* 행사접수 목록 */
+.online_receptionist .list{ text-align:center;}
+.online_receptionist .list .top_btn_cts {display:inline-block;position:relative; margin-bottom:35px;}
+.online_receptionist .list .top_btn_cts a {position:relative; width:39px; height:39px; margin-top:-17px; border:2px solid #000; border-radius:50%; background-repeat:no-repeat; background-position:center; font-size:0; vertical-align:middle;}
+.online_receptionist .list .top_btn_cts a.prev {margin-right:30px;background-image:url('/site/reserve/images/program/online_receptionist_prev.png');}
+.online_receptionist .list .top_btn_cts a.next {margin-left:30px; background-image:url('/site/reserve/images/program/online_receptionist_next.png');}
+#contents .online_receptionist .list .top_btn_cts h3 {display:inline-block;font-size:35px; line-height:39px;  font-weight:600; color:#000; letter-spacing:-0.03em; text-align:center;}
+.page4835 p-table .add-head{display:none;}
+@media all and (max-width:640px){
+    .online_receptionist .list .top_btn_cts a.prev{margin-right:10px;}
+    .online_receptionist .list .top_btn_cts a.next{margin-left:10px;}
+    .page4835 p-table .add-head{display:none;}
+}
+
+.page4805 .btn_wrap{margin:20px 0;}
+.page4806 .btn_wrap{margin:20px 0;}

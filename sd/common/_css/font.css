@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* 본고딕 */
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 200;
+	src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 500;
+	src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
+}
+
+/* 성동고딕 */
+@font-face{
+	font-family: 'SDGothic';
+	font-weight: 600;
+	src: url("../fonts/SDGothic-Bold.woff2") format('woff2'),
+	url("../fonts/SDGothic-Bold.woff") format('woff');
+}
+
+
+/* 본명조 */
+@font-face{
+	font-family: 'NotoSerifKr';
+	src: url("../fonts/NotoSerifKR-Regular.woff2") format('woff2'),
+	url("../fonts/NotoSerifKR-Regular.woff") format('woff');
+}

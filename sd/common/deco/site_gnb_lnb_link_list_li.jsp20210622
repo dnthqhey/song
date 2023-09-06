@@ -1,0 +1,21 @@
+<%@ page language="java" pageEncoding="UTF-8"%><%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><%@ taglib prefix="tsu" uri="http://www.hanshinit.co.kr/jstl/tagStringUtil"%>
+						<c:choose>
+							<c:when test="${empty IS_NOT_FOR_LOGIN and not empty loginVO and not empty loginVO.uniqId}">
+						<li class="link_item n1 mypage"><a href="/main/selectMyInfo.do?key=4004&" class="link_anchor"><span>마이페이지</span></a><%-- ${loginVO.id} ${loginVO.name} ${loginVO.userSe} --%></li>
+						<li class="link_item n2"><a href="/logout.do" class="link_anchor"><span>로그아웃</span></a><%-- ${loginVO.id} ${loginVO.name} ${loginVO.userSe} --%></li>
+							</c:when>
+							<c:otherwise>
+								<c:choose>
+								<c:when test="${empty menuInfo}">
+								<c:set var="rurl">/${siteInfo.siteId}/index.do</c:set>
+								</c:when>
+								<c:otherwise>
+								<c:set var="rurl">/${siteInfo.siteId}/sub.do?key=${key}</c:set>
+								</c:otherwise>
+								</c:choose>
+                        <li class="link_item n1">
+                        	<a id="GNB_LOGIN_ANCHOR<c:out value="${param.whoscall}"/>" href="/loginForm.do?url=${tsu:urlEncodeByEnc(rurl, 'utf-8')}" class="link_anchor"><span>로그인</span></a>
+                        </li>
+                        <li class="link_item n2"><a href="/main/joinStep1Form.do?key=${joinMenuKey}" class="link_anchor"><span>회원가입</span></a></li>
+							</c:otherwise>
+						</c:choose>
