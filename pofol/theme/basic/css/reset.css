@@ -1,0 +1,131 @@
+html{overflow-y:scroll}
+body {}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,button,table{font-family: 'Pretendard',sans-serif; font-size:13px;/*line-height:1.4em;*/color:#666;letter-spacing:-0.025em;}
+table{font-size:1em}
+table,th,td{border-collapse:collapse;}
+td{empty-cells:show;}
+dl,dt,dd{border-collapse:collapse;}
+img,fieldset{border:0}
+ul,ol,li{list-style:none}
+a{color:#666;text-decoration:none; font-family:'Pretendard',sans-serif;letter-spacing:-0.05em;}
+a:hover,a:active,a:focus,a:visited{text-decoration:none}
+@charset "UTF-8";
+table{border:0 none;border-spacing:0}
+caption,th,td{border:0 none;font-weight:normal;text-align:left}
+caption{visibility:hidden;overflow:hidden;width:1px;height:1px;font-size:0;line-height:0}
+button{cursor:pointer}
+hr{display:none}
+em{font-style:normal}
+.blind,legend{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+address,caption,strong,em,cite{font-weight:normal;font-style:normal}
+img,input,button,textarea,select{vertical-align:middle}
+
+/* 접근성 */
+.accessibility{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0}
+
+/*input 스타일 추가*/
+input[type=email], 
+input[type=password], 
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 0 10px 0 10px;
+    background: 0 0;
+    outline: 0;
+}
+
+input[type=password] {
+	font-family:sans-serif;
+}
+
+/*셀렉트박스 기본값 제거 후 디자인 적용*/
+select {-webkit-appearance: none; 
+   -moz-appearance: none;   
+   appearance: none;      
+   margin:0;
+   background:url('/img/select_cursor.png') #fff no-repeat 97% 50%;
+   padding:0 30px 0 10px;
+   display: inline-block;
+   color: #555;
+   vertical-align: middle;
+   border: 1px solid #e5e5e5;
+   border-radius: 0;
+   outline: 0;
+}
+select::-ms-expand {display: none; /* 화살표 없애기 for IE10, 11*/ }
+
+/* Oligopoly */
+@font-face {
+	font-family: 'Oligopoly';
+	font-weight: 800;
+	src:url('./font/Oligopoly Black.ttf') format('truetype') ,url('./font/Oligopoly-Black.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Oligopoly';
+	font-weight: 700;
+	src:url('font/Oligopoly-Bold.ttf') format('truetype') ,url('./font/Oligopoly-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Oligopoly';
+	font-weight: 400;
+	src:url('font/Oligopoly-Regular.ttf') format('truetype') ,url('./font/Oligopoly-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Oligopoly';
+	font-weight: 300;
+	src:url('./font/Oligopoly Light.ttf') format('truetype') ,url('./font/Oligopoly-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Oligopoly';
+	font-weight: 100;
+	src:url('./font/Oligopoly Thin.ttf') format('truetype') ,url('./font/Oligopoly-Thin.otf') format('opentype');
+}
+/* Pretendard */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('./font/Pretendard-ExtraBold.woff2') format('woff2'), url('./font/Pretendard-ExtraBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./font/Pretendard-Bold.woff2') format('woff2'), url('./font/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('./font/Pretendard-SemiBold.woff2') format('woff2'), url('./font/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('./font/Pretendard-Medium.woff2') format('woff2'), url('./font/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('./font/Pretendard-Regular.woff2') format('woff2'), url('./font/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('./font/Pretendard-Light.woff2') format('woff2'), url('./font/Pretendard-Light.woff') format('woff');
+}
+

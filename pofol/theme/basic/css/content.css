@@ -1,0 +1,185 @@
+/* ----------------------------------------------sub_about-------------------------------------------------------- */
+/* 공용 */
+.sub_about .awards,
+/* .sub_about .contact */ 
+.sub_about .view-section, 
+.sub_about .scroll-space, 
+.sub_about .history, 
+.sub_about .teams 
+{ /* container padding */padding:0 50px; }
+.sub_about h3{overflow:hidden; position:relative; padding-bottom:10px; padding-top:6px;}
+.sub_about h3 span {font:800 54px/1 'Oligopoly'; letter-spacing:0em; -webkit-text-stroke: 1px #000; -webkit-text-fill-color: transparent; -webkit-background-clip: text; color:#000; opacity:0; position:relative; left:-10%;}
+.tit-activate{ animation: tit-fadein 0.8s ease-out; animation-fill-mode: forwards; }
+
+.sub_about .history, 
+.sub_about .awards, 
+.sub_about .teams { margin-bottom:200px; }
+
+
+/* ------------------------------------view-section */
+.sub_about .view-section { width:100%; position:fixed; top:0;left:0;animation: fadein 1s ease-out; animation-fill-mode: forwards; opacity:0; animation-delay:0.8s}
+.sub_about  h2 { font:500 17px/1 'Oligopoly'; color:#000; letter-spacing:-0.025em; margin-bottom:41px; }
+.sub_about .view-section .vs-tree_wrap { width:471px; position:absolute; top:50%; left:8.437%;}
+.sub_about .view-section .vs-text_wrap { width:max-content;position:absolute; top:60%; left:50%;transform:translate(-50%,-20%) }
+.sub_about .view-section .vs-text_wrap .vs-text {  font:400 23px/1.5 'Pretendard'; color:#000; letter-spacing:0em; }
+.sub_about .view-section .vs-text_wrap .vst-op0 { opacity:0.1; position:relative;top:30px;margin-top:40px; }
+.sub_about .view-section .vs-slide-txt {  width:1635px;position:absolute; margin-top:-75px;top:50%; left:100%;}
+
+/* ------------------------------------scroll-space */
+.sub_about .scroll-space { height:3300px;padding-top:180px; }
+.sub_about .scroll-space .vs-test_wrap{ width:100%; }
+.sub_about .scroll-space .vs-h3_1{  }
+.sub_about .scroll-space .vs-h3_2{ position:relative; top:-10px; }
+.sub_about .scroll-space .vs-logo svg{ overflow:visible; }
+.sub_about .scroll-space .vs-logo{ width:200px; margin-top:0px;}
+.sub_about .scroll-space .vs-logo path {fill: none; stroke-width: 1.3px ;stroke: #777;  stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash 5s linear; animation-fill-mode: forwards; animation-delay:0.8s;}
+.sub_about .scroll-space .vs-logo circle {opacity:0 }
+/* ------------------------------------hostory */
+.sub_about .history { width:100%}
+.sub_about .history h3 { position:absolute; top:0; left:0;}
+.sub_about .history .hs-list_container { width:100%; display:flex; flex-direction:column; align-items:end; opacity:0;position:relative; top:100px;} 
+.hL-activate{ animation: hL-fadein 1s ease-out; animation-fill-mode: forwards; }
+.sub_about .history .hs-list_wrap { width:60%; position:relative; border-left:solid 1px #ddd;padding:92px 0;}
+.sub_about .history .hs-list { width:100%; position:relative;  }
+.sub_about .history .h2020 { margin-bottom: 107px}
+.sub_about .history .h2010 { margin-bottom: 107px}
+.sub_about .history .h2020::before { content:'2020’s';position:absolute;top:-17px;left:-230px; font:700 48px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010::before { content:'2010’s';position:absolute;top:-17px;left:-230px; font:700 48px/1 'Pretendard'; color:#000; display:block;  letter-spacing:0;}
+.sub_about .history .h2000::before { content:'2000’s';position:absolute;top:-17px;left:-230px; font:700 48px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .hs-list li { font:400 17px/1 'Pretendard'; color:#666; letter-spacing:-0.025em; margin-bottom:1.58em; position:relative; padding-left:109px; margin-left:7px;}
+.sub_about .history .hs-list li:last-child{ margin-bottom:0px }
+.sub_about .history .hs-list li:first-child::after{ content:''; width:55px; height:15px;position:absolute;top:0; left:-54px; display:block; background:url(../img/sub/sub_about_history-bullet.svg) }
+.sub_about .history .h2020 li:nth-child(1)::before{ content:'2021. 05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(1)::before{ content:'2017. 12';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(2)::before{ content:'2017. 09';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(3)::before{ content:'2016. 10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(4)::before{ content:'2016. 04';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(5)::before{ content:'2016. 01';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(6)::before{ content:'2014. 10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(7)::before{ content:'2014. 08';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(8)::before{ content:'2014 .05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(9)::before{ content:'2011. 11';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(10)::before{ content:'2011 .11';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(11)::before{ content:'2011 .05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(1)::before{ content:'2009 .07';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(2)::before{ content:'2007 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(3)::before{ content:'2006 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(4)::before{ content:'2006 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(5)::before{ content:'2006 .08';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+
+/* ------------------------------------awards */
+.sub_about .awards { width:100%}
+.sub_about .awards .align_wrap{ width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:40px;}
+.sub_about .awards h3 {  }
+.sub_about .awards .controller{  display:flex; justify-content:space-between; align-items:center; }
+.sub_about .awards .controller .swiper-pagination { position:relative;top:0; left:0; font:500 18px/1.55 'Pretendard'; color:#999; letter-spacing:-0.025em; margin:0 11px;}
+.sub_about .awards .controller .swiper-pagination .swiper-pagination-current { color:#000 }
+.sub_about .awards .controller .awards_prev,.sub_about .awards .controller .awards_next { cursor:pointer; transition:0.1s;}
+.sub_about .awards .awards-slide { overflow:visible; }
+.sub_about .awards .awards-slide .swiper-wrapper { transform: translate3d(1px, 0px, 0px);}
+.sub_about .awards .awards-slide .swiper-wrapper .swiper-slide { width:550px; height:360px; padding:40px; box-sizing:border-box; background:#f5f6f8; cursor:grab;} 
+.sub_about .awards .awards-slide .awards-txt { width:100%; }
+.sub_about .awards .awards-slide .awards-txt dt{ font:600 26px/1.23 'Pretendard'; color:#000; letter-spacing:-0.025em; margin-bottom:30px; }
+.sub_about .awards .awards-slide .awards-txt dd li{ font:400 17px/1.4 'Pretendard'; color:#666; letter-spacing:-0.025em; margin-bottom:12px; }
+.sub_about .awards .awards-slide .awards-txt dd li b{ font:600 17px/1.4 'Pretendard'; color:#000; letter-spacing:-0.025em; }
+
+/* ------------------------------------teams */
+.sub_about .teams { width:100%; }
+.sub_about .teams h3 { margin-bottom:40px; }
+.sub_about .teams .teams_list { width:100%; display:flex; justify-content:space-between; flex-wrap:wrap;  }
+.sub_about .teams .teams_list li { position:relative; width:16.666%; display:flex; align-items:center; justify-content:center;}
+.sub_about .teams .teams_list li span { position: absolute; font:500 24px/1 'Pretendard'; color:#000; letter-spacing:-0.025em; }
+.sub_about .teams .teams_list li .team-cir {  stroke-dasharray: 1000; stroke-dashoffset: 1000; }
+.sub_about .teams .teams_list li .cir-activate{  animation: dash 2s linear; animation-fill-mode: forwards; }
+.sub_about .teams .teams_list li .t-cir2 { transform:rotate(180deg) }
+
+/* ------------------------------------contact */
+.sub_about .contact h3 { margin-bottom:40px; }
+.sub_about .contact .contact-map_wrap { width:100%; height:640px;overflow:hidden; position:relative;display:flex; align-items:center; justify-content:center;}
+.sub_about .contact .contact-map_wrap .contect-info_wrap { position:absolute; display:flex; align-items:center;}
+.sub_about .contact .contact-map_wrap .contect-info { width: 394px; height:auto; background:#fff; padding:40px; box-sizing:border-box; position:absolute;z-index:10}
+.sub_about .contact .contact-map_wrap .contect-info dl { width:100%; }
+.sub_about .contact .contact-map_wrap .contect-info dt { font:700 24px/1 'Pretendard'; color:#000; letter-spacing:-0.025em; margin-bottom:21px;}
+.sub_about .contact .contact-map_wrap .contect-info dd { font:400 17px/1 'Pretendard'; color:#333; letter-spacing:-0.025em; margin-bottom:10px;}
+.sub_about .contact .contact-map_wrap .contect-info dd:last-child{ margin-bottom:0; }
+.sub_about .contact .contact-map_wrap .contect-info dd span{ font:700 17px/1 'Pretendard'; color:#999; letter-spacing:-0.025em; margin-right:10px;}
+.sub_about .contact .root_daum_roughmap { width:100%; height:100%; }
+.sub_about .contact .root_daum_roughmap .wrap_map{ height:100%; }
+.sub_about .contact .root_daum_roughmap .wrap_controllers{ display:none; }
+@media screen and ( min-width:770px ){/* pc사이즈 에니메이션-------- */
+	.sub_about .awards .controller .awards_prev:hover img,.sub_about .awards .controller .awards_next:hover img{ filter:brightness(0) }
+}
+/* keyframes */
+@keyframes dash { to { stroke-dashoffset: 0;}}
+@keyframes fadein { to { opacity:1}}
+@keyframes tit-fadein { to { opacity:1; left:0;}}
+@keyframes hL-fadein { to { opacity:1; top:0;}}
+@keyframes visible { to { overflow:visible}}
+
+/* media query */
+@media (hover: hover) and (pointer: fine) {/* pc에서만 반응 */
+	
+}
+@media screen and (max-width:1384px){
+	.sub_about .contact { padding:0 50px; }
+}
+@media screen and (max-width:1280px){
+
+}
+@media screen and (max-width:769px){
+	.sub_about .view-section, 
+	.sub_about .history, 
+	.sub_about .awards, 
+	.sub_about .teams, 
+	.sub_about .contact { padding:0 0;}
+	.sub_about .history, 
+	.sub_about .awards, 
+	.sub_about .teams { margin-bottom:80px; }
+	
+	.sub_about h2 { margin-bottom:20px; }
+	.sub_about h3 span{ font-size:45px; }
+	
+/* ----------------------------------------view-section & scroll-space */
+	.sub_about .scroll-space { padding:80px 0 0 0;}
+	.sub_about .scroll-space .vs-logo { width:180px; margin-top:-10px;}
+	.sub_about .scroll-space .vs-logo path {fill: none; stroke-width: 1px ;stroke: #000;}
+	
+	.sub_about .view-section .vs-tree_wrap { width:350px; position:absolute; top:50%; left:-30%; opacity:0.6}
+	.sub_about .view-section .vs-text_wrap { width:80%; position:absolute; top:60%; left:50%; }
+	.sub_about .view-section .vs-text_wrap .vs-text { width:100%; font:400 13.5px/1.5 'Pretendard'; color:#000; letter-spacing:0em; }
+	.sub_about .view-section .vs-text_wrap .vst-op0 { opacity:0; position:relative;top:20px;margin-top:20px; }
+	.sub_about .view-section .vs-slide-txt {  width:800px;position:absolute; margin-top:-75px;top:50%; left:100%;}
+
+/* ------------------------------------------------------------hostory */
+	.sub_about .history { overflow:visible; }
+	.sub_about .history .hs-list_wrap{width:100%; margin-top:40px;  padding:92px 0 0 0; border:none;}
+	.sub_about .history .h2020::before { top:-63px; left:16px; z-index:1; font-size:32px; background:#fff }
+	.sub_about .history .h2010::before { top:-63px; left:16px; z-index:1; font-size:32px; background:#fff }
+	.sub_about .history .h2000::before { top:-63px; left:16px; z-index:1; font-size:32px; background:#fff }
+	.sub_about .history .hs-list li:first-child::after{ content:''; width:55px; height:15px; transform: scaleX(-1); top:-3.1em; left:-15px;}
+
+/* ------------------------------------------------------------awards */
+	.sub_about .awards .awards-slide .swiper-wrapper .swiper-slide { height:240px; padding:20px;} 
+	.sub_about .awards .awards-slide .awards-txt dt{ font:600 21px/1.23 'Pretendard'; color:#000; letter-spacing:-0.025em; margin-bottom:10px; }
+	.sub_about .awards .awards-slide .awards-txt dd li{ font:400 13px/1.4 'Pretendard'; color:#666; letter-spacing:-0.025em; margin-bottom:5px; }
+	.sub_about .awards .awards-slide .awards-txt dd li b{ font:600 13px/1.4 'Pretendard'; color:#000; letter-spacing:-0.025em; }
+
+/* -------------------------------------------------------------teams */
+	.sub_about .teams .teams_list li { width:33.33%; margin-bottom:0}
+	.sub_about .teams .teams_list li span { font-size:17px; }
+
+/* ------------------------------------contact */
+	.sub_about .contact .contact-map_wrap { width:100%; height:640px;overflow:visible; position:relative;margin-bottom:10%;display:flex; flex-direction:column;align-items:center; justify-content:center;}
+	.sub_about .contact .contact-map_wrap .contect-info_wrap { position:relative; display:block;height:130px;}
+	.sub_about .contact .contact-map_wrap .contect-info { width: 100%; height:100%; background:none; padding:0px; position:relative;margin-bottom: 32px;}
+	.sub_about .contact .contact-map_wrap .contect-info dl { width:100%; }
+	.sub_about .contact .contact-map_wrap .contect-info dt { font:700 24px/1 'Pretendard'; color:#000; letter-spacing:-0.025em; margin-bottom:21px;}
+	.sub_about .contact .contact-map_wrap .contect-info dd { font:400 17px/1 'Pretendard'; color:#333; letter-spacing:-0.025em; margin-bottom:10px;}
+	.sub_about .contact .contact-map_wrap .contect-info dd:last-child{ margin-bottom:0; }
+	.sub_about .contact .contact-map_wrap .contect-info dd span{ font:700 17px/1 'Pretendard'; color:#999; letter-spacing:-0.025em; margin-right:10px;}
+	.sub_about .contact .root_daum_roughmap { width:100%; height:100%; }
+	.sub_about .contact .root_daum_roughmap .wrap_map{ height:100%; }
+	.sub_about .contact .root_daum_roughmap .wrap_controllers{ display:none; }
+}
+@media screen and (max-width:500px){
+}
