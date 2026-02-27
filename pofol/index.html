@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5, user-scalable=yes">
+    <meta name="robots" content="all">
+    <meta name="subject" content="portfolio_sn">
+    <meta name="description" content="포트폴리오">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="포트폴리오">
+    <meta property="og:site_name" content="포트폴리오">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="포트폴리오">
+    <meta property="og:image" content="theme/basic/img/sns/sns_img.jpg"><!--로고이미지-->
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="theme/basic/css/default.css?ver=191202">
+    <script>
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = ".";
+        var g5_bbs_url = "./bbs";
+        var g5_is_member = "";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+    </script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.menu.js?ver=191202"></script>
+    <script src="js/common.js?ver=191202"></script>
+    <script src="js/wrest.js?ver=191202"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- <script src="js/jquery.fadethis.js"></script> -->
+    <!-- <script src="js/jquery-rotate.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="/site/pofol/theme/basic/js/swiper.min.js"></script> <!-- 스와이퍼 -->
+    <script src='/site/pofol/js/gsap.min.js'></script> <!-- gsap -->
+    <script src="/site/pofol/js/jquery.youtube-background.min.js"></script>
+    <script src="/site/pofol/theme/basic/js/visual.js"></script>
+    <script src="/site/pofol/theme/basic/js/main.js"></script>
+    <script src="/site/pofol/theme/basic/js/common.js"></script>
+    <script src="/site/pofol/theme/basic/js/content.js"></script>
+    <script>history.scrollRestoration = "manual"</script>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"-->
+<!--          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="theme/basic/css/style.css">
+    <link rel="stylesheet" href="theme/basic/css/swiper.min.css">
+    <!-- <link rel="icon" href="theme/basic/img/common/favicon.png">-->
+
+    <script>
+        $(document).ready(function () {
+            $("img").removeAttr("title");
+            /*$("img").removeAttr("alt"); alt 값도 안보이게 하고 싶은 경우 주석 해제*/
+        });
+    </script>
+
+</head>
+<body>
+
+
+<header id="header" class="header">
+    <div class="header_wrap">
+        <a href="#" class="logo_wrap">
+            <span class="logo">Portfolio</span>
+        </a>
+        <nav class="top-menu">
+            <ul class="top-menu_list">
+                <li><a href="#">WORKS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="sc-top"><img src="theme/basic/img/common/scroll-top-aw.svg" alt="맨 위로"/></div>
+<!-- <div class="circle">View</div> -->
+
+
+<main id='main'>
+    <div class="pageNumbering" style="width:1px"></div>
+    <div class="bg-gradient"></div>
+    <div class="content_container bg-outline"><!-- 배경 -->
+        <div class="content_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="outline">
+                <line x1="0" y1="0" x2="0" y2="100%" style="stroke:#ccc;stroke-width:1"/>
+                <line x1="100%" y1="0" x2="100%" y2="100%" style="stroke:#ccc;stroke-width:1"/>
+            </svg><!--배경 선-->
+            <div class="content_inner">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="outline">
+                    <line x1="0" y1="0" x2="0" y2="100%" style="stroke:#ccc;stroke-width:1"/>
+                    <line x1="100%" y1="0" x2="100%" y2="100%" style="stroke:#ccc;stroke-width:1"/>
+                </svg><!--배경 선-->
+            </div>
+        </div>
+    </div>
+    <div class="main_content content_container"><!--메인 컨텐츠 시작-->
+        <!-- --------------------------------------------------visual-------------------------------------------------- -->
+        <div class="main visual content_wrap">
+            <div class="content_inner">
+                <div class="visual-text">
+                    <dl>
+                        <dt><span class="slide-txt1">Thoughtfully Built, Layer by Layer.</span></dt>
+                        <dt><span class="slide-txt2">7년차 그래픽 디자이너,<br/>4년차 실무를 더한 웹퍼블리셔</span></dt>
+                        <dd>그 사이에서 내실을 다져온,<br/>퍼블리셔이자 UI&middot;UX디자이너 송희진입니다</dd>
+                    </dl>
+                </div>
+                <div class="visual-img_wrap visual-slide1"><!--편집디자인이미지4-->
+                    <ul class="visual-img_list">
+                        <li>
+                            <img src="theme/basic/img/main/visual-1.png" alt="포폴이미지1"/>
+                        </li>
+                        <li>
+                            <img src="theme/basic/img/main/public_poster.png" alt="공공구매설명회포스터"/>
+                        </li>
+                    </ul>
+                    <ul class="visual-img_list">
+                        <li>
+                            <img src="theme/basic/img/main/visual-mgz-kw.png" alt="maz_ksdian1.png리플렛"/>
+                        </li>
+                        <li>
+                            <img src="theme/basic/img/main/visual-mgz-fs1.png" alt="설립백서이미지"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="visual-img_wrap visual-slide2"><!--웹앱이미지3-->
+                    <img src="theme/basic/img/main/visual-wz-kw.png" alt="베이비부머모바일"/>
+                    <img src="theme/basic/img/main/visual-wz-fs.png" alt="보은군청 시장실pc"/>
+                    <img src="theme/basic/img/main/visual-wz-lh.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------------------------------sec2-------------------------------------------------- -->
+        <div class="main sec2 content_wrap">
+            <h2>Web</h2>
+            <div class="swiper-container sec2-swiper">
+                <ul class="swiper-wrapper">
+
+                    <li class="swiper-slide">
+                        <a href="https://dnthqhey.github.io/dntnitys/A/index2.html" target="_blank">
+                            <img src="theme/basic/img/main/web_night1.png" alt="문화재야행"
+                                 class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/web_night-m.png" alt="문화재야행_모바일이미지"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>Concept Work</dt>
+                                <dd>청주문화재야행<br/>리디자인</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.wonju.go.kr/sbinfo/www/index.do" target="_blank">
+                            <img src="theme/basic/img/main/wonju_sbinfo.png" alt="원주시소상공인이미지"
+                                 class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/wonju_sbinfo-m.png" alt="원주시소상공인_모바일"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>소상공인종합정보센터</dt>
+                                <dd>원주시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://gimpo.go.kr/cctv/index.do" target="_blank">
+                            <img src="theme/basic/img/main/kimpo_safe.png" alt="김포시도시안전정보센터pc" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/kimpo_safe-m.png" alt="김포시도시안전정보센터모바일" class="sec2-img_m"/>
+                            <dl>
+                                <dt>도시안전정보센터</dt>
+                                <dd>김포시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.anyang.go.kr/future/index.do" target="_blank">
+                            <img src="theme/basic/img/main/ay_future.png" alt="안양미래교육이리온pc" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/ay_future-m.png" alt="안양미래교육이리온모바일"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>안양미래교육이리온</dt>
+                                <dd>안양시청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.boeun.go.kr/health/index.do">
+                            <img src="theme/basic/img/main/boeun_health.png" alt="보은군보건소pc" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/boeun_health-m.png" alt="보은군보건소모바일이미지" class="sec2-img_m"/>
+                            <dl>
+                                <dt>보은군보건소</dt>
+                                <dd>보은군청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.gm.go.kr/talk/index.do">
+                            <img src="theme/basic/img/main/gm_talk.png" alt="광명시민소통플랫폼pc" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/gm_talk-m.png" alt="광명시민소통플랫폼모바일" class="sec2-img_m"/>
+                            <dl>
+                                <dt>시민소통플랫폼</dt>
+                                <dd>광명시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.anyang.go.kr/youth/index.do">
+                            <img src="theme/basic/img/main/ay_youth.png" alt="안양청년광장pc" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/ay_youth-m.png" alt="안양청년광장모바일이미지"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>안양청년광장</dt>
+                                <dd>안양시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.anyang.go.kr/main/index.do">
+                            <img src="theme/basic/img/main/anyang.png" alt="안양시청" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/anyang-m.png" alt="안양시청모바일" class="sec2-img_m"/>
+                            <dl>
+                                <dt>안양시청홈페이지</dt>
+                                <dd>안양시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.yp21.go.kr/gunsu/index.do">
+                            <img src="theme/basic/img/main/yp21.png" alt="양평군청열린군수실"
+                                 class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/yp21-m.png" alt="양평군청열린군수실모바일"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>열린군수실</dt>
+                                <dd>양평군청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.chungbuk.go.kr/welfare/index.do">
+                            <img src="theme/basic/img/main/cb_woman.png" alt="충북도청 여성복지사업소" class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/cb_woman-m.png" alt="충북도청여성복지사업소모바일이미지"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>여성복지사업소</dt>
+                                <dd>충북도청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/wonju_facility1.png" alt="원주시 체육시설사업소"
+                                 class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/wonju_facility-m.png" alt="원주시 체육시설사업소 모바일"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>원주시 체육시설사업소</dt>
+                                <dd>원주시</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="https://www.boeun.go.kr/gunsu/index.do">
+                            <img src="theme/basic/img/main/boeun_gunsu.png" alt="보은군수실메인"
+                                 class="sec2-img_pc"/>
+                            <img src="theme/basic/img/main/boeun_gunsu-m.png" alt="보은군수실모바일이미지"
+                                 class="sec2-img_m"/>
+                            <dl>
+                                <dt>보은열린군수실</dt>
+                                <dd>보은군청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-container">
+                    <div class="btn-wrap">
+                        <button class="swp-b btn-p sec2_prev"><img
+                                src="theme/basic/img/main/btn-prev.svg" alt=""/></button>
+                        <button class="swp-b btn-sp sec2_stop">||</button>
+                        <button class="swp-b btn-st sec2_start"><img
+                                src="theme/basic/img/main/btn-start.svg" alt=""/></button>
+                        <button class="swp-b btn-n sec2_next"><img
+                                src="theme/basic/img/main/btn-next.svg" alt=""/></button>
+                    </div>
+                    <!--					<a href="#n" class="btn-more">자세히 보기</a>-->
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------------------------------sec1-------------------------------------------------- -->
+        <div class="main sec1 content_wrap">
+            <h2>Editorial</h2>
+            <div class="swiper-container sec1-swiper">
+                <ul class="swiper-wrapper">
+<!--                    <li class="swiper-slide">-->
+<!--                        <a href="bbs/board.php?bo_table=magazine&wr_id=129">-->
+<!--                            <img src="theme/basic/img/main/maz_ko.png" alt=""/>-->
+<!--                            &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; 1 &ndash;&gt;-->
+<!--                            <img src="theme/basic/img/main/maz_ko_on.png" alt="" class="sec1-img2"/>-->
+<!--                            <dl>-->
+<!--                                <dt>국회보</dt>-->
+<!--                                <dd>국회사무처</dd>-->
+<!--                            </dl>-->
+<!--                        </a>-->
+<!--                    </li>-->
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/Kkuguri.png" alt="꾸구리의 눈물"/>
+                            <!----------------------------------------- 2 -->
+                            <img src="theme/basic/img/main/Kkuguri1.png" alt="꾸구리의 눈물"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>해수부역량강화사업</dt>
+                                <dd>거름</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/handbook.png" alt="의제실행핸드북"/>
+                            <!-------------------------------------------- 3 -->
+                            <img src="theme/basic/img/main/handbook1.png" alt="의제실행핸드북" class="sec1-img2"/>
+                            <dl>
+                                <dt>의제실행핸드북</dt>
+                                <dd>충북지역문제해결플랫폼</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/upcycling.png" alt="쓸모잇는업사이클리빙랩"/>
+                            <!-------------------------------------- 4-->
+                            <img src="theme/basic/img/main/upcycling2.png" alt="쓸모잇는업사이클리빙랩" class="sec1-img2"/>
+                            <dl>
+                                <dt>쓸모잇는업사이클리빙랩</dt>
+                                <dd>보령시마을만들기지원센터</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/post_corona.png" alt="심리건강지원매뉴얼표지"/>
+                            <!----------------------------------- 5 -->
+                            <img src="theme/basic/img/main/post_corona3.png" alt="심리건강지원매뉴얼차례"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>심리건강지원매뉴얼</dt>
+                                <dd>청소년상담복지센터</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/Youth_Recruit-f.png" alt="청년일자리우수기업리플렛"/>
+                            <!------------------------------------------ 6 -->
+                            <img src="theme/basic/img/main/Youth_Recruit-i.png" alt="청년일자리우수기업리플렛"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>청년일자리우수기업리플렛</dt>
+                                <dd>충북기업진흥원</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/findhope.png" alt="희망찾기프로젝트"/>
+                            <!--------------------------------------------- 7 -->
+                            <img src="theme/basic/img/main/findhope1.png" alt="희망찾기프로젝트"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>희망찾기프로젝트</dt>
+                                <dd>일하는공동체</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/cw_news.png" alt="청원군보이미지"/>
+                            <!--------------------------------------------- 8 -->
+                            <img src="theme/basic/img/main/cw_news1.png" alt="청원군보이미지" class="sec1-img2"/>
+                            <dl>
+                                <dt>청원군보</dt>
+                                <dd>청원군청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/cultural_properties.png" alt="문화재정기조사보고서"/>
+                            <!--------------------------------------------- 9 -->
+                            <img src="theme/basic/img/main/cultural_properties1.png" alt="문화재정기조사보고서리디자인"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>문화재정기조사보고서</dt>
+                                <dd>충북역사문화연구원</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/durimarket.png" alt="사회적기업안내 리플렛"/>
+                            <!--------------------------------------- 10 -->
+                            <img src="theme/basic/img/main/durimarket_on.png" alt="사회적기업안내 리플렛" class="sec1-img2"/>
+                            <dl>
+                                <dt>(예비)사회적기업안내리플렛</dt>
+                                <dd>청주시청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/cb_PSP.png" alt="지역문제해결플랫폼"/>
+                            <!--------------------------------------- 12 -->
+                            <img src="theme/basic/img/main/cb_PSP_bottom.png" alt="지역문제해결플랫폼"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>의제실행선언식 웹자보</dt>
+                                <dd>충북지역문제해결플랫폼</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/public_poster.png" alt="공공구매설명회_포스터"/>
+                            <!--------------------------------------- 11 -->
+                            <img src="theme/basic/img/main/public_poster.png" alt="공공구매설명회_포스터"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>2020공공구매설명회</dt>
+                                <dd>충북사회적기업협의회</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/daechunews.png" alt="대추고을소식_보은신문"/>
+                            <!--------------------------------------- 13 -->
+                            <img src="theme/basic/img/main/daechunews1.png" alt="대추고을소식_보은신문"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>대추고을소식</dt>
+                                <dd>보은군청</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="theme/basic/img/main/jikji_lf1.png" alt="직지리플렛"/>
+                            <!--------------------------------------- 14 -->
+                            <img src="theme/basic/img/main/jikji_lf.png" alt="직지리플렛"
+                                 class="sec1-img2"/>
+                            <dl>
+                                <dt>직지리플렛</dt>
+                                <dd>청주고인쇄박물관</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <!-- <li class="swiper-slide">
+                        <a href="bbs/board.php?bo_table=magazine&wr_id=96">
+                            <img src="theme/basic/img/main/maz_lamp.png" alt="" />
+                            <img src="theme/basic/img/main/maz_lamp_on.png" alt="" class="sec1-img2"/>
+                            <dl><dt>신호등</dt><dd>도로교통공단</dd></dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="bbs/board.php?bo_table=magazine&wr_id=53&page=2">
+                            <img src="theme/basic/img/main/maz_1340.png" alt="" />
+                            <img src="theme/basic/img/main/maz_1340_on.png" alt="" class="sec1-img2"/>
+                            <dl><dt>1340</dt><dd>강원랜드</dd></dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="bbs/board.php?bo_table=magazine&wr_id=40&page=3">
+                            <img src="theme/basic/img/main/maz_culture.png" alt="" />
+                            <img src="theme/basic/img/main/maz_culture_on.png" alt="" class="sec1-img2"/>
+                            <dl><dt>월간 문화재</dt><dd>한국문화재재단</dd></dl>
+                        </a>
+                    </li> -->                </ul>
+                <div class="btn-container">
+                    <div class="btn-wrap">
+                        <button class="swp-b btn-p sec1_prev"><img
+                                src="theme/basic/img/main/btn-prev.svg" alt=""/></button>
+                        <button class="swp-b btn-sp sec1_stop">||</button>
+                        <button class="swp-b btn-st sec1_start"><img
+                                src="theme/basic/img/main/btn-start.svg" alt=""/></button>
+                        <button class="swp-b btn-n sec1_next"><img
+                                src="theme/basic/img/main/btn-next.svg" alt=""/></button>
+                    </div>
+                    <!--					<a href="#n" class="btn-more">자세히 보기</a>-->
+                </div>
+            </div>
+        </div>
+	</div>
+</main>
+
+
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<footer id="footer" class="footer">
+    <div class="content_container">
+        <div class="content_inner">
+            <ul class="footer_list">
+                <li>
+                    <a href="#" class="ft_logo">
+                        <span class="logo">Portfolio</span>
+<!--                        <img src="theme/basic/img/common/logo.png" alt="포트폴리오"/>-->
+                    </a>
+                    </li>
+                <li>
+                    <ul>
+<!--                        <li>-->
+<!--                            <a href="https://map.naver.com/v5/search/%EC%9D%B4%ED%8C%9D/place/13496813?c=14140728.7795351,4511919.2752044,16.82,0,0,0,dh"-->
+<!--                               target="_blank" class="ft_text">06026 서울시 강남구 도산대로 207, 성도빌딩 3층 </a></li>-->
+                        <li>010-9416-6448</li>
+                        <li>E. dnthqhey@gmail.com</li>
+                        <li><p class="ft_cr"><span>Ⓒ</span> 2026 ver portfolio</p></li>
+					</ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<!-- } 하단 끝 -->
+
+<script>
+    $(function () {
+        // 폰트 리사이즈 쿠키있으면 실행
+        font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+    });
+</script>
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+    $(function () {
+        var $sv_use = $(".sv_use");
+        var count = $sv_use.length;
+
+        $sv_use.each(function () {
+            $(this).css("z-index", count);
+            $(this).css("position", "relative");
+            count = count - 1;
+        });
+    });
+</script>
+<![endif]-->
+
+</body>
+</html>
