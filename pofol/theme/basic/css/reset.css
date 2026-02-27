@@ -64,30 +64,30 @@ select::-ms-expand {display: none; /* 화살표 없애기 for IE10, 11*/ }
 @font-face {
 	font-family: 'Oligopoly';
 	font-weight: 800;
-	src:url('./font/Oligopoly Black.ttf') format('truetype') ,url('./font/Oligopoly-Black.otf') format('opentype');
+	src:url('./font/Oligopoly-Black.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Oligopoly';
 	font-weight: 700;
-	src:url('font/Oligopoly-Bold.ttf') format('truetype') ,url('./font/Oligopoly-Bold.otf') format('opentype');
+	src:url('font/Oligopoly-Bold.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Oligopoly';
 	font-weight: 400;
-	src:url('font/Oligopoly-Regular.ttf') format('truetype') ,url('./font/Oligopoly-Regular.otf') format('opentype');
+	src:url('font/Oligopoly-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Oligopoly';
 	font-weight: 300;
-	src:url('./font/Oligopoly Light.ttf') format('truetype') ,url('./font/Oligopoly-Light.otf') format('opentype');
+	src:url('./font/Oligopoly-Light.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Oligopoly';
 	font-weight: 100;
-	src:url('./font/Oligopoly Thin.ttf') format('truetype') ,url('./font/Oligopoly-Thin.otf') format('opentype');
+	src:url('./font/Oligopoly-Thin.ttf') format('truetype');
 }
 /* Pretendard */
 @font-face {
