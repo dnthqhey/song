@@ -7,11 +7,11 @@ b { font-weight: 700;}
 	.header { padding:50px 50px 0 50px;height:100px ; box-sizing:border-box; width:100%; z-index:99999; position:fixed; top:0; left:0;}
 	.header .header_wrap{width:100%; height:100%; display:flex; justify-content:space-between; align-items:center; }
 	.header .logo_wrap {height:48px;}
-	.header .logo_wrap .logo {position: relative;display: block; height:100%;font: 600 50px /1 'Oligopoly';color: #ccc;}
+	.header .logo_wrap .logo {position: relative;display: block; height:100%;font: 600 50px /1 'pretendard';color: #ccc;}
 
 	.header .top-menu { width:150px; }
 	.header .top-menu_list { width:100%; display:flex; justify-content:end; }
-	.header .top-menu_list li a{ font: 400 17px/1 'Oligopoly'; color:#616161; letter-spacing:0; transition:0.1s}
+	.header .top-menu_list li a{ font: 400 17px/1 'pretendard'; color:#616161; letter-spacing:0; transition:0.1s}
 	.header .top-menu_list li:first-child{ margin-right:30px; }
 	.header	.logo_wrap .logo .cls-2 { animation:moving-logo 2s linear alternate infinite; }
 
@@ -53,12 +53,12 @@ b { font-weight: 700;}
 	.header { padding:20px 5% 0 5%;height:80px ;}
 	.header { padding:20px 5% 0 5%;height:80px ;}
 	.header .logo_wrap { height:30px; }
-	.header .top-menu_list li a{ font: normal 13px/1 'Oligopoly'; color:#616161; letter-spacing:0; transition:0.1s}
+	.header .top-menu_list li a{ font: normal 13px/1 'pretendard'; color:#616161; letter-spacing:0; transition:0.1s}
 	.header .top-menu_list li:first-child{ margin-right:20px; }
 	
 	.footer { padding: 0 0 20px 0 }
 	.footer .ft_logo { margin-bottom:0; margin-top:10px;display:block; width:80px;}
-	.footer .ft_logo .logo{	color: #ccc;font-size: 50px;font-weight: 600;font-family: oligopoly;}
+	.footer .ft_logo .logo{	color: #ccc;font-size: 50px;font-weight: 600;font-family: pretendard;}
 	.footer .ft_title { font: normal 12px/1.5 'Pretendard'; color:#999; letter-spacing:-0.025em;}
 	.footer .ft_cr {font: normal 12px/1.5 'Pretendard'; color:#999; letter-spacing:-0.025em;}
 	.footer .ft_cr span{font: normal 8px 'Pretendard'; color:#999; letter-spacing:-0.025em;}
