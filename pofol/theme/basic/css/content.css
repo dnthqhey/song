@@ -47,25 +47,20 @@
 .sub_about .history .h2010::before { content:'2010’s';position:absolute;top:-17px;left:-230px; font:700 48px/1 'Pretendard'; color:#000; display:block;  letter-spacing:0;}
 .sub_about .history .h2000::before { content:'2000’s';position:absolute;top:-17px;left:-230px; font:700 48px/1 'Pretendard'; color:#000; display:block; }
 .sub_about .history .hs-list li { font:400 17px/1 'Pretendard'; color:#666; letter-spacing:-0.025em; margin-bottom:1.58em; position:relative; padding-left:109px; margin-left:7px;}
-.sub_about .history .hs-list li:last-child{ margin-bottom:0px }
+.sub_about .history .hs-list li:last-child{ margin-bottom:0; }
 .sub_about .history .hs-list li:first-child::after{ content:''; width:55px; height:15px;position:absolute;top:0; left:-54px; display:block; background:url(../img/sub/sub_about_history-bullet.svg) }
-.sub_about .history .h2020 li:nth-child(1)::before{ content:'2021. 05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(1)::before{ content:'2017. 12';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(2)::before{ content:'2017. 09';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(3)::before{ content:'2016. 10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(4)::before{ content:'2016. 04';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(5)::before{ content:'2016. 01';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(6)::before{ content:'2014. 10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(7)::before{ content:'2014. 08';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(8)::before{ content:'2014 .05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(9)::before{ content:'2011. 11';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(10)::before{ content:'2011 .11';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2010 li:nth-child(11)::before{ content:'2011 .05';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2000 li:nth-child(1)::before{ content:'2009 .07';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2000 li:nth-child(2)::before{ content:'2007 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2000 li:nth-child(3)::before{ content:'2006 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2000 li:nth-child(4)::before{ content:'2006 .10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
-.sub_about .history .h2000 li:nth-child(5)::before{ content:'2006 .08';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2020 li:nth-child(1)::before{ content:'2025. 02';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2020 li:nth-child(2)::before{ content:'2021. 10';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2020 li:nth-child(3)::before{ content:'2021. 09';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2020 li:nth-child(4)::before{ content:'2020. 12';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2020 li:nth-child(6)::before{ content:'2020. 04';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(1)::before{ content:'2019';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(3)::before{ content:'2018';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(4)::before{ content:'2017';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(5)::before{ content:'2015';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(6)::before{ content:'2014';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2010 li:nth-child(10)::before{ content:'2012';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
+.sub_about .history .h2000 li:nth-child(1)::before{ content:'2011';position:absolute;top:-2px;left:11px; font:700 21px/1 'Pretendard'; color:#000; display:block; }
 
 /* ------------------------------------awards */
 .sub_about .awards { width:100%}
