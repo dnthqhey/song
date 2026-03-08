@@ -173,7 +173,7 @@ button { cursor:pointer; padding:0; background:none; border:none;}
 
 @media screen and (max-width:620px) {
     .sec1 .swiper-container .swiper-wrapper .swiper-slide a {transform: scale(0.9);}
-    .visual .visual-text dt .slide-txt2{font:600 35px/ 1.2 'NotoKr';}
+    .visual .visual-text dt .slide-txt2{font:600 25px/ 1.2 'NotoKr';}
 
 }
 @media screen and (max-width:500px){
