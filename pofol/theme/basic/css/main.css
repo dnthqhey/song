@@ -184,7 +184,7 @@ button { cursor:pointer; padding:0; background:none; border:none;}
 
 
     /*추가*/
-    .main h2{margin-bottom: 0;}
+    .main h2{margin-bottom: 0;font-size:35px;}
     .main .swiper-container .btn-wrap, .main .sec2-swiper .btn-wrap{margin-top: 0;}
 
     .visual .visual-img_list{margin-left: 0;}
