@@ -105,7 +105,9 @@ function sec1Swiper(){
         },
     });
 	 autoplay()
-
+	$('.sec1-swiper .swiper-slide a').on('click', function(e) {
+		e.preventDefault(); // 클릭 시 페이지 이동(링크) 막기
+	});
       function autoplay(){
           $('.sec1_stop').click(function(){
               swiper.autoplay.stop();
@@ -372,6 +374,7 @@ function toggleEffect(){
 		gsap.set(sp2,{display:'block'})
 	}
 }
+
 
 
 
