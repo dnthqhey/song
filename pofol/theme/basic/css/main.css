@@ -73,7 +73,7 @@ button { cursor:pointer; padding:0; background:none; border:none;}
 /*sec1 Magazine-----------------------------------------------------  */
 
 .sec1 .swiper-container::before{content:'';display:block;width:548px; height:548px; border-radius:50%; background: rgba(229,232,237,0.4); position:absolute;top:-49px; left:50%; margin-left:-274px;}
-.sec1 .swiper-container .swiper-wrapper .swiper-slide{pointer-events: none;cursor: default;}
+
 .sec1 .swiper-container .swiper-wrapper .swiper-slide img:nth-of-type(1){ box-shadow:10px 10px 20px rgba(0,0,0,0.25) }
 .sec1 .swiper-slide dl { margin-top:30px}
 .sec1 .swiper-slide .sec1-img2 { position:absolute; top:0; opacity:0;transition:0.3s;}
